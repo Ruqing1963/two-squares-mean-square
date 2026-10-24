@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper."
+title: "Sums of two squares with few prime factors, II: the cuspidal error in mean square and almost all N: code, data and manuscript"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Ruqing
+    affiliation: "GUT Geoservice Inc., Montreal, Canada"
+    email: ruqing@hotmail.com
+date-released: 2026-10-24
+version: "0.1"
+license: MIT
+repository-code: "https://github.com/Ruqing1963/two-squares-mean-square"
+keywords:
+  - sums of two squares
+  - almost primes
+  - sieve methods
+  - theta series
+  - Petersson norm
+  - mean square
+  - level of distribution
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Chen
+      given-names: Ruqing
+  title: "Sums of two squares with few prime factors, II: the cuspidal error in mean square and almost all N"
+  year: 2026
+  notes: "preprint"
