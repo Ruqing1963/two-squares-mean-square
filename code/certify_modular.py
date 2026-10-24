@@ -125,6 +125,9 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "1/2":
         # conditional (Conjecture: level 1/2)
         certify("1/2", "6/125", "1/3", "17/50", "level 1/2 (conditional): joint 8 and max side 5")
+    elif len(sys.argv) > 1 and sys.argv[1] == "19/20":
+        # level 19/20, valid for almost all N once ||G|| << (mm')^eps (Part II, Theorem 1 and Theorem B)
+        certify("19/20", "2/25", "1/3", "69/100", "level 19/20 (almost all N): joint 5 and max side 4")
     elif len(sys.argv) > 1 and sys.argv[1] == "2/3":
         # level 2/3, valid for almost all N (mean-square theorem of the supplement)
         certify("2/3", "3/50", "1/3", "51/100", "level 2/3 (almost all N): joint 6 and max side 4")

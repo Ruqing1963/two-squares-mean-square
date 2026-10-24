@@ -1,8 +1,9 @@
 r"""
 Figure 1 of Part II: (a) the running Rankin-Selberg estimate of ||G_{m,m'}||^2, normalised by (mm')^{1/4}, as a
 function of y/L (it reaches a plateau once y >> L, which is the Y^2 growth of Theorem A); (b) ||G_{m,m'}||^2_est
-at Y = 2^21 against mm' on log-log axes, with the lines 3 (mm')^{1/4} (Observation 5.1) and 0.79 (mm')^{1/2}
-(the growth allowed by Waibel's bound, through the point (1,101)).
+at Y = 2^21 against mm' on log-log axes, with the lines 0.365 (log mm')^2 (the fit of Section 5, consistent with
+Theorem 1: ||G||^2 << (mm')^eps), 3 (mm')^{1/4} and 0.79 (mm')^{1/2} (the growth allowed by Waibel's general bound,
+through the point (1,101)), and the exact value (64/9)||f_20||^2 at (1,5) (norm_level20.py).
 
 Same tables and FFT convolution as mean_square_check.py (sup_error_scan.py of Part I); admissible N only
 ((N, mm') = 1, v_2(N) <= 3).  Floating point, not certified.
@@ -72,8 +73,10 @@ for group, marker, face, lab in ((reliable, "o", "#2a78d6", r"$mm'$ without smal
         xs.append(m * mp); gs.append(G2[X])
     ax2.scatter(xs, gs, marker=marker, s=38, facecolors=face, edgecolors="#2a78d6", linewidths=1.2, label=lab, zorder=3)
 mm = np.logspace(np.log10(3), np.log10(2e6), 50)
-ax2.plot(mm, 3 * mm ** 0.25, color="#eb6834", lw=1.4, label=r"$3\,(mm')^{1/4}$")
+ax2.plot(mm, 0.365 * np.log(mm) ** 2, color="#eb6834", lw=1.4, label=r"$0.365\,(\log mm')^2$")
+ax2.plot(mm, 3 * mm ** 0.25, color="#1baf7a", lw=1.0, ls="-.", label=r"$3\,(mm')^{1/4}$")
 ax2.plot(mm, 0.79 * mm ** 0.5, color="#777", lw=1.2, ls="--", label=r"$0.79\,(mm')^{1/2}$")
+ax2.scatter([5], [64 / 9 * 0.0813495], marker="*", s=90, color="#eb6834", zorder=4, label=r"$(1,5)$ exact: $\frac{64}{9}\|f_{20}\|^2=0.5785$")
 ax2.set_xscale("log"); ax2.set_yscale("log")
 ax2.set_xlabel(r"$mm'$")
 ax2.set_ylabel(r"$\|G_{m,m'}\|^2_{\mathrm{est}}$  ($Y=2^{21}$)")

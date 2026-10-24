@@ -1,0 +1,10 @@
+﻿a_f(n), n = 1..13: [ 1  0 -2  0 -1  0  2  0  1  0  0  0  2]  (20a1: a2=0, a3=-2, a5=-1, a7=2, a11=0, a13=2)
+Rankin-Selberg, y = 2^16: ||f_20||^2 = 0.081282
+Rankin-Selberg, y = 2^18: ||f_20||^2 = 0.081275
+Rankin-Selberg, y = 2^20: ||f_20||^2 = 0.081338
+periods: omega1 = 2.82437514196, omega2 = (0.0 + 2.27416519904j);  curve: g2 = -14.66666667, g3 = -10.96296296
+  lattice Z w1 + Z w2: g2 = 5.333333333, g3 = 1.62962963, covolume = 6.423095657, ||f_20||^2 = covol/(4 pi^2) = 0.1626989137
+  lattice Z w1 + Z (w1+w2)/2: g2 = -14.66666667, g3 = 10.96296296, covolume = 3.211547828, ||f_20||^2 = covol/(4 pi^2) = 0.08134945683
+  (the lattice with g2, |g3| equal to those of the curve is the period lattice up to the sign of g3, i.e. up to the twist by -1, which has the same covolume)
+pipeline: max |(T - M) - (8/3) a_f(N)| over admissible N = 9.313225746154785e-10
+||G_{1,5}||^2 = (64/9) ||f_20||^2 =  0.5784853333333333 ; estimate over admissible N only (biased, Table 1): 0.7403461566921872

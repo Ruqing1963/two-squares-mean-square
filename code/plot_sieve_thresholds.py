@@ -6,7 +6,7 @@ For each theta the two quantities are minimised separately over alpha, beta1 (la
 value); the integer thresholds k + 1 give the bounds Omega(n(N-n)) <= k and max Omega <= k'.
 
 Floating point, not certified; the certified points are those of Part I (theta = 2/5, 1/2) and of this paper
-(theta = 2/3).  Usage:  python plot_sieve_thresholds.py
+(theta = 2/3 and 19/20).  Usage:  python plot_sieve_thresholds.py   (add --recompute to redo the scan)
 """
 import os
 import sys
@@ -53,8 +53,8 @@ ax.plot(thetas, joint, color="#2a78d6", lw=1.8, label=r"$\min\,(1/\lambda+2/\bet
 ax.plot(thetas, side, color="#eb6834", lw=1.8, label=r"$\min\,(1/\lambda+1/\beta_1)$:  $\max\Omega\leq k'$ if below $k'+1$")
 for k in (10, 9, 8, 7, 6, 5, 4):
     ax.axhline(k, color="#999", lw=0.7, ls=":")
-for th, lab in ((2 / 5, r"$2/5$: $(9,6)$"), (4 / 9, r"$4/9$: $(8,6)$"), (1 / 2, r"$1/2$: $(8,5)$"),
-                (2 / 3, r"$2/3$: $(6,4)$"), (4 / 5, r"$4/5$: $(6,4)$")):
+for th, lab in ((2 / 5, r"$2/5$: $(9,6)$"), (1 / 2, r"$1/2$: $(8,5)$"),
+                (2 / 3, r"$2/3$: $(6,4)$"), (19 / 20, r"$19/20$: $(5,4)$")):
     ax.axvline(th, color="#bbb", lw=0.8)
     ax.text(th + 0.004, 3.1, lab, fontsize=7.5, rotation=90, va="bottom", color="#333")
 ax.set_xlim(0.38, 0.86)

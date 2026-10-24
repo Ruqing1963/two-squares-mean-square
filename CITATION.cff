@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the paper."
-title: "Sums of two squares with few prime factors, II: the cuspidal error in mean square and almost all N: code, data and manuscript"
+title: "Sums of two squares with few prime factors, II: the Petersson norm of the cuspidal part of theta^2(mz)theta^2(m'z), the level of distribution 1/2, and almost all N: code, data and manuscript"
 type: software
 authors:
   - family-names: Chen
@@ -24,6 +24,6 @@ preferred-citation:
   authors:
     - family-names: Chen
       given-names: Ruqing
-  title: "Sums of two squares with few prime factors, II: the cuspidal error in mean square and almost all N"
+  title: "Sums of two squares with few prime factors, II: the Petersson norm of the cuspidal part of theta^2(mz)theta^2(m'z), the level of distribution 1/2, and almost all N"
   year: 2026
   notes: "preprint"
