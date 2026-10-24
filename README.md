@@ -25,6 +25,13 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
 * **Theorem 1.4 / Corollary 1.5.** Level of distribution 1 − ε for all but O(X^{1−δ}) integers N ≡ 2 (mod 4) up
   to X, and for those N: Ω(n(N − n)) ≤ 5 and max(Ω(n), Ω(N − n)) ≤ 4, constant 0.34 (parameters
   θ = 19/20, α = 2/25, λ = 1/3, β₁ = 69/100 certified in interval arithmetic).
+* For almost all N the circle method (Montgomery–Vaughan with characters mod 4) gives N = p + q with
+  p ≡ q ≡ 1 (mod 4), so Corollary 1.5 is not new as an arithmetic statement; the new content is Theorem 1.4
+  (the level 1 − ε for the weighted sequence) and the every-N results. Section 6 states the individual bound
+  |T − M| ≪ N^{1/2+ε}(mm′)^{−1/2+ε} (Conjecture 6.1) that would give level 1 − ε and (5,4) for every N
+  (Proposition 6.2), and Section 7.4 gives the supremum data behind it (sup/rms between 5 and 10 at every level).
+* Remark 5.3: the vector sieve of Part I has sieving limit 2 + 2√e = 5.30; the product n(N − n) is a genuine
+  dimension-2 sieve problem (limit 4.27), which should improve the pairs (k, k′) without new analytic input.
 * Numerics: the Rankin–Selberg estimate of ‖G‖² from the data satisfies ‖G_{m,m′}‖² ≈ 0.37 (log mm′)² for
   10² ≤ mm′ ≤ 1.6·10⁴; an exact check at level 20 (G_{1,5} = (8/3) f_20, ‖f_20‖² = 0.08135 from the period lattice
   of 20a1 and from Rankin–Selberg) validates the whole numerical chain.

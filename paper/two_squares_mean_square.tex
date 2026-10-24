@@ -15,6 +15,7 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
 
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\HH}{\mathbb{H}}
@@ -127,6 +128,8 @@ the integers counted being coprime to $N$ and products of distinct primes $\equi
 \end{corollary}
 
 The certified sieve parameters are $\alpha=2/25$, $\lambda=1/3$, $\beta_1=69/100$ (Section~\ref{sec:B}). The pairs $(5,4)$ for almost all $N$ and $(8,5)$ for every $N$ should be compared with $(9,6)$ for every $N$ in Part~I. A floating-point scan (Figure~\ref{fig:thr}) shows that $(5,4)$ is the limit of the Richert weights of Part~I even at the level $1$; a bound such as $(\cdot,3)$ would need different weights.
+
+Corollary~\ref{cor:C} must also be compared with what the circle method gives for almost all $N$. By the method of Montgomery and Vaughan \cite{MV}, carried out with the characters modulo $4$ (see \cite{BauerWang} for Goldbach's problem with primes in prescribed residue classes), all but $O(X^{1-\delta})$ integers $N\equiv2\pmod4$ up to $X$ are sums $p+q$ of two primes $p\equiv q\equiv1\pmod 4$, with $\gg\Sg_r(N)N/(\log N)^2$ representations; such primes are sums of two squares, so for almost all $N$ the pair $(1,1)$ holds with the count of Corollary~\ref{cor:C}. As an arithmetic statement about almost all $N$, Corollary~\ref{cor:C} is therefore far from new. What is new is Theorem~\ref{thm:B}, a level of distribution $1-\e$ for the weighted sequence $r(n)r(N-n)$, together with the observation that the sieve of Part~I extracts $(5,4)$ from it with no further input; the sieve route adds something only for \emph{every} $N$, where the circle method gives nothing (Goldbach's problem) and where Corollary~\ref{cor:main} gives $(8,5)$. Section~\ref{sec:spectral} formulates the individual bound that would raise the level to $1-\e$ for every $N$ and with it give $(5,4)$ for every $N$ (Proposition~\ref{prop:beyond}).
 
 Section~\ref{sec:spectral} restates the uniform bound of Corollary~\ref{cor:main}(i) in terms of Poincar\'e series, and Section~\ref{sec:num} contains the numerical evidence: the data of Part~I, an exact check of the whole numerical chain at the level $20$, and the empirical law $\|G_{m,m'}\|^2\approx0.37(\log mm')^2$, which corrects a remark of Part~I.
 
@@ -342,6 +345,10 @@ since $0.085058\cdot2^{-9}\cdot8\cdot1.66485\cdot(25/2)^2=0.3457\ldots$. The exc
 The same sieve gives $(8,5)$ at the level $1/2$ (Corollary~\ref{cor:main}), $(6,4)$ at $2/3$ (certified: $\alpha=3/50$, $\lambda=1/3$, $\beta_1=51/100$, $L-\lambda R\ge0.036741$) and $(5,4)$ at $19/20$. The floating-point scan of Figure~\ref{fig:thr} shows that the best attainable value of $1/\lambda+1/\beta_1$ stays above $4$ for every $\theta<1$, so $\max\Omega\le3$ is out of reach of the Richert weights with one parameter $\beta_1$, and that $1/\lambda+2/\beta_1$ drops below $6$ only for $\theta>0.83$. Corollary~\ref{cor:C} is an ``almost all $N$'' statement with a power-saving exceptional set; it says nothing about any individual $N$.
 \end{remark}
 
+\begin{remark}[The vector sieve is not the natural sieve here]\label{rem:dim2}
+The sieve of Part~I treats the two sides $n$ and $N-n$ by the vector sieve of Br\"udern and Fouvry, with two linear components of levels $N^{\theta_A}$ and $N^{\theta-\theta_A}$ and the lower bound $L=f_1(s_A)F_1(s_B)+F_1(s_A)f_1(s_B)-F_1(s_A)F_1(s_B)$. For $s_A,s_B\le3$ one has $f_1/F_1(s)=\log(s-1)$, so $L>0$ if and only if $(s_A-1)(s_B-1)>e$, and with $s=s_A+s_B$ fixed this requires $s>2+2\sqrt e=5.297\ldots$, attained at the symmetric split. The product sequence $n(N-n)$, however, is a sieve problem of dimension $2$ in the classical sense: under the weight $r(n)r(N-n)$ the density of $p\mid n(N-n)$ is $2h(p)$, $\sum_{p<z}2h(p)=2\log\log z+O(1)$, the condition $d\mid n(N-n)$ with $(n,N)=1$ splits uniquely as $d=d_1d_2$, $d_1\mid n$, $d_2\mid N-n$, and the remainder for the modulus $d$ is $\sum_{d_1d_2=d}R(d_1,d_2)$, which is exactly what Theorem~3.2 of Part~I and Theorem~\ref{thm:B} bound (this is the reason for the weight $d_3(de)$ there). The two-dimensional sieve of Diamond, Halberstam and Richert \cite{DH} applies to it directly, with the joint level $d\le N^{\theta}$ and the sieving limit $\beta_2=4.2665\ldots$ in place of $5.297$; its upper and lower functions $F_2,f_2$ should be used in place of the products of $F_1,f_1$ both in $L$ and in the weight term $R$. We expect this to improve the pairs $(k,k')$ at every level without any new analytic input, and we have not carried it out; the bound for $\max(\Omega(n),\Omega(N-n))$ then needs a separate argument, since the two-dimensional sieve controls only $\Omega(n(N-n))$. For comparison, for the unweighted sequence $n(N-n)$, which has level of distribution $1$ trivially, the two-dimensional weighted sieve gives $N=P_2+P_3$ for every large even $N$ (Wang Yuan, 1957).
+\end{remark}
+
 \section{The uniform bound and the Poincar\'e series}\label{sec:spectral}
 
 Let $L=4mm'$ and let $P_N\in S_2(\Gamma_0(L))$, $N\ge1$, be the Riesz representative of the $N$-th coefficient: the unique cusp form with
@@ -365,6 +372,36 @@ the value of $\cos^2$ for a unit vector in general position in the $\asymp L$-di
 \langle G,P_N\rangle=\sum_{\varphi\in\mathcal B^*}\frac{\langle G,\varphi\rangle\langle\varphi,P_N\rangle}{\|\varphi\|^2}=\frac{1}{4\pi N}\sum_{\varphi\in\mathcal B^*}\frac{\langle\Theta,\varphi\rangle\,a_\varphi(N)}{\|\varphi\|^2},
 \]
 so that Corollary~\ref{cor:main}(i) is the bound $\ll N^{1/2+\e}$ for this spectral sum, uniformly in $m,m'$; Part~I asked for a proof through the cancellation between the coefficients $\langle\Theta,\varphi\rangle$ and $a_\varphi(N)$. The proof given here does not see this cancellation: it shows instead that $\sum_\varphi|\langle\Theta,\varphi\rangle|^2/\|\varphi\|^2=\|G\|^2$ is itself small, i.e.\ that the theta series has a small cuspidal projection to begin with, and the spectral sum is then bounded by Cauchy--Schwarz.
+
+\subsection{The individual bound}\label{subsec:ind}
+Theorem~\ref{thm:A} and the data (Section~\ref{subsec:sup}) say that the cancellation which the proof does not see is there for most $N$, and the sieve for every $N$ would profit from it for each $N$. We state the strongest form suggested by the data.
+
+\begin{conjecture}\label{conj:ind}
+For coprime odd $m,m'$ and $N\ge1$ with $(N,mm')=1$ and $v_2(N)\le1$,
+\[
+|T(m,m';N)-M(m,m';N)|=|a_{G_{m,m'}}(N)|\ \ll_\e\ N^{1/2+\e}(mm')^{-1/2+\e}.
+\]
+In the terms of \eqref{eq:angle}: $\Delta_L(N,N)\cos^2\angle(G,P_N)\ll N^\e L^{-1+\e}/\|G\|^2$, i.e.\ no Poincar\'e series $P_N$ is aligned with $G$ by more than $N^\e L^\e$ times the average \eqref{eq:avgangle}.
+\end{conjecture}
+
+Conjecture~\ref{conj:ind} is the mean-square bound \eqref{eq:A2} applied to each $N$ separately; it is consistent with the trivial lower bound $|a_G(N)|\ge\mathrm{dist}(M,8\Z)$ for $N\ll L$, where $M\asymp N/(mm')\ll1$, and with the data of Section~\ref{subsec:sup}, where the supremum over $10^6$ to $4\cdot10^6$ values of $N$ exceeds the root mean square by a factor between $5$ and $10$ at every level computed. We do not know how to prove any power saving in $mm'$ for an individual $N$. In the spectral form the question is a twisted first moment $\sum_\varphi\langle\Theta,\varphi\rangle a_\varphi(N)/\|\varphi\|^2$ over the forms of level $L$ with the ``long'' twist $N\ge L$ (the sieve at the level $\theta$ uses $N\approx L^{1/\theta}$), outside the range $N\le L^{1-\delta}$ in which the Petersson formula evaluates such moments. Any saving would raise the level for every $N$:
+
+\begin{proposition}\label{prop:beyond}
+Let $0\le\eta\le\frac12$ and suppose that $|a_{G_{m,m'}}(N)|\ll_\e N^{1/2+\e}(mm')^{-\eta+\e}$ for all coprime odd $m,m'$ and all $N$ with $(N,mm')=1$, $v_2(N)\le1$. Then Theorem~3.2 of Part~I holds for every $N\equiv2\pmod 4$ with $D=N^{\theta-\e}$, $\theta=1/(2(1-\eta))$, i.e.\ $r(n)r(N-n)$ has level of distribution $1/(2(1-\eta))$. In particular, Conjecture~\ref{conj:ind} gives the level $1-\e$ for every $N$, and then the sieve of Section~\ref{sec:B} gives, for every sufficiently large $N\equiv2\pmod4$, $\Omega(n(N-n))\le5$ and $\max(\Omega(n),\Omega(N-n))\le4$ for at least $0.34\,\Sg_r(N)N/(\log N)^2$ integers $n$.
+\end{proposition}
+\begin{proof}
+We follow the proof of Theorem~3.2 of Part~I and only change the bound for one remainder. Each term of $R(d,e)$ is $\pm c\,a_{G}(N')$ for a form $G=G_{\tilde m,\tilde m'}$ with $\tilde m\tilde m'=t_1ss'\cdot de$, where $t\mid N^\flat$, $t_1\mid t^2$, and $N'\in\{N,N/2\}$ may have common factors with $\tilde m\tilde m'$ at the primes of $t$ only. Lemma~2.5 of Part~I reduces $a_G(N')$ to $\le4^{\omega(N)}d(N)$ terms $a_{G_{m_j,m_j'}}(N_j)$ with $(N_j,m_jm_j')=1$, $N_j\mid N'$ and $m_jm_j'\ge\tilde m\tilde m'/t_1^{2}\ge de/t_1^2$ (each reduction step at a prime $p$ divides the product of the coefficients by at most $p^2$, and only the primes of $t_1$ are involved). Hence, by the hypothesis with $\e/20$ in place of $\e$,
+\[
+|a_G(N')|\ll 4^{\omega(N)}d(N)\,N^{1/2+\e/20}\,(de)^{-\eta}\,t_1^{2\eta}\,(mm')^{\e/20}.
+\]
+Put $\eta'=\e/20$. For the terms with $t_1ss'\le N^\e$ this is $\ll N^{1/2+3\eta'+2\e\eta}(de)^{-\eta}$ by (F1) of Part~I, and their total is
+\[
+\ll N^{1/2+5\eta'+\e}\sum_{k\le D}d(k)k^{-\eta}\ll N^{1/2+6\eta'+\e}D^{1-\eta}=N^{1/2+6\eta'+\e}N^{1/2-\e(1-\eta)}\le N^{1-\e/2+6\eta'},
+\]
+since $D^{1-\eta}=N^{(\theta-\e)(1-\eta)}=N^{1/2-\e(1-\eta)}$ and $1-\eta\ge\frac12$. The terms with $t_1ss'>N^\e$ are bounded by the trivial bound \eqref{eq:triv} exactly as in Part~I, by $N^{1-\e+5\eta'}+N^{\theta+5\eta'}$. With $\theta\le1-\e$ (replace $\e$ by $\min(\e,1-\theta)$ if necessary) the total is $\ll N^{1-\e/2+6\eta'}\le N^{1-\e/5}$, which is the conclusion of Theorem~3.2 of Part~I with $N^{1-\e/5}$ in place of $N^{1-\e/3}$; Proposition~4.3 of Part~I needs only a power saving. The last assertion is Section~\ref{sec:B}, where the parameters at the level $19/20$ were certified for any $N$ satisfying \eqref{eq:B}.
+\end{proof}
+
+The exponent $\theta=1/(2(1-\eta))$ interpolates between the level $1/2$ of Corollary~\ref{cor:main} ($\eta=0$) and the level $1$ ($\eta=\frac12$); the level $2/3$, which gives $(6,4)$ for every $N$ with the certified parameters of Section~\ref{sec:B}, needs only $\eta=\frac14$, i.e.\ a saving of $(mm')^{-1/4}$ over Corollary~\ref{cor:main}(i), half of what the mean square \eqref{eq:A2} gives on average.
 
 \section{Numerical evidence}\label{sec:num}
 
@@ -431,13 +468,43 @@ which reproduces the column ``rms'' of Table~3 of Part~I ($0.27$ for $(101,103)$
 \label{fig:thr}
 \end{figure}
 
+\subsection{The supremum over $N$}\label{subsec:sup}
+Conjecture~\ref{conj:ind} says that the supremum of $|a_G(N)|/\sqrt N$ over $N$ in a range is, up to $N^\e L^\e$, of the size of the root mean square $\approx2.7(\log mm')(mm')^{-1/2}$ of Section~\ref{subsec:law}. Table~\ref{tab:sup}, extracted from the scans of Part~I (\texttt{results/sup\_error\_scan\_x21.txt}, \texttt{\_x23.txt} there), gives the ratio of the supremum over all admissible $N\in(X/2,X]$ to the root mean square, for $X=2^{21}$ (about $10^6$ values of $N$ per pair) and $X=2^{23}$ (about $4\cdot10^6$). For the pairs with $L\le6\cdot10^4$ the ratio lies between $5.4$ and $9.8$ and shows no trend in $mm'$; its mild growth from $X=2^{21}$ to $2^{23}$ is the growth of the extreme value of a fixed heavy-tailed distribution with the sample size (the suprema are attained at $N$ with $16$--$192$ divisors, in line with the factor $d(N)$ of Deligne's bound). The pair $(9,1)$ is special: $S_2(\Gamma_0(36))$ is spanned by the newform of the curve $36a1$, $y^2=x^3+1$, which has complex multiplication, so that $a_f(p)=0$ for $p\equiv2\pmod3$ and the distribution of $a_f(N)$ is far from the Gaussian bulk of Figure~2 of Part~I. The pair $(1009,1013)$ is in the range $X<2L$, where neither the mean square nor the supremum has reached its asymptotic regime.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{rrrrrrr}
+\hline
+$(m,m')$ & $mm'$ & rms & $\sup$, $X=2^{21}$ & $\sup/\mathrm{rms}$ & $\sup$, $X=2^{23}$ & $\sup/\mathrm{rms}$\\
+\hline
+$(1,5)$ & 5 & 1.76 & 14.7 & 8.4 & 17.3 & 9.8\\
+$(3,5)$ & 15 & 1.90 & 10.5 & 5.5 & 12.2 & 6.4\\
+$(1,101)$ & 101 & 1.40 & 11.8 & 8.4 & 12.1 & 8.6\\
+$(13,29)$ & 377 & 0.89 & 5.9 & 6.6 & 6.8 & 7.7\\
+$(1,1009)$ & 1009 & 0.67 & 4.4 & 6.5 & 5.3 & 8.0\\
+$(61,67)$ & 4087 & 0.38 & 2.5 & 6.5 & 2.4 & 6.3\\
+$(101,103)$ & 10403 & 0.27 & 1.9 & 7.3 & 1.8 & 6.7\\
+$(1,15015)$ & 15015 & 0.18 & 1.0 & 5.7 & -- & --\\
+$(9,1)$ & 9 & 1.76 & 28.7 & 16.3 & 33.8 & 19.2\\
+$(1009,1013)$ & 1022117 & 0.036 & 0.61 & 17 & 0.55 & 14\\
+\hline
+\end{tabular}
+\medskip
+\caption{The supremum of $|T(m,m';N)-M(m,m';N)|/\sqrt N$ over the admissible $N\in(X/2,X]$ of Part~I, Section~5, and its ratio to the root mean square over the same $N$ (the rms is the same to two decimals for both $X$). The last two pairs are the degenerate cases discussed in the text.}
+\label{tab:sup}
+\end{table}
+
 \section*{Data and code}
 {\sloppy
 The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{certify\_modular.py} (arguments \texttt{1/2}, \texttt{2/3}, \texttt{19/20}), \texttt{plot\_mean\_square.py} and \texttt{plot\_sieve\_thresholds.py} (Figures~\ref{fig:ms} and \ref{fig:thr}), the modules of Part~I they use (\texttt{sup\_error\_scan.py}, \texttt{modular\_sieve\_scan.py}, \texttt{sieve\_core.py}) and the outputs \texttt{results/mean\_square\_check\_x21.txt}, \texttt{results/norm\_level20.txt}, \texttt{results/certify\_modular\_output\_twothirds.txt}, \texttt{results/certify\_modular\_output\_nineteen.txt}, \texttt{results/sieve\_thresholds.txt} are in the repository \url{https://github.com/Ruqing1963/two-squares-mean-square}; the code and data of Part~I are at \url{https://github.com/Ruqing1963/two-squares-theta-level}. The certification of the sieve parameters uses directed rounding as described in Part~I, Appendix~A; the computations of Section~\ref{sec:num} are in floating point and are evidence, not proof.
 \par}
 
 \begin{thebibliography}{9}
+\bibitem{BauerWang} C.~Bauer, Y.~Wang, \emph{On the Goldbach conjecture in arithmetic progressions}, Rocky Mountain J. Math. \textbf{36} (2006), 35--66.
 \bibitem{ChenI} R.~Chen, \emph{Sums of two squares with few prime factors via theta series of quaternary forms}, preprint (2026), version 2, \href{https://doi.org/10.5281/zenodo.23618710}{doi:10.5281/zenodo.23618710}.
+\bibitem{DH} H.~G.~Diamond, H.~Halberstam, \emph{A Higher-Dimensional Sieve Method}, with an appendix by W.~F.~Galway, Cambridge Tracts in Math. \textbf{177}, Cambridge Univ. Press, 2008.
+\bibitem{MV} H.~L.~Montgomery, R.~C.~Vaughan, \emph{The exceptional set in Goldbach's problem}, Acta Arith. \textbf{27} (1975), 353--370.
 \bibitem{IwaTopics} H.~Iwaniec, \emph{Topics in Classical Automorphic Forms}, Grad. Stud. Math. \textbf{17}, Amer. Math. Soc., 1997.
 \bibitem{Waibel} F.~Waibel, \emph{Uniform bounds for norms of theta series and arithmetic applications}, Math. Proc. Cambridge Philos. Soc. \textbf{173} (2022), 669--691; \href{https://arxiv.org/abs/2012.04311}{arXiv:2012.04311} (equation and lemma numbers refer to the arXiv version).
 \end{thebibliography}
