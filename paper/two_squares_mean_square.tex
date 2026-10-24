@@ -34,7 +34,7 @@
 \begin{document}
 
 \begin{abstract}
-Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G=G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_G(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. We prove the mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le e^{8\pi}Y(3+17Y/L)\|G\|^2$, which with Waibel's norm bound gives $\sum_{N\le Y}|T-M|^2\ll Y^2(mm')^{-1/2+\e}$ for $Y\ge mm'$: on average over $N$ the error is $N^{1/2}(mm')^{-1/4}$, the size observed numerically in Part~I. It follows that the weighted sequence $r(n)r(N-n)$ has level of distribution $2/3$ for all but $O(X^{1-\delta})$ integers $N\equiv2\pmod4$ up to $X$, and for these $N$ the sieve of Part~I gives $\gg N/(\log N)^2$ integers $n<N$ with $n$, $N-n$ sums of two squares, $\Omega(n(N-n))\le6$ and $\max(\Omega(n),\Omega(N-n))\le4$. We reformulate the uniform conjecture of Part~I as a near-orthogonality statement between $\Theta_{m,m'}$ and the Poincar\'e series, show that it holds on average in a strong form, and record numerical evidence that $\|G_{m,m'}\|^2\approx3\,(mm')^{1/4}$, smaller than the general bound.
+Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G=G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_G(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. We prove the mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le 4\pi e^2\,Y(3+107Y/L)\|G\|^2$, which with Waibel's norm bound gives $\sum_{N\le Y}|T-M|^2\ll Y^2(mm')^{-1/2+\e}$ for $Y\ge mm'$: on average over $N$ the error is $N^{1/2}(mm')^{-1/4}$, the size observed numerically in Part~I. It follows that the weighted sequence $r(n)r(N-n)$ has level of distribution $2/3$ for all but $O(X^{1-\delta})$ integers $N\equiv2\pmod4$ up to $X$, and for these $N$ the sieve of Part~I gives $\gg N/(\log N)^2$ integers $n<N$ with $n$, $N-n$ sums of two squares, $\Omega(n(N-n))\le6$ and $\max(\Omega(n),\Omega(N-n))\le4$. We reformulate the uniform conjecture of Part~I as a near-orthogonality statement between $\Theta_{m,m'}$ and the Poincar\'e series, show that it holds on average in a strong form, and record numerical evidence that $\|G_{m,m'}\|^2\approx3\,(mm')^{1/4}$, smaller than the general bound.
 \end{abstract}
 
 \maketitle
@@ -55,13 +55,13 @@ The Petersson norm is $\|G\|^2=\int_{\Gamma_0(L)\backslash\HH}|G|^2\,\dd x\,\dd 
 \begin{theorem}[Mean square]\label{thm:A}
 Let $L\ge1$, $G\in S_2(\Gamma_0(L))$ and $Y\ge1$. Then
 \begin{equation}\label{eq:A}
-\sum_{n\le Y}|a_G(n)|^2\ \le\ e^{8\pi}\,Y\Bigl(3+\frac{17Y}{L}\Bigr)\|G\|^2 .
+\sum_{n\le Y}|a_G(n)|^2\ \le\ 4\pi e^2\,Y\Bigl(3+\frac{107\,Y}{L}\Bigr)\|G\|^2 .
 \end{equation}
 In particular, for coprime odd $m,m'$, $G=G_{m,m'}$ and $Y\ge mm'$,
 \begin{equation}\label{eq:A2}
 \sum_{N\le Y}\bigl|T(m,m';N)-M(m,m';N)\bigr|^2\ \ll_\e\ Y^2\,(mm')^{-1/2+\e},
 \end{equation}
-i.e.\ the root mean square of $(T-M)/\sqrt N$ over $N\le Y$ is $\ll(mm')^{-1/4+\e}$.
+and hence, since $\sum_{Y/2<N\le Y}|a_G(N)|^2/N\le(2/Y)\sum_{N\le Y}|a_G(N)|^2$, the root mean square of $(T-M)/\sqrt N$ over $Y/2<N\le Y$ is $\ll(mm')^{-1/4+\e}$.
 \end{theorem}
 
 The bound \eqref{eq:A2} is what the data of Part~I, Table~3, show (the root mean square there decreases with $mm'$; see Section~\ref{sec:num} for a closer look). The proof of Theorem~\ref{thm:A} is a classical covering argument and does not use the Petersson formula; the dependence on the level is exactly the factor $Y/L$, i.e.\ the volume of $\Gamma_0(L)\backslash\HH$.
@@ -106,27 +106,27 @@ where $\Delta_L(N,N)$ is the Petersson density of Part~I, (11). Theorem~\ref{thm
 
 Let $G(z)=\sum_{n\ge1}a(n)e(nz)\in S_2(\Gamma_0(L))$ and put $F(z)=y^2|G(z)|^2$, $z=x+iy$. Since $G(\gamma z)=(cz+d)^2G(z)$ and $\operatorname{Im}(\gamma z)=y/|cz+d|^2$ for $\gamma=\left(\begin{smallmatrix}a&b\\ c&d\end{smallmatrix}\right)\in\Gamma_0(L)$, the function $F$ is $\Gamma_0(L)$-invariant, and with the invariant measure $\dd\mu=y^{-2}\dd x\,\dd y$ we have $\|G\|^2=\int_{\cF}F\,\dd\mu$ for any fundamental domain $\cF$ of $\Gamma_0(L)$.
 
-Let $R=\{x+iy:\ 0\le x\le1,\ 1/Y\le y\le2/Y\}$. By Parseval, $\int_0^1|G(x+iy)|^2\,\dd x=\sum_n|a(n)|^2e^{-4\pi ny}$, hence
+Let $y_0=1/(4\pi Y)$ and $R=\{x+iy:\ 0\le x\le1,\ y_0\le y\le2y_0\}$. By Parseval, $\int_0^1|G(x+iy)|^2\,\dd x=\sum_n|a(n)|^2e^{-4\pi ny}$, hence
 \[
-\int_R|G|^2\,\dd x\,\dd y=\sum_n|a(n)|^2\int_{1/Y}^{2/Y}e^{-4\pi ny}\,\dd y\ \ge\ \frac{e^{-8\pi}}{Y}\sum_{n\le Y}|a(n)|^2 ,
+\int_R|G|^2\,\dd x\,\dd y=\sum_n|a(n)|^2\int_{y_0}^{2y_0}e^{-4\pi ny}\,\dd y\ \ge\ \frac{e^{-2}}{4\pi Y}\sum_{n\le Y}|a(n)|^2 ,
 \]
-because $e^{-4\pi ny}\ge e^{-8\pi}$ for $n\le Y$, $y\le2/Y$. On the other hand $\int_R|G|^2\,\dd x\,\dd y=\int_RF\,\dd\mu$, and
+because $4\pi ny\le 8\pi Yy_0=2$ for $n\le Y$, $y\le2y_0$. On the other hand $\int_R|G|^2\,\dd x\,\dd y=\int_RF\,\dd\mu$, and
 \[
 \int_RF\,\dd\mu=\sum_{\gamma\in\Gamma_0(L)/\{\pm1\}}\int_{R\cap\gamma\cF}F\,\dd\mu=\int_{\cF}F(w)\,\#\{\gamma:\ \gamma w\in R\}\,\dd\mu(w)\ \le\ \mu_R\,\|G\|^2,
 \]
 where $\mu_R=\sup_{z\in R}\#\{\gamma\in\Gamma_0(L)/\{\pm1\}:\ \gamma z\in R\}$ (the two suprema, over $w\in\cF$ and over $z\in R$, coincide, since $\#\{\gamma:\gamma w\in R\}=\#\{\gamma:\gamma z\in R\}$ for $z=\gamma_0w$). It remains to bound $\mu_R$. Fix $z=x+iy\in R$ and let $\gamma=\left(\begin{smallmatrix}a&b\\ c&d\end{smallmatrix}\right)\in\Gamma_0(L)$ with $\gamma z\in R$.
 \begin{itemize}[leftmargin=2em]
 \item If $c=0$, then $\gamma=\pm\left(\begin{smallmatrix}1&b\\ 0&1\end{smallmatrix}\right)$ and $\gamma z=z+b$, so $b\in\{-1,0,1\}$: at most $3$ elements.
-\item If $c\ne0$, then $L\mid c$, and $\operatorname{Im}(\gamma z)=y/|cz+d|^2\in[1/Y,2/Y]$ together with $y\in[1/Y,2/Y]$ gives $|cz+d|^2\in[1/2,2]$. Since $|cz+d|^2=(cx+d)^2+c^2y^2$, this forces $c^2y^2\le2$, hence $|c|\le\sqrt2\,Y$, and $|cx+d|\le\sqrt2$. The number of non-zero multiples $c$ of $L$ with $|c|\le\sqrt2Y$ is at most $2\sqrt2\,Y/L$; for each $c$ there are at most $3$ integers $d$ with $|cx+d|\le\sqrt2$; and for each pair $(c,d)$ the elements of $\Gamma_0(L)$ with bottom row $(c,d)$ are $\left(\begin{smallmatrix}1&k\\ 0&1\end{smallmatrix}\right)\gamma_0$, $k\in\Z$, whose images $\gamma_0z+k$ have real part in $[0,1]$ for at most $2$ values of $k$. This gives at most $2\sqrt2\cdot3\cdot2\,Y/L<17\,Y/L$ elements.
+\item If $c\ne0$, we may take $c>0$, since $\gamma$ and $-\gamma$ are the same element of $\Gamma_0(L)/\{\pm1\}$. Then $L\mid c$, and $\operatorname{Im}(\gamma z)=y/|cz+d|^2\in[y_0,2y_0]$ together with $y\in[y_0,2y_0]$ gives $|cz+d|^2\in[1/2,2]$. Since $|cz+d|^2=(cx+d)^2+c^2y^2$, this forces $c^2y^2\le2$, hence $c\le\sqrt2/y_0=4\sqrt2\,\pi Y$, and $|cx+d|\le\sqrt2$. The number of positive multiples $c$ of $L$ with $c\le4\sqrt2\pi Y$ is at most $4\sqrt2\pi\,Y/L$; for each $c$ there are at most $3$ integers $d$ with $|cx+d|\le\sqrt2$; and for each pair $(c,d)$ the elements of $\Gamma_0(L)$ with bottom row $(c,d)$ are $\left(\begin{smallmatrix}1&k\\ 0&1\end{smallmatrix}\right)\gamma_0$, $k\in\Z$, whose images $\gamma_0z+k$ have real part in $[0,1]$ for at most $2$ values of $k$. This gives at most $4\sqrt2\pi\cdot3\cdot2\,Y/L=24\sqrt2\pi\,Y/L<107\,Y/L$ elements.
 \end{itemize}
-Hence $\mu_R\le3+17Y/L$, and
+Hence $\mu_R\le3+107Y/L$, and
 \[
-\sum_{n\le Y}|a(n)|^2\le e^{8\pi}Y\int_RF\,\dd\mu\le e^{8\pi}Y\Bigl(3+\frac{17Y}L\Bigr)\|G\|^2,
+\sum_{n\le Y}|a(n)|^2\le 4\pi e^2Y\int_RF\,\dd\mu\le 4\pi e^2\,Y\Bigl(3+\frac{107Y}L\Bigr)\|G\|^2,
 \]
-which is \eqref{eq:A}. For $G=G_{m,m'}$, $L=4mm'$ and $Y\ge mm'$ the bracket is $\le 3+17Y/(4mm')\le 8Y/(mm')$, and Lemma~2.1 of Part~I gives \eqref{eq:A2}. \qed
+which is \eqref{eq:A}. For $G=G_{m,m'}$, $L=4mm'$ and $Y\ge mm'$ the bracket is $\le 3+107Y/(4mm')\le 30Y/(mm')$, and Lemma~2.1 of Part~I gives \eqref{eq:A2}. \qed
 
-\begin{remark}
-The argument is the classical one for bounding $\sum_{n\le Y}|a(n)|^2$ by the norm (compare \cite[Chapter~5]{IwaTopics}); its only input is the invariance of $y^2|G|^2$. For $Y\ge L$ the factor $Y^2/L$ in \eqref{eq:A} is of the correct order of magnitude: by the Rankin--Selberg method, $\sum_{n\le Y}|a(n)|^2/n\sim 16\pi^2\|G\|^2Y/\vol(\Gamma_0(L)\backslash\HH)$ with $\vol=\frac\pi3L\prod_{p\mid L}(1+1/p)$ (measure $\dd\mu$), so that $\sum_{n\le Y}|a(n)|^2\sim 8\pi^2\|G\|^2Y^2/\vol$ for fixed $G$ as $Y\to\infty$. Theorem~\ref{thm:A} makes this uniform in the level, at the cost of the constant.
+\begin{remark}\label{rem:rankin}
+The argument is the classical one for bounding $\sum_{n\le Y}|a(n)|^2$ by the norm (compare \cite[Chapter~5]{IwaTopics}); its only input is the invariance of $y^2|G|^2$. The strip $y_0\le y\le2y_0$ with $y_0=1/(4\pi Y)$ is chosen so that the exponential factor in Parseval's identity stays at $e^{-2}$ for all $n\le Y$; the strip $1/Y\le y\le2/Y$ would give the same argument with $e^{8\pi}$ in place of $4\pi e^2$. For $Y\ge L$ the factor $Y^2/L$ in \eqref{eq:A} is of the correct order of magnitude: by the Rankin--Selberg method, $\sum_{n\le Y}|a(n)|^2/n\sim 16\pi^2\|G\|^2Y/\vol(\Gamma_0(L)\backslash\HH)$ with $\vol=\frac\pi3L\prod_{p\mid L}(1+1/p)$ (measure $\dd\mu$), so that $\sum_{n\le Y}|a(n)|^2\sim 8\pi^2\|G\|^2Y^2/\vol$ for fixed $G$ as $Y\to\infty$. Theorem~\ref{thm:A} makes this uniform in the level, at the cost of the constant.
 \end{remark}
 
 \section{Proof of Theorem~\ref{thm:B} and Corollary~\ref{cor:C}}\label{sec:B}
@@ -134,9 +134,9 @@ The argument is the classical one for bounding $\sum_{n\le Y}|a(n)|^2$ by the no
 \subsection{The remainder on average}
 We follow the proof of Theorem~3.2 of Part~I, replacing the uniform bound for $|T-M|$ by Theorem~\ref{thm:A} after an application of Cauchy--Schwarz over $N$. Recall from Part~I, (15), that for $N\equiv2\pmod4$ and coprime square-free $d,e$ with $(de,2N)=1$,
 \begin{equation}\label{eq:Rdecomp}
-R(d,e;N)=\sum_{t\mid N^\flat}\mu(t)\sum_{m\mid d^2}\sum_{m'\mid e^2}c_d(m)c_e(m')\sum_{t_1\mid t^2}c_t(t_1)\,\bigl(a_{G}(N)-a_{G}(N/2)\bigr),\qquad G=G_{t_1m,m'},
+R(d,e;N)=\sum_{t\mid N^\flat}\mu(t)\sum_{m\mid d^2}\sum_{m'\mid e^2}c_d(m)c_e(m')\sum_{\substack{t_1\mid t^2\\ t\mid t_1}}c_t(t_1)\,\bigl(a_{G}(N)-a_{G}(N/2)\bigr),\qquad G=G_{t_1m,m'},
 \end{equation}
-where $N^\flat$ is the product of the odd primes dividing $N$, $m=ds$, $m'=es'$ with $s\mid d$, $s'\mid e$, the coefficients $t_1m,m'$ are coprime, odd and cube-free, $\tilde m\tilde m':=t_1mm'=t_1ss'\cdot de$, and the coefficients $c$ satisfy $|c_d(m)c_e(m')c_t(t_1)|\le3^{\omega(d)+\omega(e)+\omega(t)}$. Let $\eta=\e/10$. For $N\le X$ with $X\ge X_0(\e)$ we have, as in (F1)--(F3) of Part~I: $d_3(de)\,3^{\omega(d)+\omega(e)+\omega(t)}\,4^{\omega(N)}d(N)^2\le X^\eta$; for fixed $(d,e,N)$ the number of tuples $(s,s',t,t_1)$ is at most $X^\eta$; and $\sum_{k\le D}d(k)/k\le X^\eta$, $\sum_{k\le D}d(k)k^{-1/4}\le D^{3/4}X^{\eta}$. We also use the two bounds for a single term,
+where $N^\flat$ is the product of the odd primes dividing $N$, $m=ds$, $m'=es'$ with $s\mid d$, $s'\mid e$, and likewise $t_1=tu$ with $u\mid t$ (the coefficients $c_d(m)$, $c_t(t_1)$ of Part~I, (14), vanish unless $m=ds$ with $s\mid d$, resp.\ $t_1=tu$ with $u\mid t$; in particular $t\mid t_1$); the coefficients $t_1m,m'$ are coprime, odd and cube-free, $\tilde m\tilde m':=t_1mm'=t_1ss'\cdot de$, and the coefficients $c$ satisfy $|c_d(m)c_e(m')c_t(t_1)|\le3^{\omega(d)+\omega(e)+\omega(t)}$. Let $\eta=\e/10$. For $N\le X$ with $X\ge X_0(\e)$ we have, as in (F1)--(F3) of Part~I: $d_3(de)\,3^{\omega(d)+\omega(e)+\omega(t)}\,4^{\omega(N)}d(N)^2\le X^\eta$; for fixed $(d,e,N)$ the number of tuples $(s,s',t,t_1)$ is at most $X^\eta$; and $\sum_{k\le D}d(k)/k\le X^\eta$, $\sum_{k\le D}d(k)k^{-1/4}\le D^{3/4}X^{\eta}$. We also use the two bounds for a single term,
 \begin{gather}
 |a_G(N')|\le T(\tilde m,\tilde m';N')+M(\tilde m,\tilde m';N')\ll X^{2\eta}\Bigl(\frac{X}{\tilde m\tilde m'}+1\Bigr)\qquad(N'\le X),\label{eq:triv}\\
 \sum_{n\le X}|a_G(n)|\le X^{1/2}\Bigl(\sum_{n\le X}|a_G(n)|^2\Bigr)^{1/2}\ll X\Bigl(1+\frac XL\Bigr)^{1/2}L^{1/4+\eta},\label{eq:ms}
@@ -148,7 +148,7 @@ where $G=G_{\tilde m,\tilde m'}$ and $L=4\tilde m\tilde m'$, the first being (20
 \ll X^{1+4\eta}\sum_{k\le D}d(k)\Bigl(\frac{X^{1-\e}}{k}+1\Bigr)\ll X^{2-\e+5\eta}+X^{1+5\eta}D\ll X^{2-\e/2}.
 \]
 
-\emph{Tuples with $t_1ss'\le X^\e$.} Now $t\le t_1\le X^\e$, so $t$ runs over at most $X^\e$ values, $t_1$ over at most $d(t^2)\le X^\eta$ values, and $(s,s')$ over at most $d(d)d(e)\le X^\eta$ values; the forms $G=G_{t_1m,m'}$ have level $L=4t_1ss'de\le4X^\e D\le X$, so that \eqref{eq:ms} applies with $\min(X,\tilde m\tilde m')=\tilde m\tilde m'$. For a fixed tuple and fixed $(d,e)$, we drop the condition $t\mid N$ except for the count: the number of $N\le X$ with $t\mid N$ is $\le X/t$, and Cauchy--Schwarz gives
+\emph{Tuples with $t_1ss'\le X^\e$.} Now $t\le t_1\le X^\e$ (as $t\mid t_1$), so $t$ runs over at most $X^\e$ values, $t_1$ over at most $d(t^2)\le X^\eta$ values, and $(s,s')$ over at most $d(d)d(e)\le X^\eta$ values; the forms $G=G_{t_1m,m'}$ have level $L=4t_1ss'de\le4X^\e D\le X$, so that the right-hand side of \eqref{eq:ms} is $\ll X^{3/2}(\tilde m\tilde m')^{-1/4+\eta}$. For a fixed tuple and fixed $(d,e)$, we drop the condition $t\mid N$ except for the count: the number of $N\le X$ with $t\mid N$ is $\le X/t$, and Cauchy--Schwarz gives
 \begin{align*}
 \sum_{\substack{N\le X\\ t\mid N}}\bigl(|a_G(N)|+|a_G(N/2)|\bigr)&\le2\Bigl(\frac Xt\Bigr)^{1/2}\Bigl(\sum_{n\le X}|a_G(n)|^2\Bigr)^{1/2}\\
 &\ll\Bigl(\frac Xt\Bigr)^{1/2}X\,(\tilde m\tilde m')^{-1/4+\eta}\le X^{3/2+\eta}\,t^{-1/2}(de)^{-1/4},
@@ -163,6 +163,10 @@ For the second, let $S(N)$ be the inner sum with $D=X^{2/3-2\e}$. The number of 
 
 \begin{remark}
 The exponent $2/3$ is the balance $X^{3/2}D^{3/4}=X^{2}$ between the mean-square bound $X^{3/2}(de)^{-1/4}$ for the sum over $N$ of one remainder and the number $D$ of moduli, exactly as $2/5$ in Part~I is the balance $N^{1/2}D^{1/4}\cdot D=N$ for a single $N$. Any improvement of the exponent $1/4$ in Waibel's bound, say $\|G_{m,m'}\|\ll(mm')^{\beta+\e}$, gives the level $1/(2(1+\beta))$ for every $N$ (Part~I, Remark~3.3) and, through the balance $X^{3/2}D^{1/2+\beta}=X^2$, the level $1/(1+2\beta)$ for almost all $N$; for $\beta=1/4$ these are $2/5$ and $2/3$, and for $\beta=1/8$ (Section~\ref{sec:num}) they would be $4/9$ and $4/5$.
+\end{remark}
+
+\begin{remark}
+The exceptional set $X^{1-\e/4}$ comes from Markov's inequality applied to a first moment of $S(N)$, which in turn rests on the second moment of $a_G(N)$. A bound for a higher moment, $\sum_{N\le Y}|a_G(N)|^{2k}\ll Y^{k+1}(mm')^{-k/2+\e}$, would shrink the exceptional set to $X^{1-k\e'}$; we have no such bound for $k\ge2$, and do not pursue this.
 \end{remark}
 
 \subsection{The sieve at level $2/3$}
@@ -204,7 +208,7 @@ This identity separates the three quantities that enter any bound for $a_G(N)$.
 \end{enumerate}
 Theorem~\ref{thm:A} is a statement about (iii) on average. Inserting \eqref{eq:angle} into \eqref{eq:A} and restricting to $N\in(Y/2,Y]$,
 \begin{equation}\label{eq:avgangle}
-\frac{1}{Y/2}\sum_{Y/2<N\le Y}\Delta_L(N,N)\cos^2\angle(G,P_N)\ \le\ \frac{e^{8\pi}}{\pi}\Bigl(\frac3Y+\frac{17}L\Bigr)\ \ll\ \frac1L\qquad(Y\ge L).
+\frac{1}{Y/2}\sum_{Y/2<N\le Y}\Delta_L(N,N)\cos^2\angle(G,P_N)\ \le\ 4e^2\Bigl(\frac3Y+\frac{107}L\Bigr)\ \ll\ \frac1L\qquad(Y\ge L).
 \end{equation}
 Since $\dim S_2(\Gamma_0(L))\asymp L$, the right-hand side is the value of $\cos^2$ for a unit vector in general position: on average over $N$, the theta series is no more aligned with the Poincar\'e series than a random cusp form of level $L$ would be. In these terms, Conjecture~5.1 of Part~I reads
 \begin{equation}\label{eq:conjangle}
@@ -225,11 +229,15 @@ Theorem~\ref{thm:A} shows that \eqref{eq:lemma} holds in mean square over $N$ wi
 
 \section{Numerical evidence}\label{sec:num}
 
-The script \texttt{mean\_square\_check.py} computes, with the tables and the FFT convolution of \texttt{sup\_error\_scan.py} of Part~I, the sums $S_2(Y)=\sum_{N\le Y}|a_G(N)|^2$ over the admissible $N$ ($(N,mm')=1$, $v_2(N)\le3$, where the main term of that script is exact) for $Y=2^{21}$ and $Y=2^{20}$, and the estimate
+The script \texttt{mean\_square\_check.py} computes, with the tables and the FFT convolution of \texttt{sup\_error\_scan.py} of Part~I, the sums $S_2(Y)=\sum_{N\in\mathcal N_Y}|a_G(N)|^2$ over the admissible set
 \[
-\|G\|^2_{\mathrm{est}}=\frac{\vol(\Gamma_0(L)\backslash\HH)}{16\pi^2}\cdot\frac{1}{\#\{N\le Y\}}\sum_{N\le Y}\frac{|a_G(N)|^2}{N}
+\mathcal N_Y=\{N\le Y:\ (N,mm')=1,\ v_2(N)\le3\},
 \]
-suggested by the Rankin--Selberg asymptotic of Remark~2.2 (it assumes that the mean square per $N$ is the same on the excluded $N$, which is immaterial when $mm'$ has only large prime factors). Table~\ref{tab:ms} shows the result.
+on which the main term of that script is exact, for $Y=2^{21}$ and $Y=2^{20}$, and the estimate
+\[
+\|G\|^2_{\mathrm{est}}=\frac{\vol(\Gamma_0(L)\backslash\HH)}{16\pi^2}\cdot\frac{1}{\#\mathcal N_Y}\sum_{N\in\mathcal N_Y}\frac{|a_G(N)|^2}{N}
+\]
+suggested by the Rankin--Selberg asymptotic of Remark~\ref{rem:rankin} (it assumes that the mean square per $N$ is the same on the excluded $N$, which is immaterial when $mm'$ has only large prime factors). Table~\ref{tab:ms} shows the result.
 
 \begin{table}[ht]
 \centering
@@ -273,10 +281,14 @@ $\|G_{m,m'}\|\ll_\e(mm')^{1/8+\e}$ for all coprime odd $m,m'$.
 Under Hypothesis~\ref{hyp}: Theorem~2.3 and Corollary~2.7 of Part~I hold with $(mm')^{1/8+\e}$ in place of $(mm')^{1/4+\e}$; the level of distribution of $r(n)r(N-n)$ is $4/9$ for every $N\equiv2\pmod4$ and $4/5$ for almost all such $N$; and the sieve of Part~I gives $\Omega(n(N-n))\le8$ and $\max(\Omega(n),\Omega(N-n))\le6$ for every $N$.
 \end{proposition}
 \begin{proof}
-The proofs of Theorem~2.3 and Corollary~2.7 of Part~I use the norm only through Lemma~2.1. In Theorem~3.2 of Part~I the exponent $1/4$ enters through $\sum_{k\le D}d(k)k^{1/4}\ll D^{5/4}N^\eta$; with $1/8$ the balance $N^{1/2}D^{9/8}=N$ gives $D=N^{4/9}$ (Remark~3.3 of Part~I), and in Theorem~\ref{thm:B} the balance $X^{3/2}D^{5/8}=X^2$ gives $D=X^{4/5}$. The floating-point scan at $\theta=4/9$ gives $1/\lambda+2/\beta_1<8.62$ and $1/\lambda+1/\beta_1<5.99$ at best, so $(8,6)$ is attainable with margin and $(8,5)$ only at the boundary; we claim only $(8,6)$, which can be certified as in Part~I.
+The proofs of Theorem~2.3 and Corollary~2.7 of Part~I use the norm only through Lemma~2.1. In Theorem~3.2 of Part~I the exponent $1/4$ enters through $\sum_{k\le D}d(k)k^{1/4}\ll D^{5/4}N^\eta$; with $1/8$ the balance $N^{1/2}D^{9/8}=N$ gives $D=N^{4/9}$ (Remark~3.3 of Part~I), and in Theorem~\ref{thm:B} the balance $X^{3/2}D^{5/8}=X^2$ gives $D=X^{4/5}$. The floating-point scan at $\theta=4/9$ gives, at best, $1/\lambda+2/\beta_1\approx8.61$ and $1/\lambda+1/\beta_1\approx5.98$. The second value, however, is attained only at the largest admissible $\lambda$, where $L-\lambda R=0$; any $\lambda$ with a positive margin $L-\lambda R>0$ pushes $1/\lambda+1/\beta_1$ above $6$. Hence $(8,6)$ is attainable with margin and can be certified as in Part~I, while $(8,5)$ is not reachable with these weights at this level; we claim only $(8,6)$.
 \end{proof}
 
-Hypothesis~\ref{hyp} concerns the norm alone and is a statement about a single theta series, not about its individual coefficients; it might be more accessible than Conjecture~5.1 of Part~I. Waibel's lower bound (Theorem~3 of \cite{Waibel}) gives only $\|G_{m,m'}\|^2\gg1/\min(m,m')+O(L^\e)$ for these forms and is far from the truth here; the growth $(mm')^{1/4}$ of $\|G\|^2$, if real, asks for an explanation in terms of the spectral weights $\langle\Theta,\varphi\rangle$, for instance through the structural factorisation into central values proposed in Part~I, Section~5.5.
+Hypothesis~\ref{hyp} concerns the norm alone and is a statement about a single theta series, not about its individual coefficients; it might be more accessible than Conjecture~5.1 of Part~I. Waibel's lower bound (Theorem~3 of \cite{Waibel}) gives only $\|G_{m,m'}\|^2\gg1/\min(m,m')+O(L^\e)$ for these forms and is far from the truth here; the growth $(mm')^{1/4}$ of $\|G\|^2$, if real, asks for an explanation in terms of the spectral weights $\langle\Theta,\varphi\rangle$. By Parseval over the orthogonal eigenbasis $\mathcal B^*$,
+\[
+\|G\|^2=\sum_{\varphi\in\mathcal B^*}\frac{|\langle\Theta,\varphi\rangle|^2}{\|\varphi\|^2},
+\]
+so Hypothesis~\ref{hyp} is the statement that this weighted second moment over the family of $\asymp L$ eigenforms is $\ll L^{1/4+\e}$. In the heuristic factorisation of Part~I, Section~5.5, $\langle\Theta,\varphi\rangle=\mathcal E_\varphi(m,m')L(\frac12,f)L(\frac12,f\otimes\chi)$, and $\|G\|^2$ becomes a second moment of products of two central values with the weights $|\mathcal E_\varphi|^2/\|\varphi\|^2$. (Since $\theta^2$ is an Eisenstein series, the inner product is a Rankin--Selberg integral, not a triple product of cusp forms.) Without the local factors $\mathcal E_\varphi$, which have not been worked out, this does not predict the exponent $1/4$; it does locate the question in the second moment of a family of $L$-values, where tools exist.
 
 \section*{Data and code}
 {\sloppy
