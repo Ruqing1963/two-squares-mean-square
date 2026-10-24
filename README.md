@@ -42,6 +42,11 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   α₂ = 5.357727, β₂ = 4.266450 (agreeing to 1e-8 with the ball-arithmetic values of Booker–Browning); the two numerical
   inequalities for f₂(9) and the F₂-integral that the theorem needs hold with margins 2e-4 and 6e-3 but are not
   interval-certified. (7,4) is missed by 0.03; at level 2/3 the pair (6,4) gets margin 0.196, at 19/20 (5,3) gets 0.24.
+* Section 8: the remainder beyond level 1/2 is Σ_{de ≤ N^θ} λ_d λ′_e R(d,e;N), i.e. the distribution of the products
+  dα (weighted by λ_d r(α)) in the class N mod e with the extra weight r((N − dα)/e): a dispersion problem of
+  Bombieri–Friedlander–Iwaniec / Titchmarsh-divisor type. `modulus_sum_scan.py` measures the sums of a_{G_{d,e}}(N)
+  over all coprime odd square-free (d,e) with de ≤ N^θ at fixed N ≈ 2·10⁶: the signed sums (all +, μ(de), random
+  signs) are all of size (Σ a²)^{1/2}, i.e. square-root cancellation, no sign correlation.
 * Numerics: the Rankin–Selberg estimate of ‖G‖² from the data satisfies ‖G_{m,m′}‖² ≈ 0.37 (log mm′)² for
   10² ≤ mm′ ≤ 1.6·10⁴; an exact check at level 20 (G_{1,5} = (8/3) f_20, ‖f_20‖² = 0.08135 from the period lattice
   of 20a1 and from Rankin–Selberg) validates the whole numerical chain. `local_densities.py` makes the Siegel main
@@ -63,10 +68,12 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             local_densities.py        exact Siegel main term for every n (and for the odd vectors); self-test at levels 4, 12, 20
             cusp_lower_bound.py       Table 3: the lower bound from the regions above the cusps, cusp by cusp
             dhr_sieve.py              DHR sieve functions F_2, f_2 (alpha_2, beta_2 by the adjoint method) and the weighted sieve (Table 4)
+            modulus_sum_scan.py       Table 5: sums of a_{G_{d,e}}(N) over the moduli at fixed N (cancellation test)
 figures/    mean_square, sieve_thresholds  (.pdf and .png)
 results/    mean_square_check_x21.txt              Table 1
             cusp_lower_bound.txt, cusp_lower_bound_large.txt   Table 3 (X = 2^21; X = 2^24 for (1,15015), (1009,1013))
             dhr_sieve.txt                          Table 4 and the parameters of Theorem 7.1
+            modulus_sum_scan.txt                   Table 5
             norm_level20.txt                       the exact check at level 20
             certify_modular_output_twothirds.txt   certified parameters at level 2/3 (bounds 6 and 4)
             certify_modular_output_nineteen.txt    certified parameters at level 19/20 (Corollary 1.4: bounds 5 and 4)
@@ -90,6 +97,7 @@ python plot_sieve_thresholds.py        # Figure 2 from results/sieve_thresholds.
 python local_densities.py              # self-test of the exact main term (levels 4, 12, 20; ~10 s)
 python cusp_lower_bound.py --detail    # Table 3 (~2 min); python cusp_lower_bound.py 16777216 1,15015 1009,1013 for the two large pairs
 python dhr_sieve.py 0.5 2/3 0.95       # F_2, f_2, alpha_2, beta_2 and Table 4 (~3 min)
+python modulus_sum_scan.py             # Table 5: four values of N ~ 2e6 (~10 min)
 ```
 
 What is rigorous: `certify_modular.py` (interval arithmetic and directed rounding) enters the proofs of

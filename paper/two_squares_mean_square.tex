@@ -144,7 +144,7 @@ The fourth theme is the sieve itself. Part~I sifts $n$ and $N-n$ by the vector s
 \]
 for $\ge0.25\,\Sg_r(N)N/(\log N)^2$ integers $n$, for every large $N\equiv2\pmod 4$ (Theorem~\ref{thm:dim2}): $(7,5)$ in place of $(8,5)$. The sieve functions enter through two explicit numerical inequalities (\eqref{eq:dim2cond}), which hold with a margin in our computation but which, unlike the linear sieve functions of Part~I, we have not certified in interval arithmetic.
 
-Section~\ref{sec:spectral} restates the uniform bound of Theorem~\ref{thm:norm}(ii) in terms of Poincar\'e series and formulates the individual bound, Section~\ref{sec:num} contains the numerical evidence: the data of Part~I, an exact check of the whole numerical chain at the level $20$, the empirical law $\|G_{m,m'}\|^2\approx0.37(\log mm')^2$, which corrects a remark in the first two versions of Part~I, and the supremum of $|T-M|/\sqrt N$ over $N$; Section~\ref{sec:lower} proves Theorem~\ref{thm:lower} and decomposes the norm over the cusps; and Section~\ref{sec:dim2} contains the two-dimensional sieve.
+Section~\ref{sec:spectral} restates the uniform bound of Theorem~\ref{thm:norm}(ii) in terms of Poincar\'e series and formulates the individual bound, Section~\ref{sec:num} contains the numerical evidence: the data of Part~I, an exact check of the whole numerical chain at the level $20$, the empirical law $\|G_{m,m'}\|^2\approx0.37(\log mm')^2$, which corrects a remark in the first two versions of Part~I, and the supremum of $|T-M|/\sqrt N$ over $N$; Section~\ref{sec:lower} proves Theorem~\ref{thm:lower} and decomposes the norm over the cusps; Section~\ref{sec:dim2} contains the two-dimensional sieve; and Section~\ref{sec:beyond} describes the sum over the moduli that a level beyond $1/2$ for every $N$ would require, in the form of a dispersion problem, with numerical evidence that its terms cancel like random signs.
 
 \section{Proof of Theorem~\ref{thm:A}}\label{sec:A}
 
@@ -644,14 +644,75 @@ $19/20$ & 5.60 & 3.83 & 5.21 & 3.75 & $(5,3)$: $+0.238$ ($0.124$, $0.50$, $1/2$)
 \label{tab:dim2}
 \end{table}
 
+\section{Beyond the level $1/2$: the sum over the moduli}\label{sec:beyond}
+
+We end with the question that the sieve route leaves open for every $N$: the level of distribution beyond $1/2$. At the level $\theta$, the remainder of the sieve (the vector sieve of Part~I as well as the two-dimensional sieve of Section~\ref{sec:dim2}) is a sum
+\begin{equation}\label{eq:remsum}
+\sum_{\substack{de\le N^\theta\\ (d,e)=1,\ (de,2N)=1}}\lambda_d\lambda'_e\,R(d,e;N)
+\end{equation}
+with sieve weights $|\lambda_d|,|\lambda'_e|\le1$ supported on square-free integers, and by \eqref{eq:Rdecomp} each $R(d,e;N)$ is a bounded combination of coefficients $a_{G_{d',e'}}(N')$ with $d'e'\asymp de$ (up to divisors of $N$) and $N'\in\{N,N/2\}$. Part~I bounds \eqref{eq:remsum} by $\sum|R(d,e;N)|$ and each term by $N^{1/2+\e}$ (Theorem~\ref{thm:norm}(ii)), which gives $N^{1/2+\e}N^{\theta}$ and hence $\theta<1/2$; Proposition~\ref{prop:beyond} shows that any power saving $(de)^{-\eta}$ in the individual bound raises the level. The other possibility is cancellation between the terms: $R(d,e;N)$ changes sign with $(d,e)$, and the sieve weights are sign-changing too.
+
+\subsection{The structure of the sum}
+Since $\sum_{d\mid n,\ e\mid N-n}r(n)r(N-n)=T(d,e;N)$ for coprime $d,e$, the sum \eqref{eq:remsum} is, before the M\"obius inversion of $(n,N)=1$,
+\[
+\sum_{d,e}\lambda_d\lambda'_e\bigl(T(d,e;N)-M(d,e;N)\bigr)=\sum_{d,e}\lambda_d\lambda'_e\Bigl(\sum_{d\alpha+e\beta=N}r(\alpha)r(\beta)-M(d,e;N)\Bigr),
+\]
+a weighted count of the representations of $N$ by the family of quaternary forms $Q_{d,e}$. Writing $n=d\alpha$ and $N-n=e\beta$, the main sum is
+\begin{equation}\label{eq:bilinear}
+\sum_{e}\lambda'_e\sum_{\substack{d,\alpha\\ d\alpha\equiv N\ (e)}}\lambda_d\,r(\alpha)\,r\Bigl(\frac{N-d\alpha}e\Bigr),
+\end{equation}
+the distribution of the products $d\alpha$, weighted by $\lambda_dr(\alpha)$, in the residue class $N$ modulo $e$, with the additional weight $r((N-d\alpha)/e)$ attached to the quotient. Without the last factor this is the setting of the dispersion method of Bombieri, Friedlander and Iwaniec \cite{BFI}: sums $\sum_q\lambda_q\sum_{mn\equiv a\ (q)}\alpha_m\beta_n$ with well-factorable $\lambda$, for which the level $4/7$ is known for suitable $\alpha,\beta$ from the Deshouillers--Iwaniec bounds for sums of Kloosterman sums. The factor $r((N-d\alpha)/e)=4\sum_{k\mid(N-d\alpha)/e}\chi(k)$ introduces a third modulus: \eqref{eq:bilinear} becomes $4\sum_{e,k}\lambda'_e\chi(k)\sum_{d\alpha\equiv N\ (ek)}\lambda_dr(\alpha)$, the distribution of $d\alpha$ in progressions to the moduli $ek$, where $k$ runs up to $N/(de)$, so that the moduli $ek$ range up to $N$. This is the shape of the Titchmarsh divisor problem, $\sum_{q}\sum_{mn\equiv a\ (q)}$ over all $q\le x$, which the dispersion method does handle (Fouvry, Bombieri--Friedlander--Iwaniec), with the difference that here both $d\alpha$ and the quotient carry the arithmetic weight $r$ and the modulus $e$ carries a sieve weight. We expect that the dispersion method, applied to \eqref{eq:bilinear} with the moduli $e$ in a range $N^{\theta_e}$ and the bilinear structure of $\lambda_dr(\alpha)$, gives a level $\theta>1/2$ for the signed sum \eqref{eq:remsum} and with it an improvement of Theorem~\ref{thm:dim2} for every $N$; we have not carried this out. The spectral version of the same question is the sum over the levels $4de$ of the inner products $\langle G_{d,e},P_N^{(4de)}\rangle$ of Section~\ref{sec:spectral}.
+
+\subsection{The signs of $a_{G_{d,e}}(N)$, numerically}
+Whether cancellation of this kind is present can be measured. The script \texttt{modulus\_sum\_scan.py} computes, for a fixed $N\equiv2\pmod4$ and all coprime odd square-free pairs $(d,e)$ with $de\le N^{3/4}$, the coefficients $a_{d,e}=a_{G_{d,e}}(N)=T(d,e;N)-M(d,e;N)$ exactly (the main term for every $N$ by the formulae of Section~\ref{subsec:allcusps}), and compares the sums
+\begin{gather*}
+A=\sum|a_{d,e}|,\qquad Q=\Bigl(\sum a_{d,e}^2\Bigr)^{1/2},\\
+S_1=\sum a_{d,e},\qquad S_\mu=\sum\mu(de)\,a_{d,e},\qquad S_{\mathrm{rnd}}=\sum\pm a_{d,e}
+\end{gather*}
+(all sums over the pairs with $de\le N^\theta$),
+where $\pm$ are independent random signs; $|S|/Q\approx1$ is square-root cancellation and $A/Q$ is the maximum. Table~\ref{tab:signs} shows the result.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\begin{tabular}{rr|rrrrrrr}
+\hline
+$N$ & $\theta$ & pairs & $A/N$ & $Q/N$ & $S_1/Q$ & $S_\mu/Q$ & $S_{\mathrm{rnd}}/Q$ & $A/Q$\\
+\hline
+$2000002=2\cdot101\cdot9901$ & 0.50 & 2149 & 0.82 & 0.024 & $-0.43$ & $0.66$ & $1.93$ & 35\\
+ & 0.60 & 10367 & 2.43 & 0.033 & $-0.75$ & $0.55$ & $-0.05$ & 73\\
+ & 0.70 & 49699 & 6.78 & 0.044 & $1.43$ & $-0.76$ & $0.39$ & 154\\
+ & 0.75 & 108127 & 10.93 & 0.049 & $2.01$ & $-1.30$ & $0.69$ & 221\\
+$2000006=2\cdot1000003$ & 0.50 & 2149 & 0.85 & 0.025 & $2.15$ & $0.38$ & $0.29$ & 35\\
+ & 0.60 & 10367 & 2.49 & 0.034 & $2.34$ & $-0.11$ & $1.50$ & 74\\
+ & 0.70 & 49699 & 6.83 & 0.044 & $0.40$ & $-0.20$ & $1.82$ & 154\\
+ & 0.75 & 108131 & 11.01 & 0.050 & $1.74$ & $-0.75$ & $2.88$ & 221\\
+$2000018=2\cdot293\cdot3413$ & 0.50 & 2149 & 0.86 & 0.025 & $-1.87$ & $-1.34$ & $0.63$ & 34\\
+ & 0.60 & 10367 & 2.49 & 0.034 & $-1.78$ & $-0.54$ & $1.09$ & 73\\
+ & 0.70 & 49699 & 6.77 & 0.045 & $-1.13$ & $1.04$ & $-0.08$ & 152\\
+ & 0.75 & 108131 & 10.90 & 0.050 & $0.71$ & $1.29$ & $0.89$ & 218\\
+$3000002=2\cdot557\cdot2693$ & 0.50 & 2677 & 0.78 & 0.021 & $0.51$ & $0.37$ & $1.08$ & 38\\
+ & 0.60 & 13515 & 2.35 & 0.029 & $1.05$ & $-0.25$ & $0.72$ & 82\\
+ & 0.70 & 67357 & 6.63 & 0.038 & $2.18$ & $-0.97$ & $1.52$ & 177\\
+ & 0.75 & 149721 & 10.81 & 0.042 & $3.28$ & $-0.06$ & $1.08$ & 257\\
+\hline
+\end{tabular}
+\medskip
+\caption{Sums of $a_{G_{d,e}}(N)$ over the coprime odd square-free pairs with $de\le N^\theta$ (\texttt{results/modulus\_sum\_scan.txt}). Floating point.}
+\label{tab:signs}
+\end{table}
+
+For all three weightings the sums are of the size $Q$, the square root of the sum of squares, as for independent random signs ($|S_\mu|/Q\le1.3$, $|S_{\mathrm{rnd}}|/Q\le2.9$, $|S_1|/Q\le3.3$ in the table): the coefficients $a_{G_{d,e}}(N)$ for different $(d,e)$ show no sign correlation with each other or with $\mu(de)$, and the signed sums are smaller than $\sum|a_{d,e}|$ by the factor $A/Q$, which grows with $\theta$ (from $35$ at $\theta=1/2$ to $220$ at $3/4$). The sum $A$ itself is already larger than $N$ for $\theta\ge0.55$ at these $N$, which is why the proofs need $N$ large; the signed sums are $0.02$--$0.05\,N$. Since $|a_{d,e}|\approx N^{1/2}(de)^{-1/2}\log(de)$ on average (Theorem~\ref{thm:A} and Section~\ref{sec:num}), $Q\approx N^{1/2}(\log N)^{3/2}$ for every $\theta$, while $A\approx N^{1/2+\theta/2}$; both are $o(N)$ for $\theta<1$ if Conjecture~\ref{conj:ind} holds, but only the cancellation visible here is available without it. The data are, of course, no substitute for a proof: they say that the sum \eqref{eq:remsum} behaves as the dispersion method would predict, not how to prove it.
+
 \section*{Data and code}
 {\sloppy
-The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{certify\_modular.py} (arguments \texttt{1/2}, \texttt{2/3}, \texttt{19/20}), \texttt{plot\_mean\_square.py} and \texttt{plot\_sieve\_thresholds.py} (Figures~\ref{fig:ms} and \ref{fig:thr}), \texttt{local\_densities.py} and \texttt{cusp\_lower\_bound.py} (Table~\ref{tab:cusps}), \texttt{dhr\_sieve.py} (Section~\ref{sec:dim2}, output \texttt{results/dhr\_sieve.txt}), the modules of Part~I they use (\texttt{sup\_error\_scan.py}, \texttt{modular\_sieve\_scan.py}, \texttt{sieve\_core.py}) and the outputs \texttt{results/mean\_square\_check\_x21.txt}, \texttt{results/norm\_level20.txt}, \texttt{results/certify\_modular\_output\_twothirds.txt}, \texttt{results/certify\_modular\_output\_nineteen.txt}, \texttt{results/sieve\_thresholds.txt}, \texttt{results/cusp\_lower\_bound.txt}, \texttt{results/cusp\_lower\_bound\_large.txt} are in the repository \url{https://github.com/Ruqing1963/two-squares-mean-square}; the code and data of Part~I are at \url{https://github.com/Ruqing1963/two-squares-theta-level}. The certification of the sieve parameters uses directed rounding as described in Part~I, Appendix~A; the computations of Section~\ref{sec:num} are in floating point and are evidence, not proof.
+The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{certify\_modular.py} (arguments \texttt{1/2}, \texttt{2/3}, \texttt{19/20}), \texttt{plot\_mean\_square.py} and \texttt{plot\_sieve\_thresholds.py} (Figures~\ref{fig:ms} and \ref{fig:thr}), \texttt{local\_densities.py} and \texttt{cusp\_lower\_bound.py} (Table~\ref{tab:cusps}), \texttt{dhr\_sieve.py} (Section~\ref{sec:dim2}, output \texttt{results/dhr\_sieve.txt}), \texttt{modulus\_sum\_scan.py} (Table~\ref{tab:signs}, output \texttt{results/modulus\_sum\_scan.txt}), the modules of Part~I they use (\texttt{sup\_error\_scan.py}, \texttt{modular\_sieve\_scan.py}, \texttt{sieve\_core.py}) and the outputs \texttt{results/mean\_square\_check\_x21.txt}, \texttt{results/norm\_level20.txt}, \texttt{results/certify\_modular\_output\_twothirds.txt}, \texttt{results/certify\_modular\_output\_nineteen.txt}, \texttt{results/sieve\_thresholds.txt}, \texttt{results/cusp\_lower\_bound.txt}, \texttt{results/cusp\_lower\_bound\_large.txt} are in the repository \url{https://github.com/Ruqing1963/two-squares-mean-square}; the code and data of Part~I are at \url{https://github.com/Ruqing1963/two-squares-theta-level}. The certification of the sieve parameters uses directed rounding as described in Part~I, Appendix~A; the computations of Section~\ref{sec:num} are in floating point and are evidence, not proof.
 \par}
 
 \begin{thebibliography}{9}
 \bibitem{AL} A.~O.~L.~Atkin, J.~Lehner, \emph{Hecke operators on $\Gamma_0(m)$}, Math. Ann. \textbf{185} (1970), 134--160.
 \bibitem{BB} A.~R.~Booker, T.~D.~Browning, \emph{Square-free values of reducible polynomials}, Discrete Anal. (2016), Paper No.~8, 16~pp.; the values of $\alpha_\kappa,\beta_\kappa$ for $\kappa\le50$ are in the ancillary file \texttt{dhr.html} of \href{https://arxiv.org/abs/1511.00601}{arXiv:1511.00601}.
+\bibitem{BFI} E.~Bombieri, J.~B.~Friedlander, H.~Iwaniec, \emph{Primes in arithmetic progressions to large moduli}, Acta Math. \textbf{156} (1986), 203--251.
 \bibitem{BauerWang} C.~Bauer, Y.~Wang, \emph{On the Goldbach conjecture in arithmetic progressions}, Rocky Mountain J. Math. \textbf{36} (2006), 35--66.
 \bibitem{ChenI} R.~Chen, \emph{Sums of two squares with few prime factors via theta series of quaternary forms}, preprint (2026), version 3, \url{https://github.com/Ruqing1963/two-squares-theta-level} (tag v3.0); version 2 is archived at \href{https://doi.org/10.5281/zenodo.23618710}{doi:10.5281/zenodo.23618710}. Theorem, lemma and table numbers are the same in versions 2 and 3, except that version 3 adds Theorem~1.2.
 \bibitem{DH} H.~G.~Diamond, H.~Halberstam, \emph{A Higher-Dimensional Sieve Method}, with an appendix by W.~F.~Galway, Cambridge Tracts in Math. \textbf{177}, Cambridge Univ. Press, 2008.
