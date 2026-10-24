@@ -17,9 +17,10 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   Waibel's decomposition of the norm over the cusps of Γ₀(L) and his Lemma 12 on the expansion of a theta series at
   a cusp; for this family the expansion at every cusp is again a theta series of a form A(x²+y²)+B(z²+w²) with
   AB ≍ mm′, whose coefficients are O(n^ε) for n ≪ mm′ because Aα + Bβ = n has O(1) solutions.
-* **Corollary 1.2.** Conjecture 5.1 of Part I holds: T − M ≪ d(N) N^{1/2} (mm′)^ε uniformly; the sequence
-  r(n) r(N − n) has level of distribution 1/2; and Theorem 1.1 of Part I holds with Ω(n(N − n)) ≤ 8 and
+* **Corollary 1.2.** T − M ≪ d(N) N^{1/2} (mm′)^ε uniformly (Conjecture 5.1 of Part I, versions 1–2); the sequence
+  r(n) r(N − n) has level of distribution 1/2; and Theorem 1.1 of Part I (version 3) holds: Ω(n(N − n)) ≤ 8 and
   max(Ω(n), Ω(N − n)) ≤ 5 for every large N ≡ 2 (mod 4), with the constant 0.23 (parameters certified in Part I).
+  Version 3 of Part I states Theorem 1.1 of this paper as its Theorem 1.2.
 * **Theorem 1.3 (mean square).** For every G ∈ S₂(Γ₀(L)) and Y ≥ 1, Σ_{n ≤ Y} |a_G(n)|² ≤ 4πe² Y (1 + 54Y/L) ‖G‖²
   (covering argument); hence Σ_{N ≤ Y} |T − M|² ≪ Y² (mm′)^{−1+ε} for Y ≥ mm′.
 * **Theorem 1.4 / Corollary 1.5.** Level of distribution 1 − ε for all but O(X^{1−δ}) integers N ≡ 2 (mod 4) up

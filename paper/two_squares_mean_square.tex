@@ -37,7 +37,7 @@
 \begin{document}
 
 \begin{abstract}
-Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_{G}(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. We prove $\|G_{m,m'}\|\ll_\e(mm')^{\e}$ for the Petersson norm. The proof combines Waibel's decomposition of the norm over the cusps of $\Gamma_0(L)$ with the observation that at every cusp the expansion of $\Theta_{m,m'}$ is again a theta series of a form $A(x^2+y^2)+B(z^2+w^2)$ with $AB\asymp mm'$, whose coefficients are $O(n^\e)$ in the range that matters. Waibel's general bound gives $(mm')^{1/4+\e}$ for this family, and numerically $\|G_{m,m'}\|^2\approx0.37\,(\log mm')^2$. By the Hecke-operator argument of Part~I this proves the conjecture of Part~I: $T(m,m';N)-M(m,m';N)\ll d(N)N^{1/2}(mm')^\e$ uniformly, so that the weighted sequence $r(n)r(N-n)$ has level of distribution $1/2$, and the main theorem of Part~I holds with $\Omega(n(N-n))\le8$ and $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$. We also prove a mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le4\pi e^2Y(1+54Y/L)\|G\|^2$ by a covering argument, which gives the level of distribution $1-\e$ for all but $O(X^{1-\delta})$ integers $N\le X$, and for those $N$ the bounds $5$ and $4$.
+Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_{G}(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. We prove $\|G_{m,m'}\|\ll_\e(mm')^{\e}$ for the Petersson norm. The proof combines Waibel's decomposition of the norm over the cusps of $\Gamma_0(L)$ with the observation that at every cusp the expansion of $\Theta_{m,m'}$ is again a theta series of a form $A(x^2+y^2)+B(z^2+w^2)$ with $AB\asymp mm'$, whose coefficients are $O(n^\e)$ in the range that matters. Waibel's general bound gives $(mm')^{1/4+\e}$ for this family, and numerically $\|G_{m,m'}\|^2\approx0.37\,(\log mm')^2$. By the Hecke-operator argument of Part~I this gives $T(m,m';N)-M(m,m';N)\ll d(N)N^{1/2}(mm')^\e$ uniformly, which was conjectured in the first two versions of Part~I, so that the weighted sequence $r(n)r(N-n)$ has level of distribution $1/2$, and the main theorem of Part~I holds with $\Omega(n(N-n))\le8$ and $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$; version~3 of Part~I takes the norm bound from here as its Theorem~1.2 and states these bounds as its main theorem. We also prove a mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le4\pi e^2Y(1+54Y/L)\|G\|^2$ by a covering argument, which gives the level of distribution $1-\e$ for all but $O(X^{1-\delta})$ integers $N\le X$, and for those $N$ the bounds $5$ and $4$.
 \end{abstract}
 
 \maketitle
@@ -53,7 +53,7 @@ $\Theta_{m,m'}=E+G$ is the decomposition into the Eisenstein part, whose coeffic
 \[
 a_G(N)=T(m,m';N)-M(m,m';N)\qquad\text{for every }N\ge1 .
 \]
-The Petersson norm is $\|G\|^2=\int_{\Gamma_0(L)\backslash\HH}|G|^2\,\dd x\,\dd y$. Lemma~2.1 of Part~I, which is Waibel's theorem \cite[Theorem~1]{Waibel} for the form $Q_{m,m'}=m(x^2+y^2)+m'(z^2+w^2)$, gives $\|G\|\ll(mm')^{1/4+\e}$, and Part~I deduces from it, through a Hecke operator, the uniform bound $a_G(N)\ll d(N)N^{1/2}(mm')^{1/4+\e}$ for $(N,mm')=1$, $v_2(N)\le1$, and the level of distribution $2/5$. Part~I conjectures (Conjecture~5.1 there) that the factor $(mm')^{1/4}$ can be removed. The first result of this paper is that the norm itself is much smaller than Waibel's general bound.
+The Petersson norm is $\|G\|^2=\int_{\Gamma_0(L)\backslash\HH}|G|^2\,\dd x\,\dd y$. Lemma~2.1 of Part~I, which is Waibel's theorem \cite[Theorem~1]{Waibel} for the form $Q_{m,m'}=m(x^2+y^2)+m'(z^2+w^2)$, gives $\|G\|\ll(mm')^{1/4+\e}$, and the first two versions of Part~I deduced from it, through a Hecke operator, the uniform bound $a_G(N)\ll d(N)N^{1/2}(mm')^{1/4+\e}$ for $(N,mm')=1$, $v_2(N)\le1$, the level of distribution $2/5$ and the bounds $9$ and $6$, and conjectured (Conjecture~5.1 there) that the factor $(mm')^{1/4}$ can be removed. The first result of this paper is that the norm itself is much smaller than Waibel's general bound; version~3 of Part~I, which this paper accompanies, states it as its Theorem~1.2, takes its proof from here, and keeps the results obtainable from Waibel's bound alone as its Remark~4.5.
 
 \begin{theorem}[The norm]\label{thm:norm}
 For coprime odd positive integers $m,m'$,
@@ -64,15 +64,15 @@ For coprime odd positive integers $m,m'$,
 
 The proof (Section~\ref{sec:norm}) uses Waibel's decomposition of the norm over the cusps of $\Gamma_0(L)$ and his description of the Fourier expansion of a theta series at a cusp \cite[(22) and Lemma~12]{Waibel}. For $Q_{m,m'}$ the expansion at every cusp is again a theta series of a form $A(x_1^2+x_2^2)+B(x_3^2+x_4^2)$ with $AB\asymp mm'$, and such a form has only $O(n^\e)$ representations of every $n\ll mm'$, because the equation $A\alpha+B\beta=n$ has $O(1)$ solutions $(\alpha,\beta)$. This is special to our family; in general the Fourier coefficients at a cusp are of size $n^{1+\e}/\sqrt{\det}$, which is what Waibel's bound reflects. Numerically, $\|G_{m,m'}\|^2\approx0.37\,(\log mm')^2$ (Section~\ref{sec:num}).
 
-\begin{corollary}[Conjecture 5.1 of Part I, level $1/2$, and the bounds $8$ and $5$]\label{cor:main}
+\begin{corollary}[The uniform bound, the level $1/2$, and the bounds $8$ and $5$]\label{cor:main}
 \begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.2em]
 \item For coprime odd $m,m'$ and $N\ge1$ with $(N,mm')=1$ and $v_2(N)\le1$,
 \[
 T(m,m';N)=M(m,m';N)+O_\e\bigl(d(N)\,N^{1/2}(mm')^{\e}\bigr).
 \]
-This is Conjecture~5.1 of Part~I. For coprime odd cube-free $m,m'$ and every $N$ with $v_2(N)\le1$ the error term is $O_\e(d(N)^4N^{1/2}(mm')^\e)$.
+This was Conjecture~5.1 of Part~I, versions 1--2. For coprime odd cube-free $m,m'$ and every $N$ with $v_2(N)\le1$ the error term is $O_\e(d(N)^4N^{1/2}(mm')^\e)$.
 \item The weighted sequence $r(n)r(N-n)$ has level of distribution $1/2$: Theorem~3.2 of Part~I holds with $D=N^{1/2-\e}$.
-\item Theorem~1.1 of Part~I holds with $9$ and $6$ replaced by $8$ and $5$: for every sufficiently large $N\equiv2\pmod4$,
+\item Theorem~1.1 of Part~I (version~3; the bounds $9$ and $6$ of versions 1--2 improve to $8$ and $5$): for every sufficiently large $N\equiv2\pmod4$,
 \begin{multline*}
 \#\bigl\{1\le n<N:\ n=x^2+y^2,\ N-n=z^2+w^2,\ \Omega(n(N-n))\le 8,\ \max(\Omega(n),\Omega(N-n))\le 5\bigr\}\\
 \ge\ 0.23\,\Sg_r(N)\,\frac{N}{(\log N)^2},\qquad \Sg_r(N)=\prod_{\substack{p\mid N\\ p>2}}\frac{p-1}{p-2},
@@ -81,7 +81,7 @@ the integers counted being coprime to $N$ and products of distinct primes $\equi
 \end{enumerate}
 \end{corollary}
 
-Part (i) is Theorem~\ref{thm:norm} inserted into Lemma~2.2 of Part~I; (ii) is the proof of Theorem~3.2 of Part~I with the exponent $1/4$ replaced by $\e$; (iii) is Remark~4.5 of Part~I, whose sieve parameters at the level $1/2$ were certified there in interval arithmetic. The details are in Section~\ref{sec:cor}.
+Part (i) is Theorem~\ref{thm:norm} inserted into Lemma~2.2 of Part~I; (ii) is the proof of Theorem~3.2 of Part~I with the exponent $1/4$ replaced by $\e$; (iii) uses the sieve parameters at the level $1/2$ certified in interval arithmetic in Part~I (first line of Table~2 there; Remark~4.5 in versions 1--2). The details are in Section~\ref{sec:cor}.
 
 The second theme of the paper is the average over $N$ of the error term, which is of independent interest and gives a stronger level of distribution for almost all $N$.
 
@@ -127,11 +127,11 @@ For all but $O(X^{1-\delta})$ integers $N\equiv2\pmod 4$ in $(X/2,X]$, with an a
 the integers counted being coprime to $N$ and products of distinct primes $\equiv1\pmod4$ exceeding $N^{2/25}$.
 \end{corollary}
 
-The certified sieve parameters are $\alpha=2/25$, $\lambda=1/3$, $\beta_1=69/100$ (Section~\ref{sec:B}). The pairs $(5,4)$ for almost all $N$ and $(8,5)$ for every $N$ should be compared with $(9,6)$ for every $N$ in Part~I. A floating-point scan (Figure~\ref{fig:thr}) shows that $(5,4)$ is the limit of the Richert weights of Part~I even at the level $1$; a bound such as $(\cdot,3)$ would need different weights.
+The certified sieve parameters are $\alpha=2/25$, $\lambda=1/3$, $\beta_1=69/100$ (Section~\ref{sec:B}). The pairs $(5,4)$ for almost all $N$ and $(8,5)$ for every $N$ should be compared with $(9,6)$ for every $N$, which is what Waibel's bound alone gives (Part~I, Remark~4.5). A floating-point scan (Figure~\ref{fig:thr}) shows that the best attainable value of $1/\lambda+1/\beta_1$ drops below $4$ only for $\theta>0.88$; at $\theta=19/20$ the scan gives $3.83$ (at $\alpha=0.10$, $\beta_1=0.47$, $\lambda=0.59$, with $1/\lambda+2/\beta_1=5.96$), i.e.\ the pair $(5,3)$, which we have not certified, for the reason explained next.
 
 Corollary~\ref{cor:C} must also be compared with what the circle method gives for almost all $N$. By the method of Montgomery and Vaughan \cite{MV}, carried out with the characters modulo $4$ (see \cite{BauerWang} for Goldbach's problem with primes in prescribed residue classes), all but $O(X^{1-\delta})$ integers $N\equiv2\pmod4$ up to $X$ are sums $p+q$ of two primes $p\equiv q\equiv1\pmod 4$, with $\gg\Sg_r(N)N/(\log N)^2$ representations; such primes are sums of two squares, so for almost all $N$ the pair $(1,1)$ holds with the count of Corollary~\ref{cor:C}. As an arithmetic statement about almost all $N$, Corollary~\ref{cor:C} is therefore far from new. What is new is Theorem~\ref{thm:B}, a level of distribution $1-\e$ for the weighted sequence $r(n)r(N-n)$, together with the observation that the sieve of Part~I extracts $(5,4)$ from it with no further input; the sieve route adds something only for \emph{every} $N$, where the circle method gives nothing (Goldbach's problem) and where Corollary~\ref{cor:main} gives $(8,5)$. Section~\ref{sec:spectral} formulates the individual bound that would raise the level to $1-\e$ for every $N$ and with it give $(5,4)$ for every $N$ (Proposition~\ref{prop:beyond}).
 
-Section~\ref{sec:spectral} restates the uniform bound of Corollary~\ref{cor:main}(i) in terms of Poincar\'e series, and Section~\ref{sec:num} contains the numerical evidence: the data of Part~I, an exact check of the whole numerical chain at the level $20$, and the empirical law $\|G_{m,m'}\|^2\approx0.37(\log mm')^2$, which corrects a remark of Part~I.
+Section~\ref{sec:spectral} restates the uniform bound of Corollary~\ref{cor:main}(i) in terms of Poincar\'e series, and Section~\ref{sec:num} contains the numerical evidence: the data of Part~I, an exact check of the whole numerical chain at the level $20$, and the empirical law $\|G_{m,m'}\|^2\approx0.37(\log mm')^2$, which corrects a remark in the first two versions of Part~I.
 
 \section{Proof of Theorem~\ref{thm:norm}}\label{sec:norm}
 
@@ -172,9 +172,9 @@ For $Q=Q_{m,m'}$ one can take $U=I$ in Lemma~\ref{lem:W2}, and then, with $d_m=(
 D=\mathrm{diag}(d_m,d_m,d_{m'},d_{m'})\cdot2^{t},\quad t\in\{0,1\},\qquad
 \tfrac12x^{\mathrm T}Sx=A(x_1^2+x_2^2)+B(x_3^2+x_4^2),
 \]
-where $A=\kappa\,(m'/d_{m'})\,d_m$ and $B=\kappa\,(m/d_m)\,d_{m'}$ are positive integers with $\kappa=4^{t}d_md_{m'}/\hat d\in\{\tfrac14,\tfrac12,1,2,4,8\}$. In particular
+where $A=\kappa\,(m'/d_{m'})\,d_m$ and $B=\kappa\,(m/d_m)\,d_{m'}$ are positive integers with $\kappa=4^{t}d_md_{m'}/\hat d\in\{\tfrac14,\tfrac12,1,2,4,8\}$. Put $g_0=(d_m,m/d_m)\,(d_{m'},m'/d_{m'})$, so that $g_0=1$ when $m,m'$ are square-free, and in general $g_0\mid d_md_{m'}$, hence $g_0\le d\le2\hat d$. Then
 \[
-\det D\le16\,d^2,\qquad AB=\kappa^2mm'\ge\frac{mm'}{16},\qquad \frac{(A,B)}{AB}\le\frac{4}{mm'},\qquad \sqrt{\det S}=4AB\ge\frac{mm'}4 .
+\det D\le16\,d^2,\qquad AB=\kappa^2mm'\ge\frac{mm'}{16},\qquad \frac{(A,B)}{AB}\le\frac{4g_0}{mm'},\qquad \sqrt{\det S}=4AB\ge\frac{mm'}4 .
 \]
 \end{lemma}
 \begin{proof}
@@ -183,17 +183,17 @@ The form $\tfrac12x^{\mathrm T}A_Qx=m(x_1^2+x_2^2)+m'(x_3^2+x_4^2)$ is already d
 \tfrac12x^{\mathrm T}Sx=\frac{L}{\hat d}\cdot4^{t}\Bigl(\frac{d_m^2(x_1^2+x_2^2)}{4m}+\frac{d_{m'}^2(x_3^2+x_4^2)}{4m'}\Bigr)
 =\frac{4^{t}}{\hat d}\bigl(m'd_m^2(x_1^2+x_2^2)+md_{m'}^2(x_3^2+x_4^2)\bigr),
 \]
-which is the stated form with $\kappa=4^td_md_{m'}/\hat d=4^t/\hat d_2$, $\hat d_2=\hat d/(d_md_{m'})\in\{d_2,d_2/2\}\subset\{\tfrac12,1,2,4\}$. The integrality of $S$ (Waibel's Lemma~11) forces $A,B\in\Z$. Since $(m'/d_{m'})d_m$ and $(m/d_m)d_{m'}$ are coprime, $(A,B)\le\kappa$ if $\kappa\in\Z$ and $(A,B)=1$ otherwise, so $(A,B)/(AB)\le\kappa/(\kappa^2mm')=1/(\kappa mm')\le4/(mm')$. Finally $\det D=(d_md_{m'})^22^{4t}\le16d^2$ and $\det S=\det\mathrm{diag}(2A,2A,2B,2B)=16A^2B^2$.
+which is the stated form with $\kappa=4^td_md_{m'}/\hat d=4^t/\hat d_2$, $\hat d_2=\hat d/(d_md_{m'})\in\{d_2,d_2/2\}\subset\{\tfrac12,1,2,4\}$. The integrality of $S$ (Waibel's Lemma~11) forces $A,B\in\Z$. Write $A=\kappa a$, $B=\kappa b$ with $a=(m'/d_{m'})d_m$, $b=(m/d_m)d_{m'}$. Since $(m,m')=1$, the primes of $d_m$ and $m/d_m$ divide $m$ and those of $d_{m'}$ and $m'/d_{m'}$ divide $m'$, so $(a,b)=(d_m,m/d_m)(d_{m'},m'/d_{m'})=g_0$; note that $g_0>1$ is possible when $m$ or $m'$ is not square-free (e.g.\ $p^2\mid m$ and $p\,\|\,c$ give $d_m=p=m/d_m$ up to units, so $p\mid g_0$). If $\kappa\in\Z$ then $(A,B)=\kappa g_0$; if $\kappa\in\{\frac12,\frac14\}$ then $A,B\in\Z$ forces $\kappa^{-1}\mid a,b$ and $(A,B)=\kappa g_0$ as well. Hence $(A,B)/(AB)=\kappa g_0/(\kappa^2ab)=g_0/(\kappa mm')\le4g_0/(mm')$. Finally $g_0\mid d_md_{m'}\mid d$ and $d\le2\hat d$, $\det D=(d_md_{m'})^22^{4t}\le16d^2$ and $\det S=\det\mathrm{diag}(2A,2A,2B,2B)=16A^2B^2$.
 \end{proof}
 
 \begin{lemma}\label{lem:count}
-Let $A,B\ge1$ be integers with $(A,B)/(AB)\le4/(mm')$. Then for every $n\ge1$,
+Let $A,B\ge1$ be integers with $(A,B)/(AB)\le4g_0/(mm')$ for some $g_0\ge1$. Then for every $n\ge1$,
 \[
-r\bigl(A(x_1^2+x_2^2)+B(x_3^2+x_4^2),\,n\bigr)\ \ll_\e\ n^{\e}\Bigl(1+\frac{n}{mm'}\Bigr).
+r\bigl(A(x_1^2+x_2^2)+B(x_3^2+x_4^2),\,n\bigr)\ \ll_\e\ n^{\e}\Bigl(1+\frac{g_0\,n}{mm'}\Bigr).
 \]
 \end{lemma}
 \begin{proof}
-A representation gives $\alpha=x_1^2+x_2^2$, $\beta=x_3^2+x_4^2$ with $A\alpha+B\beta=n$, $\alpha,\beta\ge0$. The solutions $\alpha$ of this equation lie in one residue class modulo $B/(A,B)$ and in $[0,n/A]$, so there are at most $n(A,B)/(AB)+1\le4n/(mm')+1$ pairs $(\alpha,\beta)$, and each pair contributes $r(\alpha)r(\beta)\le16\,d(\alpha)d(\beta)\ll n^\e$ representations.
+A representation gives $\alpha=x_1^2+x_2^2$, $\beta=x_3^2+x_4^2$ with $A\alpha+B\beta=n$, $\alpha,\beta\ge0$. Put $g=(A,B)$; there are no solutions unless $g\mid n$, and then the solutions $\alpha$ lie in one residue class modulo $B/g$ and in $[0,n/A]$, so there are at most $ng/(AB)+1\le4g_0n/(mm')+1$ pairs $(\alpha,\beta)$, and each pair contributes $r(\alpha)r(\beta)\le16\,d(\alpha)d(\beta)\ll n^\e$ representations.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:norm}]
@@ -203,7 +203,7 @@ I(\varrho)\le L\sum_{n\ge1}|b(n)|^2\int_{\sqrt3/2}^\infty e^{-4\pi\hat dny/L}\,\
 =\frac{L^2}{4\pi\hat d}\sum_{n\ge1}\frac{|b(n)|^2}{n}\,e^{-2\sqrt3\pi\hat dn/L}.
 \end{equation}
 
-\emph{The cusp $\infty$.} If $d=L$, then $\varrho\in\Gamma_0(L)$, $b(n)=a_G(n)$ and $\hat d=L$. For every $n$, $|a_G(n)|\le T(m,m';n)+M(m,m';n)\ll n^\e(1+n/(mm'))$ by Lemma~\ref{lem:count} (for $T$) and Lemma~\ref{lem:W3} applied to $Q$ itself (for $M$; here $(n,L)^{1/2}\le n^{1/2}$ and $n^{3/2}/(mm')\le n^{3/2}$ is harmless because of the exponential). Hence $I(\varrho)\ll L\sum_nn^{2\e}(1+n^{3/2})e^{-2\sqrt3\pi n}\ll L$, and these $\varphi(L)$ pairs $(a,c)$ contribute $\ll(\mu/\tilde\mu)\varphi(L)L=1$ to the sum in Lemma~\ref{lem:W1}.
+\emph{The cusp $\infty$.} If $d=L$, then $\varrho\in\Gamma_0(L)$, $b(n)=a_G(n)$ and $\hat d=L$. For every $n$, $|a_G(n)|\le T(m,m';n)+M(m,m';n)\ll n^\e(1+n/(mm'))$ by Lemma~\ref{lem:count} with $A=m$, $B=m'$, $g_0=1$ (for $T$) and Lemma~\ref{lem:W3} applied to $Q$ itself (for $M$; here $(n,L)^{1/2}\le n^{1/2}$ and $n^{3/2}/(mm')\le n^{3/2}$ is harmless because of the exponential). Hence $I(\varrho)\ll L\sum_nn^{2\e}(1+n^{3/2})e^{-2\sqrt3\pi n}\ll L$, and these $\varphi(L)$ pairs $(a,c)$ contribute $\ll(\mu/\tilde\mu)\varphi(L)L=1$ to the sum in Lemma~\ref{lem:W1}.
 
 \emph{The other cusps.} Let $d\mid L$, $d<L$. The number of $c$ modulo $L$ with $(c,L)=d$ is $\varphi(L/d)$, and for each such $c$ the number of $a$ modulo $L$ with $(a,c,L)=1$ is $\varphi(d)L/d$; since $\varphi(L/d)\varphi(d)\le\varphi(L)$, these pairs contribute at most
 \[
@@ -214,12 +214,13 @@ the maximum over the $\varrho_{a,c}$ with $(c,L)=d$. By Lemma~\ref{lem:W2}, Lemm
 \frac1dI(\varrho)&\le\frac{L^2}{4\pi d\hat d}\cdot\frac{32\cdot16d^2}{16(mm')^2}\sum_n\frac{r(S,n)^2+r(\gen S,n)^2}{n}e^{-2\sqrt3\pi\hat dn/L}\\
 &\le\frac{256}{\pi}\sum_n\frac{r(S,n)^2+r(\gen S,n)^2}{n}e^{-2\sqrt3\pi\hat dn/L}.
 \end{align*}
-For the first sum, Lemma~\ref{lem:count} gives $r(S,n)^2\ll n^{2\e}(1+n/(mm'))^2$, and since $\hat d\ge d/2\ge1/2$ and $n/(mm')\le8$ for $n\le2L$,
+For the first sum, Lemmas~\ref{lem:S} and \ref{lem:count} give $r(S,n)^2\ll n^{2\e}(1+g_0n/(mm'))^2$ with $g_0\le2\hat d$. We keep $\hat d$ in the exponential and split at $n=2L/\hat d$: for $n\le2L/\hat d$ we have $g_0n/(mm')\le4L/(mm')=16$, and for the tail we use $\sum_{n>Z}n\,e^{-\lambda n}\ll\lambda^{-2}$ with $\lambda=2\sqrt3\pi\hat d/L$. Hence
 \begin{align*}
-\sum_n\frac{n^{2\e}(1+n/(mm'))^2}{n}e^{-2\sqrt3\pi\hat dn/L}
-&\ll\sum_{n\le 2L}n^{2\e-1}\Bigl(1+\frac{n}{mm'}\Bigr)^2+\frac{L^{2\e}}{(mm')^2}\sum_{n>2L}n\,e^{-\sqrt3\pi n/L}\\
-&\ll L^{2\e}\log L+L^{2\e}\frac{L^2}{(mm')^2}\ll L^{3\e}.
+\sum_n\frac{n^{2\e}(1+g_0n/(mm'))^2}{n}e^{-2\sqrt3\pi\hat dn/L}
+&\ll 17^2\sum_{n\le 2L/\hat d}n^{2\e-1}+\frac{L^{2\e}g_0^2}{(mm')^2}\sum_{n>2L/\hat d}n\,e^{-2\sqrt3\pi\hat dn/L}\\
+&\ll L^{2\e}\log L+L^{2\e}\,\frac{g_0^2}{\hat d^2}\cdot\frac{L^2}{(mm')^2}\ll L^{3\e},
 \end{align*}
+since $g_0/\hat d\le2$ and $L=4mm'$, so that the last fraction is at most $64$. (For square-free $m,m'$ one has $g_0=1$ and the splitting is not needed; the care with $\hat d$ matters only when $m$ or $m'$ has a square factor, which does occur in the sieve, where the coefficients are cube-free.)
 For the second sum, Lemma~\ref{lem:W3} with $L_S\le L$ and $\sqrt{\det S}\ge mm'/4$ gives $r(\gen S,n)^2\ll L^{2\e}n^2(n,L)/(mm')^2$, and
 \begin{align*}
 \sum_n\frac{n^2(n,L)}{(mm')^2n}e^{-2\sqrt3\pi\hat dn/L}
@@ -236,7 +237,7 @@ Renaming $\e$ gives the theorem.
 \begin{remark}\label{rem:heur}
 The proof shows more precisely that
 \[
-\|G_{m,m'}\|^2\ll d(mm')\,(\log mm')^2\max_{n\le8mm'}\ \max_{\alpha,\beta\le n}\bigl(d(\alpha)d(\beta)\bigr)^2,
+\|G_{m,m'}\|^2\ll d(mm')\,(\log mm')^2\max_{n\le16mm'}\ \max_{\alpha,\beta\le n}\bigl(d(\alpha)d(\beta)\bigr)^2,
 \]
 so that the true order of the norm is governed by the size of $r(\alpha)r(\beta)$ on the $O(1)$ pairs $(\alpha,\beta)$ with $A\alpha+B\beta=n$, $n\ll mm'$. On average over $n$ these products are of size $(\log n)$, which suggests $\|G_{m,m'}\|^2\asymp(\log mm')^2$; the data of Section~\ref{sec:num} give $\|G_{m,m'}\|^2\approx0.37(\log mm')^2$. Waibel's Theorem~1 gives $(mm')^{1/2+\e}$ for $\|G\|^2$, and his Theorem~2 for diagonal forms gives $\min(m,m')(mm')^{\e}$; both are sharp for other families and both lose here because they bound $r(S,n)$ by the general lattice-point estimate of \cite[Lemma~9]{Waibel}.
 \end{remark}
@@ -251,7 +252,7 @@ so that the true order of the norm is governed by the size of $r(\alpha)r(\beta)
 \]
 and the terms with $t_1ss'>N^\e$ contribute $\ll N^{1-\e+5\eta}+N^{5\eta}D\ll N^{1-\e/2}$ as before. Hence Theorem~3.2 of Part~I holds with $D=N^{1/2-\e}$ and the bound $N^{1-\e/3}$.
 
-\emph{(iii).} Proposition~4.3 of Part~I and its proof use the level only through the conclusion of Theorem~3.2, with $\theta$ the exponent of $D$; they hold with $\theta=1/2$ by (ii). Remark~4.5 of Part~I records the parameters
+\emph{(iii).} Proposition~4.3 of Part~I and its proof use the level only through the conclusion of Theorem~3.2, with $\theta$ the exponent of $D$; they hold with $\theta=1/2$ by (ii). The first line of Table~2 of Part~I (Remark~4.5 in versions 1--2) records the parameters
 \[
 \theta=\tfrac12,\qquad\alpha=\tfrac6{125},\qquad\lambda=\tfrac13,\qquad\beta_1=\tfrac{17}{50},\qquad
 \tfrac1\lambda+\tfrac2{\beta_1}=\tfrac{151}{17}<9,\qquad\tfrac1\lambda+\tfrac1{\beta_1}=\tfrac{101}{17}<6,
@@ -263,7 +264,7 @@ for which \texttt{certify\_modular.py} of Part~I (argument \texttt{1/2}) certifi
 since $0.164754\cdot2^{-12}\cdot8\cdot1.66485\cdot(125/6)^2=0.2325\ldots$. \qed
 
 \begin{remark}
-Corollary~\ref{cor:main} removes the conditional status of Remark~4.5 and of the level $1/2$ in Part~I; Section~5 of Part~I (the numerical evidence and the conjecture) is superseded, and its Section~5.5 (the heuristic spectral interpretation) is no longer needed for the result, although the question it raises, why the spectral sum there exhibits the cancellation, is answered by Theorem~\ref{thm:norm} only indirectly, through the cusps. The remark in Section~5.3 of Part~I that the root mean square of $(T-M)/\sqrt N$ ``decreases like $(mm')^{-1/4}$'' and that Waibel's bound ``appears to be sharp'' is incorrect; see Section~\ref{sec:num}.
+In the first two versions of Part~I the level $1/2$ and the bounds $8$, $5$ were conditional (Remark~4.5 there) on Conjecture~5.1, and Section~5 there presented the numerical evidence for it. Version~3 of Part~I states Theorem~\ref{thm:norm} as its Theorem~1.2, the bounds $8$ and $5$ as its main theorem and the level $1/2$ as its Theorem~3.2, keeps the Waibel-only results as its Remark~4.5, and corrects its Section~5.3, where versions 1--2 had read off a decay of the root mean square of $(T-M)/\sqrt N$ like $(mm')^{-1/4}$ and concluded that Waibel's bound ``appears to be sharp''; the decay is like $(\log mm')(mm')^{-1/2}$ (Section~\ref{sec:num}). The question raised in Section~5.5 of Part~I, why the spectral sum there exhibits cancellation, is answered by Theorem~\ref{thm:norm} only indirectly, through the cusps.
 \end{remark}
 
 \section{Proof of Theorem~\ref{thm:A}}\label{sec:A}
@@ -342,7 +343,7 @@ Proposition~4.3 of Part~I and its proof use the level of distribution only throu
 since $0.085058\cdot2^{-9}\cdot8\cdot1.66485\cdot(25/2)^2=0.3457\ldots$. The exceptional set is that of Theorem~\ref{thm:B} with, say, $\e=1/80$, so $\delta=1/320$ is admissible. \qed
 
 \begin{remark}
-The same sieve gives $(8,5)$ at the level $1/2$ (Corollary~\ref{cor:main}), $(6,4)$ at $2/3$ (certified: $\alpha=3/50$, $\lambda=1/3$, $\beta_1=51/100$, $L-\lambda R\ge0.036741$) and $(5,4)$ at $19/20$. The floating-point scan of Figure~\ref{fig:thr} shows that the best attainable value of $1/\lambda+1/\beta_1$ stays above $4$ for every $\theta<1$, so $\max\Omega\le3$ is out of reach of the Richert weights with one parameter $\beta_1$, and that $1/\lambda+2/\beta_1$ drops below $6$ only for $\theta>0.83$. Corollary~\ref{cor:C} is an ``almost all $N$'' statement with a power-saving exceptional set; it says nothing about any individual $N$.
+The same sieve gives $(8,5)$ at the level $1/2$ (Corollary~\ref{cor:main}), $(6,4)$ at $2/3$ (certified: $\alpha=3/50$, $\lambda=1/3$, $\beta_1=51/100$, $L-\lambda R\ge0.036741$) and $(5,4)$ at $19/20$. The floating-point scan of Figure~\ref{fig:thr} shows that $1/\lambda+2/\beta_1$ drops below $6$ only for $\theta>0.83$, and that the best attainable value of $1/\lambda+1/\beta_1$ drops below $4$ for $\theta>0.88$: at $\theta=19/20$ the minimum is $3.83$, attained at $\alpha=0.10$, $\beta_1=0.47$, $\lambda=0.59$, where $1/\lambda+2/\beta_1=5.96$, so that the Richert weights give $(5,3)$ for almost all $N$ in the floating-point model, with the sifting parameter $\alpha$ at the edge of the scanned range. We have not certified this set, because Corollary~\ref{cor:C} is in any case superseded for almost all $N$ by the circle method (Section~\ref{sec:results}); it is an ``almost all $N$'' statement with a power-saving exceptional set and says nothing about any individual $N$, which is where the sieve route matters (Section~\ref{subsec:ind}).
 \end{remark}
 
 \begin{remark}[The vector sieve is not the natural sieve here]\label{rem:dim2}
@@ -443,7 +444,7 @@ $(1009,1013)$ & 1022117 & 1962192 & 4.559 & 46.87 & 0.046 & 0.244\\
 \begin{figure}[t]
 \centering
 \includegraphics[width=\textwidth]{mean_square.pdf}
-\caption{(a) The running estimate $\|G\|^2_{\mathrm{est}}(y)$, computed over the admissible $N\le y$, divided by $(mm')^{1/4}$, against $y/L$ on a logarithmic scale, for five pairs $(m,m')$; the plateau for $y\gg L$ is the growth $Y^2$ of Theorem~\ref{thm:A} and the Rankin--Selberg asymptotic of Remark~\ref{rem:rankin}. (b) $\|G_{m,m'}\|^2_{\mathrm{est}}$ at $Y=2^{21}$ against $mm'$, both axes logarithmic; filled circles: the five pairs with $mm'$ free of small prime factors and $Y\ge50L$; open squares: pairs with $25\%$--$64\%$ of the $N$ excluded; triangle: $(1009,1013)$, for which $Y<L$; star: the exact value at $(1,5)$. The lines are $0.365(\log mm')^2$, the fit of Section~\ref{subsec:law}, $3(mm')^{1/4}$, and $0.79(mm')^{1/2}$ (the growth allowed by Waibel's general bound, through the point $(1,101)$). Script \texttt{plot\_mean\_square.py}; floating point.}
+\caption{(a) The running estimate $\|G\|^2_{\mathrm{est}}(y)$, computed over the admissible $N\le y$, divided by $(\log mm')^{2}$, against $y/L$ on a logarithmic scale, for five pairs $(m,m')$; the plateau for $y\gg L$ is the growth $Y^2$ of Theorem~\ref{thm:A} and the Rankin--Selberg asymptotic of Remark~\ref{rem:rankin}, and its height is the constant $0.365$ of Section~\ref{subsec:law} (dashed). (b) $\|G_{m,m'}\|^2_{\mathrm{est}}$ at $Y=2^{21}$ against $mm'$, both axes logarithmic; filled circles: the five pairs with $mm'$ free of small prime factors and $Y\ge50L$; open squares: pairs with $25\%$--$64\%$ of the $N$ excluded; triangle: $(1009,1013)$, for which $Y<L$; star: the exact value at $(1,5)$. The lines are $0.365(\log mm')^2$, the fit of Section~\ref{subsec:law}, $3(mm')^{1/4}$, and $0.79(mm')^{1/2}$ (the growth allowed by Waibel's general bound, through the point $(1,101)$). Script \texttt{plot\_mean\_square.py}; floating point.}
 \label{fig:ms}
 \end{figure}
 
@@ -459,7 +460,7 @@ and, for the root mean square of $(T-M)/\sqrt N$ over $N\le Y$, $Y\gg L$,
 \[
 \mathrm{rms}^2\approx\frac{16\pi^2\|G\|^2}{\vol(\Gamma_0(L)\backslash\HH)}\approx\frac{44\,(\log mm')^2}{mm'\prod_{p\mid 2mm'}(1+1/p)},
 \]
-which reproduces the column ``rms'' of Table~3 of Part~I ($0.27$ for $(101,103)$, $0.67$ for $(1,1009)$). This corrects the remark in Section~5.3 of Part~I that the root mean square ``decreases like $(mm')^{-1/4}$'' and that Waibel's bound ``appears to be sharp'': the decrease is like $(mm')^{-1/2}$ up to a logarithm, as Theorem~\ref{thm:A} with Theorem~\ref{thm:norm} shows.
+which reproduces the column ``rms'' of Table~3 of Part~I ($0.27$ for $(101,103)$, $0.67$ for $(1,1009)$). This corrects the remark in Section~5.3 of the first two versions of Part~I that the root mean square ``decreases like $(mm')^{-1/4}$'' and that Waibel's bound ``appears to be sharp'': the decrease is like $(mm')^{-1/2}$ up to a logarithm, as Theorem~\ref{thm:A} with Theorem~\ref{thm:norm} shows; version~3 of Part~I states the corrected law.
 
 \begin{figure}[H]
 \centering
@@ -502,7 +503,7 @@ The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{
 
 \begin{thebibliography}{9}
 \bibitem{BauerWang} C.~Bauer, Y.~Wang, \emph{On the Goldbach conjecture in arithmetic progressions}, Rocky Mountain J. Math. \textbf{36} (2006), 35--66.
-\bibitem{ChenI} R.~Chen, \emph{Sums of two squares with few prime factors via theta series of quaternary forms}, preprint (2026), version 2, \href{https://doi.org/10.5281/zenodo.23618710}{doi:10.5281/zenodo.23618710}.
+\bibitem{ChenI} R.~Chen, \emph{Sums of two squares with few prime factors via theta series of quaternary forms}, preprint (2026), version 3, \url{https://github.com/Ruqing1963/two-squares-theta-level} (tag v3.0); version 2 is archived at \href{https://doi.org/10.5281/zenodo.23618710}{doi:10.5281/zenodo.23618710}. Theorem, lemma and table numbers are the same in versions 2 and 3, except that version 3 adds Theorem~1.2.
 \bibitem{DH} H.~G.~Diamond, H.~Halberstam, \emph{A Higher-Dimensional Sieve Method}, with an appendix by W.~F.~Galway, Cambridge Tracts in Math. \textbf{177}, Cambridge Univ. Press, 2008.
 \bibitem{MV} H.~L.~Montgomery, R.~C.~Vaughan, \emph{The exceptional set in Goldbach's problem}, Acta Arith. \textbf{27} (1975), 353--370.
 \bibitem{IwaTopics} H.~Iwaniec, \emph{Topics in Classical Automorphic Forms}, Grad. Stud. Math. \textbf{17}, Amer. Math. Soc., 1997.

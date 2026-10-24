@@ -1,5 +1,5 @@
 r"""
-Figure 1 of Part II: (a) the running Rankin-Selberg estimate of ||G_{m,m'}||^2, normalised by (mm')^{1/4}, as a
+Figure 1 of Part II: (a) the running Rankin-Selberg estimate of ||G_{m,m'}||^2, normalised by (log mm')^2, as a
 function of y/L (it reaches a plateau once y >> L, which is the Y^2 growth of Theorem A); (b) ||G_{m,m'}||^2_est
 at Y = 2^21 against mm' on log-log axes, with the lines 0.365 (log mm')^2 (the fit of Section 5, consistent with
 Theorem 1: ||G||^2 << (mm')^eps), 3 (mm')^{1/4} and 0.79 (mm')^{1/2} (the growth allowed by Waibel's general bound,
@@ -51,14 +51,16 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10.2, 4.0))
 ys = np.unique(np.round(2 ** np.arange(10, np.log2(X) + 1e-9, 0.125)).astype(int))
 for (m, mp), col in zip(curves, colors):
     L, ok, G2 = norm_estimates(m, mp)
-    ax1.plot(ys / L, G2[ys] / (m * mp) ** 0.25, color=col, lw=1.6, label=rf"$(m,m')=({m},{mp})$")
-    print(f"({m},{mp}): L={L}, ||G||^2_est(Y)/(mm')^(1/4) = {G2[X] / (m * mp) ** 0.25:.3f}")
+    ax1.plot(ys / L, G2[ys] / np.log(m * mp) ** 2, color=col, lw=1.6, label=rf"$(m,m')=({m},{mp})$")
+    print(f"({m},{mp}): L={L}, ||G||^2_est(Y)/(log mm')^2 = {G2[X] / np.log(m * mp) ** 2:.3f}")
+ax1.axhline(0.365, color="#eb6834", lw=0.8, ls="--")
+ax1.text(2e-4, 0.375, r"$0.365$", fontsize=8, color="#eb6834")
 ax1.axvline(1.0, color="#777", lw=0.8, ls=":")
-ax1.text(1.05, 0.25, r"$y=L$", fontsize=8, color="#555")
+ax1.text(1.05, 0.03, r"$y=L$", fontsize=8, color="#555")
 ax1.set_xscale("log")
 ax1.set_xlabel(r"$y/L$")
-ax1.set_ylabel(r"$\|G\|^2_{\mathrm{est}}(y)\,/\,(mm')^{1/4}$")
-ax1.set_ylim(0, 4)
+ax1.set_ylabel(r"$\|G\|^2_{\mathrm{est}}(y)\,/\,(\log mm')^{2}$")
+ax1.set_ylim(0, 0.6)
 ax1.grid(True, alpha=0.25)
 ax1.legend(fontsize=7.5, loc="lower right")
 ax1.set_title("(a) running estimate of the norm", fontsize=9)
