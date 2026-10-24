@@ -6,7 +6,7 @@ estimated from it by the Rankin-Selberg asymptotic
 
 vol = (pi/3) L prod_{p | L} (1 + 1/p) (measure dx dy / y^2).  Theorem A of the supplement states, rigorously,
 
-    sum_{N <= Y} |a_G(N)|^2  <=  4 pi e^2 Y (3 + 107 Y/L) ||G||^2,      ||G||^2 << (mm')^{1/2 + eps},
+    sum_{N <= Y} |a_G(N)|^2  <=  4 pi e^2 Y (1 + 54 Y/L) ||G||^2,      ||G||^2 << (mm')^{1/2 + eps},
 
 so that the root mean square of (T - M)/sqrt(N) over Y/2 < N <= Y is << (mm')^{-1/4 + eps} once Y >= mm'.
 

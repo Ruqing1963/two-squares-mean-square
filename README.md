@@ -13,10 +13,10 @@ Let m, m′ be coprime odd integers, Θ_{m,m′}(z) = θ²(mz)θ²(m′z), G = G
 a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of representations of N by m(x²+y²)+m′(z²+w²).
 
 * **Theorem A (mean square).** For every G ∈ S₂(Γ₀(L)) and Y ≥ 1,
-  Σ_{n ≤ Y} |a_G(n)|² ≤ 4πe² Y (3 + 107Y/L) ‖G‖². With Waibel's norm bound this gives
+  Σ_{n ≤ Y} |a_G(n)|² ≤ 4πe² Y (1 + 54Y/L) ‖G‖². With Waibel's norm bound this gives
   Σ_{N ≤ Y} |T − M|² ≪ Y² (mm′)^{−1/2+ε} for Y ≥ mm′: on average over N the error is N^{1/2}(mm′)^{−1/4},
   which is what the experiments of Part I show. The proof is a covering argument (the function y²|G|² is
-  Γ₀(L)-invariant and the strip [0,1] × [1/(4πY), 1/(2πY)] covers the fundamental domain at most 3 + 107Y/L times).
+  Γ₀(L)-invariant and the strip [0,1) × [1/(4πY), 1/(2πY)] covers the fundamental domain at most 1 + 54Y/L times).
 * **Theorem B.** The weighted sequence r(n) r(N − n) has level of distribution 2/3 for all but O(X^{1−δ})
   integers N ≡ 2 (mod 4) up to X (Part I proves 2/5 for every N; Conjecture 5.1 of Part I would give 1/2).
 * **Corollary C.** For these N there are ≥ 0.13 𝔖(N) N/(log N)² integers n < N with n and N − n sums of two
