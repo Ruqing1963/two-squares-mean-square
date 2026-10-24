@@ -38,8 +38,12 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             sup_error_scan.py         Part I: T(m,m';N) by FFT and the exact Siegel main term (used by mean_square_check.py)
             modular_sieve_scan.py     Part I: floating-point parameter scan (uses sieve_core.py)
             sieve_core.py             linear sieve functions
+            plot_mean_square.py       Figure 1: running norm estimate against y/L, and ||G||^2 against mm'
+            plot_sieve_thresholds.py  Figure 2: best sieve thresholds against the level theta
+figures/    mean_square, sieve_thresholds  (.pdf and .png)
 results/    mean_square_check_x21.txt              Table 1
             certify_modular_output_twothirds.txt   the certified parameters of Corollary C
+            sieve_thresholds.txt                   data of Figure 2
 ```
 
 ## Reproducing the numbers
@@ -52,6 +56,8 @@ python certify_modular.py 2/3          # Corollary C: level 2/3, two parameter s
 python mean_square_check.py            # Table 1: X = 2^21, ten pairs (m, m') (~1 min, floating point)
 python modular_sieve_scan.py 0.666667  # floating-point scan at level 2/3 (not certified)
 python modular_sieve_scan.py 0.444444  # the same at level 4/9 (Proposition 5.3)
+python plot_mean_square.py             # Figure 1 (~2 min)
+python plot_sieve_thresholds.py        # Figure 2 and results/sieve_thresholds.txt (several minutes)
 ```
 
 What is rigorous: `certify_modular.py` (interval arithmetic and directed rounding) enters the proof of

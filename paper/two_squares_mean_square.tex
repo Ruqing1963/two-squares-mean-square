@@ -4,6 +4,9 @@
 \usepackage{microtype}
 \usepackage{enumitem}
 \usepackage{array}
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{{../figures/}}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -237,9 +240,9 @@ on which the main term of that script is exact, for $Y=2^{21}$ and $Y=2^{20}$, a
 \[
 \|G\|^2_{\mathrm{est}}=\frac{\vol(\Gamma_0(L)\backslash\HH)}{16\pi^2}\cdot\frac{1}{\#\mathcal N_Y}\sum_{N\in\mathcal N_Y}\frac{|a_G(N)|^2}{N}
 \]
-suggested by the Rankin--Selberg asymptotic of Remark~\ref{rem:rankin}. Replacing $1/Y$ by $1/\#\mathcal N_Y$ assumes that the mean square of $|a_G(N)|^2/N$ over the excluded $N$ (those with $(N,mm')>1$ or $v_2(N)\ge4$) is the same as over $\mathcal N_Y$; this is immaterial when $mm'$ has only large prime factors, but introduces a bias of unknown sign for $(1,5)$, $(9,1)$, $(3,5)$ and $(1,15015)$, where $25\%$, $38\%$, $50\%$ and $64\%$ of the $N$ are excluded. Table~\ref{tab:ms} shows the result.
+suggested by the Rankin--Selberg asymptotic of Remark~\ref{rem:rankin}. Replacing $1/Y$ by $1/\#\mathcal N_Y$ assumes that the mean square of $|a_G(N)|^2/N$ over the excluded $N$ (those with $(N,mm')>1$ or $v_2(N)\ge4$) is the same as over $\mathcal N_Y$; this is immaterial when $mm'$ has only large prime factors, but introduces a bias of unknown sign for $(1,5)$, $(9,1)$, $(3,5)$ and $(1,15015)$, where $25\%$, $38\%$, $50\%$ and $64\%$ of the $N$ are excluded. Table~\ref{tab:ms} shows the result at $Y=2^{21}$, and Figure~\ref{fig:ms} the dependence on $Y$ and on $mm'$.
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \small
 \begin{tabular}{rrrrrrr}
@@ -263,12 +266,19 @@ $(1009,1013)$ & 1022117 & 1962192 & 4.559 & 46.87 & 0.046 & 1.47\\
 \label{tab:ms}
 \end{table}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{mean_square.pdf}
+\caption{(a) The running estimate $\|G\|^2_{\mathrm{est}}(y)$, computed over the admissible $N\le y$, divided by $(mm')^{1/4}$, against $y/L$ on a logarithmic scale, for five pairs $(m,m')$; the plateau for $y\gg L$ is the growth $Y^2$ of Theorem~\ref{thm:A} and the Rankin--Selberg asymptotic of Remark~\ref{rem:rankin}. (b) $\|G_{m,m'}\|^2_{\mathrm{est}}$ at $Y=2^{21}$ against $mm'$, both axes logarithmic; filled circles: the five pairs of Observation~\ref{obs}; open squares: pairs with $25\%$--$64\%$ of the $N$ excluded; triangle: $(1009,1013)$, for which $Y<L$. The lines are $3(mm')^{1/4}$ and $0.79(mm')^{1/2}$ (the latter through the point $(1,101)$, the growth allowed by Waibel's bound). Script \texttt{plot\_mean\_square.py}; floating point.}
+\label{fig:ms}
+\end{figure}
+
 \begin{observation}\label{obs}
 For the five pairs with $10^2\le mm'\le1.1\cdot10^4$, $Y\ge50L$ and $mm'$ free of small prime factors, the estimate $\|G_{m,m'}\|^2_{\mathrm{est}}$ lies between $2.5\,(mm')^{1/4}$ and $3.2\,(mm')^{1/4}$ (and $(1,15015)$, with its bias, gives $3.3$), while $\|G\|^2_{\mathrm{est}}/(mm')^{1/2}$ decreases from $0.79$ to $0.29$ over the same range. The data therefore suggest
 \[
 \|G_{m,m'}\|^2\asymp(mm')^{1/4},\qquad\text{i.e.}\qquad\|G_{m,m'}\|\asymp(mm')^{1/8},
 \]
-rather than the bound $(mm')^{1/4+\e}$ of Lemma~2.1 of Part~I. This corrects the remark in Part~I, Section~5.3, that the root mean square ``decreases like $(mm')^{-1/4}$'' and that Waibel's bound ``appears to be sharp'': over the reliable range the root mean square of $(T-M)/\sqrt N$ decreases like $(mm')^{-3/8}$, and the second term $N^{1+\e}/(\det A)^{1/4}$ of Waibel's Theorem~1 appears to overestimate $\|G_{m,m'}\|^2$ by a factor of about $(mm')^{1/4}$ for this family.
+rather than the bound $(mm')^{1/4+\e}$ of Lemma~2.1 of Part~I. This corrects the remark in Part~I, Section~5.3, that the root mean square ``decreases like $(mm')^{-1/4}$'' and that Waibel's bound ``appears to be sharp'': over the reliable range the root mean square of $(T-M)/\sqrt N$ decreases like $(mm')^{-3/8}$, and the second term $N^{1+\e}/(\det A)^{1/4}$ of Waibel's Theorem~1 appears to overestimate $\|G_{m,m'}\|^2$ by a factor of about $(mm')^{1/4}$ for this family. Figure~\ref{fig:ms}(a) shows that the estimate has reached its plateau for the five pairs (the running estimate is constant for $y\ge10L$), and that $(1009,1013)$, with $Y/L\approx0.5$, is still in the transition region, where Theorem~\ref{thm:A} only gives the bound $Y\|G\|^2$; Figure~\ref{fig:ms}(b) shows the five reliable points on the line of slope $1/4$.
 \end{observation}
 
 We record what a norm bound of this strength would give, as a conditional statement.
@@ -281,8 +291,15 @@ $\|G_{m,m'}\|\ll_\e(mm')^{1/8+\e}$ for all coprime odd $m,m'$.
 Under Hypothesis~\ref{hyp}: Theorem~2.3 and Corollary~2.7 of Part~I hold with $(mm')^{1/8+\e}$ in place of $(mm')^{1/4+\e}$; the level of distribution of $r(n)r(N-n)$ is $4/9$ for every $N\equiv2\pmod4$ and $4/5$ for almost all such $N$; and the sieve of Part~I gives $\Omega(n(N-n))\le8$ and $\max(\Omega(n),\Omega(N-n))\le6$ for every $N$.
 \end{proposition}
 \begin{proof}
-The proofs of Theorem~2.3 and Corollary~2.7 of Part~I use the norm only through Lemma~2.1. In Theorem~3.2 of Part~I the exponent $1/4$ enters through $\sum_{k\le D}d(k)k^{1/4}\ll D^{5/4}N^\eta$; with $1/8$ the balance $N^{1/2}D^{9/8}=N$ gives $D=N^{4/9}$ (Remark~3.3 of Part~I), and in Theorem~\ref{thm:B} the balance $X^{3/2}D^{5/8}=X^2$ gives $D=X^{4/5}$. The floating-point scan at $\theta=4/9$ gives, at best, $1/\lambda+2/\beta_1\approx8.61$ and $1/\lambda+1/\beta_1\approx5.98$. The second value, however, is attained only at the largest admissible $\lambda$, where $L-\lambda R=0$; any $\lambda$ with a positive margin $L-\lambda R>0$ pushes $1/\lambda+1/\beta_1$ above $6$. Hence $(8,6)$ is attainable with margin and can be certified as in Part~I, while $(8,5)$ is not reachable with these weights at this level; we claim only $(8,6)$. For almost all $N$ the level $4/5$ does not improve on Corollary~\ref{cor:C}: the scan at $\theta=4/5$ gives at best $1/\lambda+2/\beta_1\approx6.15$ and $1/\lambda+1/\beta_1\approx4.22$, i.e.\ again $(6,4)$; the Richert weights with one parameter $\beta_1$ no longer profit from the level beyond $2/3$, and a lower bound such as $(5,\cdot)$ would need different weights.
+The proofs of Theorem~2.3 and Corollary~2.7 of Part~I use the norm only through Lemma~2.1. In Theorem~3.2 of Part~I the exponent $1/4$ enters through $\sum_{k\le D}d(k)k^{1/4}\ll D^{5/4}N^\eta$; with $1/8$ the balance $N^{1/2}D^{9/8}=N$ gives $D=N^{4/9}$ (Remark~3.3 of Part~I), and in Theorem~\ref{thm:B} the balance $X^{3/2}D^{5/8}=X^2$ gives $D=X^{4/5}$. The floating-point scan at $\theta=4/9$ gives, at best, $1/\lambda+2/\beta_1\approx8.61$ and $1/\lambda+1/\beta_1\approx5.98$. The second value, however, is attained only at the largest admissible $\lambda$, where $L-\lambda R=0$; any $\lambda$ with a positive margin $L-\lambda R>0$ pushes $1/\lambda+1/\beta_1$ above $6$. Hence $(8,6)$ is attainable with margin and can be certified as in Part~I, while $(8,5)$ is not reachable with these weights at this level; we claim only $(8,6)$. For almost all $N$ the level $4/5$ does not improve on Corollary~\ref{cor:C}: the scan at $\theta=4/5$ gives at best $1/\lambda+2/\beta_1\approx6.15$ and $1/\lambda+1/\beta_1\approx4.22$, i.e.\ again $(6,4)$; the Richert weights with one parameter $\beta_1$ no longer profit from the level beyond $2/3$, and a lower bound such as $(5,\cdot)$ would need different weights. Figure~\ref{fig:thr} shows the two quantities as functions of $\theta$.
 \end{proof}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{sieve_thresholds.pdf}
+\caption{The smallest values of $1/\lambda+2/\beta_1$ and of $1/\lambda+1/\beta_1$ attainable with $L-\lambda R>0$ in the sieve of Part~I, as functions of the level of distribution $\theta$ (floating-point model of \texttt{modular\_sieve\_scan.py}, minimised over $\alpha$, $\beta_1$ with $\lambda=L/R$; script \texttt{plot\_sieve\_thresholds.py}). The bound $\Omega(n(N-n))\le k$, resp.\ $\max\Omega\le k'$, holds when the blue, resp.\ orange, curve is below the dotted line $k+1$, resp.\ $k'+1$. The vertical lines mark $\theta=2/5$ (Part~I), $4/9$ and $4/5$ (Proposition~\ref{prop:hyp}), $1/2$ (Conjecture~5.1 of Part~I) and $2/3$ (Corollary~\ref{cor:C}); only the parameter sets at $2/5$, $1/2$ and $2/3$ are certified. Between $2/3$ and $4/5$ both curves stay just above the thresholds $6$ and $4$.}
+\label{fig:thr}
+\end{figure}
 
 Hypothesis~\ref{hyp} concerns the norm alone and is a statement about a single theta series, not about its individual coefficients; it might be more accessible than Conjecture~5.1 of Part~I. Waibel's lower bound (Theorem~3 of \cite{Waibel}) gives only $\|G_{m,m'}\|^2\gg1/\min(m,m')+O(L^\e)$ for these forms and is far from the truth here; the growth $(mm')^{1/4}$ of $\|G\|^2$, if real, asks for an explanation in terms of the spectral weights $\langle\Theta,\varphi\rangle$. By Parseval over the orthogonal eigenbasis $\mathcal B^*$,
 \[
@@ -292,7 +309,7 @@ so Hypothesis~\ref{hyp} is the statement that this weighted second moment over t
 
 \section*{Data and code}
 {\sloppy
-The scripts \texttt{mean\_square\_check.py} and \texttt{certify\_modular.py} (argument \texttt{2/3}), the modules of Part~I they use (\texttt{sup\_error\_scan.py}, \texttt{modular\_sieve\_scan.py}, \texttt{sieve\_core.py}) and the outputs \texttt{results/mean\_square\_check\_x21.txt}, \texttt{results/certify\_modular\_output\_twothirds.txt} are in the repository \url{https://github.com/Ruqing1963/two-squares-mean-square}; the code and data of Part~I are at \url{https://github.com/Ruqing1963/two-squares-theta-level}. The certification of the sieve parameters uses directed rounding as described in Part~I, Appendix~A; the mean-square computation is in floating point and is evidence, not proof.
+The scripts \texttt{mean\_square\_check.py}, \texttt{certify\_modular.py} (argument \texttt{2/3}), \texttt{plot\_mean\_square.py} and \texttt{plot\_sieve\_thresholds.py} (Figures~\ref{fig:ms} and \ref{fig:thr}), the modules of Part~I they use (\texttt{sup\_error\_scan.py}, \texttt{modular\_sieve\_scan.py}, \texttt{sieve\_core.py}) and the outputs \texttt{results/mean\_square\_check\_x21.txt}, \texttt{results/certify\_modular\_output\_twothirds.txt}, \texttt{results/sieve\_thresholds.txt} are in the repository \url{https://github.com/Ruqing1963/two-squares-mean-square}; the code and data of Part~I are at \url{https://github.com/Ruqing1963/two-squares-theta-level}. The certification of the sieve parameters uses directed rounding as described in Part~I, Appendix~A; the mean-square computation is in floating point and is evidence, not proof.
 \par}
 
 \begin{thebibliography}{9}
