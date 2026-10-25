@@ -1,0 +1,114 @@
+﻿q = 11 (chi(q) = -1), level 44: 1 T_3-eigencomponents, eigenvalues [-1.]
+   a(3) = -1.0000: a(2) = +1.0000, a(4) = +0.0000, a(5) = +1.0000, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 1.000
+   newform component of level 44: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 19 (chi(q) = -1), level 76: 2 T_3-eigencomponents, eigenvalues [-2.  1.]
+   a(3) = -2.0000: a(2) = +1.0000, a(4) = +2.0000, a(5) = +3.0000, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.608
+   a(3) = +1.0000: a(2) = +1.0000, a(4) = -1.0000, a(5) = +0.0000, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.394
+   newform component of level 76: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 23 (chi(q) = -1), level 92: 3 T_3-eigencomponents, eigenvalues [-2.2361  0.      2.2361]
+   a(3) = -2.2361: a(2) = +1.0000, a(4) = +2.6180, a(5) = +1.2361, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.422
+   a(3) = +0.0000: a(2) = +1.0000, a(4) = -1.0000, a(5) = +4.0000, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.485
+   a(3) = +2.2361: a(2) = +1.0000, a(4) = +0.3820, a(5) = -3.2361, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.093
+   newform component of level 92: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 31 (chi(q) = -1), level 124: 4 T_3-eigencomponents, eigenvalues [-3.2361 -0.7321  1.2361  2.7321]
+   a(3) = -3.2361: a(2) = +1.0000, a(4) = +3.6180, a(5) = +1.0000, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.237
+   a(3) = -0.7321: a(2) = +1.0000, a(4) = -1.0000, a(5) = +3.4641, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.425
+   a(3) = +1.2361: a(2) = +1.0000, a(4) = +1.3820, a(5) = +1.0000, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.323
+   a(3) = +2.7321: a(2) = +1.0000, a(4) = -1.0000, a(5) = -3.4641, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.015
+   newform component of level 124: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 43 (chi(q) = -1), level 172: 4 T_3-eigencomponents, eigenvalues [-2.7913 -1.4142  1.4142  1.7913]
+   a(3) = -2.7913: a(2) = +1.0000, a(4) = -1.0000, a(5) = +3.7913, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.237
+   a(3) = -1.4142: a(2) = +1.0000, a(4) = +3.4142, a(5) = +0.5858, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.339
+   a(3) = +1.4142: a(2) = +1.0000, a(4) = +0.5858, a(5) = +3.4142, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.326
+   a(3) = +1.7913: a(2) = +1.0000, a(4) = -1.0000, a(5) = -0.7913, a(q) = +1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.098
+   newform component of level 172: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 47 (chi(q) = -1), level 188: 6 T_3-eigencomponents, eigenvalues [-2.8758 -2.8284 -0.1883  0.8248  2.2393  2.8284]
+   a(3) = -2.8758: a(2) = +1.0000, a(4) = +4.3089, a(5) = -2.3943, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = -2.8284: a(2) = +1.0000, a(4) = -1.0000, a(5) = +3.4142, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = -0.1883: a(2) = +1.0000, a(4) = +2.6734, a(5) = +3.1528, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +0.8248: a(2) = +1.0000, a(4) = -0.2661, a(5) = +1.4949, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +2.2393: a(2) = +1.0000, a(4) = +2.2838, a(5) = -4.2535, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +2.8284: a(2) = +1.0000, a(4) = -1.0000, a(5) = +0.5858, a(q) = +1.0000  -> old (levels q, 2q)
+   newform component of level 188: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 59 (chi(q) = -1), level 236: 6 T_3-eigencomponents, eigenvalues [-2.9072 -2.3072  0.0831  0.7548  2.      2.3766]
+   a(3) = -2.9072: a(2) = +1.0000, a(4) = +4.4693, a(5) = -0.0566, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = -2.3072: a(2) = +1.0000, a(4) = -0.6571, a(5) = +2.3792, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +0.0831: a(2) = +1.0000, a(4) = +2.5540, a(5) = +3.7287, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +0.7548: a(2) = +1.0000, a(4) = +3.3117, a(5) = -3.4794, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +2.0000: a(2) = +1.0000, a(4) = -1.0000, a(5) = +2.0000, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +2.3766: a(2) = +1.0000, a(4) = +0.3221, a(5) = -0.5719, a(q) = +1.0000  -> old (levels q, 2q)
+   newform component of level 236: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 67 (chi(q) = -1), level 268: 6 T_3-eigencomponents, eigenvalues [-2.9593 -2.     -0.618   1.5302  1.618   2.4292]
+   a(3) = -2.9593: a(2) = +1.0000, a(4) = -1.0000, a(5) = +0.7984, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = -2.0000: a(2) = +1.0000, a(4) = +4.0000, a(5) = +2.0000, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = -0.6180: a(2) = +1.0000, a(4) = +0.3820, a(5) = +4.2361, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +1.5302: a(2) = +1.0000, a(4) = -1.0000, a(5) = -1.1284, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +1.6180: a(2) = +1.0000, a(4) = +2.6180, a(5) = -0.2361, a(q) = +1.0000  -> old (levels q, 2q)
+   a(3) = +2.4292: a(2) = +1.0000, a(4) = -1.0000, a(5) = +3.3301, a(q) = +1.0000  -> old (levels q, 2q)
+   newform component of level 268: none   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 71: more than 7 distinct T_3-eigenvalues; skipped
+q = 79 (chi(q) = -1), level 316: 7 T_3-eigencomponents, eigenvalues [-2.8883 -2.4535 -1.6425  0.7807  1.3001  2.4178  3.3563]
+   a(3) = -2.8883: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = -2.4535: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = -1.6425: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +0.7807: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +1.3001: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +2.4178: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +3.3563: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   newform component of level 316: INCONCLUSIVE (unresolved components)   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 83 (chi(q) = -1), level 332: 6 T_3-eigencomponents, eigenvalues [-3.2361 -2.0474 -1.3513  1.2149  1.963   2.7673]
+   a(3) = -3.2361: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = -2.0474: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = -1.3513: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +1.2149: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +1.9630: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +2.7673: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   newform component of level 332: INCONCLUSIVE (unresolved components)   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 5 (chi(q) = +1), level 20: 1 T_3-eigencomponents, eigenvalues [-2.]
+   a(3) = -2.0000: a(2) = +0.0000, a(4) = +0.0000, a(5) = -1.0000, a(q) = -1.0000  -> NEWFORM of level 20, share of ||G||^2 = 1.000
+   newform component of level 20: YES   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 13 (chi(q) = +1), level 52: 2 T_3-eigencomponents, eigenvalues [-3.  0.]
+   a(3) = -3.0000: a(2) = +3.0000, a(4) = +3.0000, a(5) = -1.0000, a(q) = -1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.351
+   a(3) = +0.0000: a(2) = -0.0000, a(4) = -0.0000, a(5) = +2.0000, a(q) = -1.0000  -> NEWFORM of level 52, share of ||G||^2 = 0.648
+   newform component of level 52: YES   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 17 (chi(q) = +1), level 68: 3 T_3-eigencomponents, eigenvalues [-2.     -0.7321  2.7321]
+   a(3) = -2.0000: a(2) = +3.0000, a(4) = +3.0000, a(5) = +0.0000, a(q) = -1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.401
+   a(3) = -0.7321: a(2) = -0.0000, a(4) = -0.0000, a(5) = +3.4641, a(q) = -1.0000  -> NEWFORM of level 68, share of ||G||^2 = 0.531
+   a(3) = +2.7321: a(2) = +0.0000, a(4) = +0.0000, a(5) = -3.4641, a(q) = -1.0000  -> NEWFORM of level 68, share of ||G||^2 = 0.067
+   newform component of level 68: YES   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 29 (chi(q) = +1), level 116: 4 T_3-eigencomponents, eigenvalues [-3. -1.  1.  2.]
+   a(3) = -3.0000: a(2) = -0.0000, a(4) = -0.0000, a(5) = +3.0000, a(q) = -1.0000  -> NEWFORM of level 116, share of ||G||^2 = 0.191
+   a(3) = -1.0000: a(2) = +3.0000, a(4) = +3.0000, a(5) = +1.0000, a(q) = -1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.461
+   a(3) = +1.0000: a(2) = +0.0000, a(4) = +0.0000, a(5) = +3.0000, a(q) = -1.0000  -> NEWFORM of level 116, share of ||G||^2 = 0.294
+   a(3) = +2.0000: a(2) = -0.0000, a(4) = -0.0000, a(5) = -2.0000, a(q) = -1.0000  -> NEWFORM of level 116, share of ||G||^2 = 0.052
+   newform component of level 116: YES   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 37 (chi(q) = +1), level 148: 4 T_3-eigencomponents, eigenvalues [-2.5616 -1.618   0.618   1.5616]
+   a(3) = -2.5616: a(2) = +0.0000, a(4) = +0.0000, a(5) = +2.0000, a(q) = -1.0000  -> NEWFORM of level 148, share of ||G||^2 = 0.217
+   a(3) = -1.6180: a(2) = +3.0000, a(4) = +3.0000, a(5) = +3.8541, a(q) = -1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.377
+   a(3) = +0.6180: a(2) = +3.0000, a(4) = +3.0000, a(5) = -2.8541, a(q) = -1.0000  -> old (levels q, 2q), share of ||G||^2 = 0.101
+   a(3) = +1.5616: a(2) = +0.0000, a(4) = +0.0000, a(5) = +2.0000, a(q) = -1.0000  -> NEWFORM of level 148, share of ||G||^2 = 0.305
+   newform component of level 148: YES   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 41 (chi(q) = +1), level 164: 6 T_3-eigencomponents, eigenvalues [-3.2403 -1.4142  0.0951  1.4142  2.2155  2.9297]
+   a(3) = -3.2403: a(2) = +0.0000, a(4) = +0.0000, a(5) = +2.5661, a(q) = -1.0000  -> NEWFORM of level 164
+   a(3) = -1.4142: a(2) = +3.0000, a(4) = +3.0000, a(5) = +2.8284, a(q) = -1.0000  -> old (levels q, 2q)
+   a(3) = +0.0951: a(2) = +0.0000, a(4) = +0.0000, a(5) = +1.1702, a(q) = -1.0000  -> NEWFORM of level 164
+   a(3) = +1.4142: a(2) = +3.0000, a(4) = +3.0000, a(5) = -2.8284, a(q) = -1.0000  -> old (levels q, 2q)
+   a(3) = +2.2155: a(2) = -0.0000, a(4) = -0.0000, a(5) = +3.5967, a(q) = -1.0000  -> NEWFORM of level 164
+   a(3) = +2.9297: a(2) = +0.0000, a(4) = +0.0000, a(5) = -3.3331, a(q) = -1.0000  -> NEWFORM of level 164
+   newform component of level 164: YES   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 53 (chi(q) = +1), level 212: 6 T_3-eigencomponents, eigenvalues [-3.2618 -2.     -1.3399  1.      1.6017  2.    ]
+   a(3) = -3.2618: a(2) = +0.0000, a(4) = +0.0000, a(5) = -1.1157, a(q) = -1.0000  -> NEWFORM of level 212
+   a(3) = -2.0000: a(2) = +3.0000, a(4) = +3.0000, a(5) = +3.0000, a(q) = -1.0000  -> old (levels q, 2q)
+   a(3) = -1.3399: a(2) = +0.0000, a(4) = +0.0000, a(5) = +3.8845, a(q) = -1.0000  -> NEWFORM of level 212
+   a(3) = +1.0000: a(2) = +3.0000, a(4) = +3.0000, a(5) = -0.0000, a(q) = -1.0000  -> old (levels q, 2q)
+   a(3) = +1.6017: a(2) = -0.0000, a(4) = -0.0000, a(5) = -2.7687, a(q) = -1.0000  -> NEWFORM of level 212
+   a(3) = +2.0000: a(2) = +0.0000, a(4) = +0.0000, a(5) = +2.0000, a(q) = -1.0000  -> NEWFORM of level 212
+   newform component of level 212: YES   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)
+q = 61 (chi(q) = +1), level 244: 6 T_3-eigencomponents, eigenvalues [-3.4364 -2.9354 -1.0413  0.4631  1.5004  2.9743]
+   a(3) = -3.4364: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = -2.9354: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = -1.0413: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +0.4631: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +1.5004: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   a(3) = +2.9743: mixture or inaccurate component (a(15) != a(3)a(5)), not separated by T_5
+   newform component of level 244: INCONCLUSIVE (unresolved components)   (Theorem: none when chi(q) = -1; when chi(q) = +1 the newforms with eta_q = +1 and L L != 0 occur)

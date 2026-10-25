@@ -54,6 +54,30 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   Corollary 6.10: ‖G_{1,n}‖² = (16/π⁴) Σ_f γ_f 4^{ω(n/M₁)} L(1,f)² L(1,f⊗χ)² over the newforms f of all levels dividing
   4n (γ_f from the Gram matrix of {f(dz)}), so the norm bounds are bounds for this second moment; the newform part
   Σ L(1,φ)²L(1,φ⊗χ)²/⟨φ,φ⟩ ≪ (log 3n)²(log log 3n)^C.
+* **Theorem 6.14 (the asymptotic formula, Section 6.7).** For square-free mm′,
+  ‖G_{m,m′}‖² = (1/π) Σ_{δ | mm′, δ² < mm′} δ⁻¹ (log(mm′/δ²))² + O(log(2mm′)(log log 3mm′)^C); in particular
+  ‖G_{1,p}‖² = (1/π)(log p)² + O(log p). Proof: the lower bound (regions above height 1) and the upper bound (strips
+  above height √3/2 covering the fundamental domain) are the same Parseval sums with the weights e^{−4πk/Q} and
+  e^{−2√3πk/Q}; both are evaluated by one computation (Lemma 6.11 sandwich, Lemma 6.12 expansion at the cusps of
+  denominator 2δ as θ₂²(w)θ₂²(δ²w/n), Proposition 6.13 class by class). Numerically (`norm_sandwich.py`) the
+  Rankin–Selberg estimate lies between Λ₁ and Λ_{√3/2} for every pair; the part of the norm below height 1 is
+  ≈ 0.04 log p for (1,p) and ≈ 0.16 log mm′ for m ≈ m′, its proven bound Λ_{√3/2} − Λ₁ is 0.134 log p for (1,p) up to
+  p = 10⁶. Corollary 6.15: Σ_f γ_f L(1,f)²L(1,f⊗χ)² = (π³/16)(log p)² + O(log p) over the newforms of levels p, 2p, 4p.
+* **Proposition 6.17 and Corollary 6.18 (vanishing at the inert levels, Section 6.8).** Every newform of level 4n
+  (n odd) has η₄ = −1, because the local component at 2 (conductor 2², trivial central character) is unique: the
+  depth-zero supercuspidal. With the Atkin–Lehner symmetries Θ_{1,n}|W_n = χ(n)Θ, Θ|W_L = −Θ this gives: if
+  χ₋₄(n) = −1 (an odd number of prime factors ≡ 3 mod 4) then no newform of level 4n occurs in G_{1,n}, G_{m,m′} is old
+  (levels dividing 2n), and L(1,φ)L(1,φ⊗χ₋₄) = 0 for every newform φ of level 4n (L(1,φ) = 0 if η_n = −1,
+  L(1,φ⊗χ₋₄) = 0 if η_n = +1). Checked for q = 11, 19, 23, 31, 43, 47, 59, 67 (`newform_support.py`: all
+  components old; for q = 79, 83 the T₃-components are not resolved accurately enough), while for q ≡ 1 mod 4
+  newforms of level 4q occur at every q ≤ 53. Proposition 6.19: pr_f G_{m,m′} =
+  χ(m) η_{(m,M₁)}(f) pr_f G_{1,mm′} for every newform f of level 2^e M₁ | 4mm′: the cusp forms of the factorisations of
+  mm′ differ component by component only by these signs, and Σ_{m|n} χ(m) a_{G_{m,n/m}}(N) sees only the f with
+  η_p(f) = +1 for all p | M₁.
+* **Moments of a_G(N)/√N (Section 5.4).** Kurtosis 3.5–3.8 (Gaussian: 3) and sup/rms 5.5–8.4 (Gaussian sample of
+  the same size: 5.4) over the admissible N ≤ 2²¹; the N with d(N) ≥ 24 (17 % of all) carry 16–29 % of the fourth
+  moment (`coefficient_moments.py`). A fourth-moment version of Theorem 1.3 would only improve the constant in the
+  exponent of the exceptional set.
 * **Theorem 7.1 (two-dimensional sieve, Section 7).** Replacing the vector sieve of Part I by the Diamond–Halberstam–Richert
   sieve of dimension 2 (sieving limit β₂ = 4.2665 instead of 2 + 2√e = 5.30) gives, from the same level 1/2,
   Ω(n(N − n)) ≤ 7 and max(Ω(n), Ω(N − n)) ≤ 5 for ≥ 0.25 Σ_r(N) N/(log N)² integers n, for every large N ≡ 2 (mod 4):
@@ -93,6 +117,9 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             modulus_sum_scan.py       Table 5: sums of a_{G_{d,e}}(N) over the moduli at fixed N (cancellation test)
             test_rs_formula.py        numerical test of Theorem 6.7(i) (newform components of G_{1,p} via T_3, norms, central values)
             test_rs_old.py            numerical test of Theorem 6.7(ii) (oldform components)
+            norm_sandwich.py          Lambda_1 <= ||G||^2 <= Lambda_{sqrt3/2} over all cusps (Section 6.7)
+            newform_support.py        T_3-eigencomponents of G_{1,q}: newform components occur iff chi(q) = +1 (Section 6.8)
+            coefficient_moments.py    kurtosis, sup/rms and d(N)-dependence of a_G(N)/sqrt(N) (Section 5.4)
             plot_cusp_decomposition.py  Figure 3: the norm cusp by cusp (from results/cusp_lower_bound.txt)
             plot_dhr_sieve.py         Figure 4: F_2, f_2 against the vector sieve; thresholds against theta (cache results/dhr_thresholds.txt)
             plot_modulus_sums.py      Figure 5: cancellation in the sum over the moduli, N = 3000002

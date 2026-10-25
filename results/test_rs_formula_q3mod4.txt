@@ -1,0 +1,40 @@
+﻿p = 11, level 44: T_3 eigenvalues on the span of G_{1,11}: [-1.]
+   eigenvalue -1.0000: a(2) = 1.0000, a(3) = -1.0000, a(5) = 1.0000, a(11) = 1.0000, a(9)-(a(3)^2-3) = 8.9e-16  -> old
+p = 19, level 76: T_3 eigenvalues on the span of G_{1,19}: [-2.  1.]
+   eigenvalue -2.0000: a(2) = 1.0000, a(3) = -2.0000, a(5) = 3.0000, a(19) = 1.0000, a(9)-(a(3)^2-3) = 1.4e-12  -> old
+   eigenvalue 1.0000: a(2) = 1.0000, a(3) = 1.0000, a(5) = -0.0000, a(19) = 1.0000, a(9)-(a(3)^2-3) = -5.7e-14  -> old
+p = 23, level 92: T_3 eigenvalues on the span of G_{1,23}: [-2.236068 -0.        2.236068]
+   eigenvalue -2.2361: a(2) = 1.0000, a(3) = -2.2361, a(5) = 1.2361, a(23) = 1.0000, a(9)-(a(3)^2-3) = -2.8e-14  -> old
+   eigenvalue -0.0000: a(2) = 1.0000, a(3) = 0.0000, a(5) = 4.0000, a(23) = 1.0000, a(9)-(a(3)^2-3) = 0.0e+00  -> old
+   eigenvalue 2.2361: a(2) = 1.0000, a(3) = 2.2361, a(5) = -3.2361, a(23) = 1.0000, a(9)-(a(3)^2-3) = 5.5e-14  -> old
+p = 31, level 124: T_3 eigenvalues on the span of G_{1,31}: [-3.236068 -0.732051  1.236068  2.732051]
+   eigenvalue -3.2361: a(2) = 1.0000, a(3) = -3.2361, a(5) = 1.0000, a(31) = 1.0000, a(9)-(a(3)^2-3) = -2.0e-13  -> old
+   eigenvalue -0.7321: a(2) = 1.0000, a(3) = -0.7321, a(5) = 3.4641, a(31) = 1.0000, a(9)-(a(3)^2-3) = 2.9e-14  -> old
+   eigenvalue 1.2361: a(2) = 1.0000, a(3) = 1.2361, a(5) = 1.0000, a(31) = 1.0000, a(9)-(a(3)^2-3) = 3.4e-13  -> old
+   eigenvalue 2.7321: a(2) = 1.0000, a(3) = 2.7321, a(5) = -3.4641, a(31) = 1.0000, a(9)-(a(3)^2-3) = -1.6e-12  -> old
+p = 43, level 172: T_3 eigenvalues on the span of G_{1,43}: [-2.791288 -1.414214  1.414214  1.791288]
+   eigenvalue -2.7913: a(2) = 1.0000, a(3) = -2.7913, a(5) = 3.7913, a(43) = 1.0000, a(9)-(a(3)^2-3) = 7.2e-14  -> old
+   eigenvalue -1.4142: a(2) = 1.0000, a(3) = -1.4142, a(5) = 0.5858, a(43) = 1.0000, a(9)-(a(3)^2-3) = -7.4e-14  -> old
+   eigenvalue 1.4142: a(2) = 1.0000, a(3) = 1.4142, a(5) = 3.4142, a(43) = 1.0000, a(9)-(a(3)^2-3) = 6.4e-14  -> old
+   eigenvalue 1.7913: a(2) = 1.0000, a(3) = 1.7913, a(5) = -0.7913, a(43) = 1.0000, a(9)-(a(3)^2-3) = -5.6e-14  -> old
+python : Traceback (most recent call last):
+At line:1 char:380
++ ... uare\code"; python test_rs_formula.py 11 19 23 31 43 47 59 67 2>&1 |  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\LAPPIE\Desktop\Goldbash\two-squares-mean-square\code\test_rs_formula.py", line 53, in <module>
+    print(f"p = {p}, level {N}: T_3 eigenvalues on the span of G_{{1,{p}}}: {np.round(lam, 6)}")
+                                                                             ^^^^^^^^^^^^^^^^
+  File "C:\Users\LAPPIE\AppData\Roaming\Python\Python312\site-packages\numpy\core\fromnumeric.py", line 3360, in round
+    return _wrapfunc(a, 'round', decimals=decimals, out=out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LAPPIE\AppData\Roaming\Python\Python312\site-packages\numpy\core\fromnumeric.py", line 56, in _wrapfun
+c
+    return _wrapit(obj, method, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LAPPIE\AppData\Roaming\Python\Python312\site-packages\numpy\core\fromnumeric.py", line 45, in _wrapit
+    result = getattr(asarray(obj), method)(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'
