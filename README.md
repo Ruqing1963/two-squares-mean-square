@@ -39,9 +39,11 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   sieve of dimension 2 (sieving limit β₂ = 4.2665 instead of 2 + 2√e = 5.30) gives, from the same level 1/2,
   Ω(n(N − n)) ≤ 7 and max(Ω(n), Ω(N − n)) ≤ 5 for ≥ 0.25 Σ_r(N) N/(log N)² integers n, for every large N ≡ 2 (mod 4):
   (7,5) instead of (8,5). `dhr_sieve.py` computes F₂, f₂ from the differential-delay system and determines
-  α₂ = 5.357727, β₂ = 4.266450 (agreeing to 1e-8 with the ball-arithmetic values of Booker–Browning); the two numerical
-  inequalities for f₂(9) and the F₂-integral that the theorem needs hold with margins 2e-4 and 6e-3 but are not
-  interval-certified. (7,4) is missed by 0.03; at level 2/3 the pair (6,4) gets margin 0.196, at 19/20 (5,3) gets 0.24.
+  α₂ = 5.357727, β₂ = 4.266450 (agreeing to 1e-8 with the ball-arithmetic values of Booker–Browning); the two
+  inequalities the theorem needs, f₂(9) ≥ 0.9995 and the F₂-integral ≤ 2.625, are certified in interval arithmetic
+  (`certify_dhr.py`: f₂(9) ∈ [0.999711, 0.999738], integral ≤ 2.623903, from the Booker–Browning enclosures of
+  α₂, β₂ and the monotonicity of F₂, f₂), so the theorem is unconditional. (7,4) is missed by 0.03; at level 2/3 the
+  pair (6,4) gets margin 0.196, at 19/20 (5,3) gets 0.24.
 * Section 8: the remainder beyond level 1/2 is Σ_{de ≤ N^θ} λ_d λ′_e R(d,e;N), i.e. the distribution of the products
   dα (weighted by λ_d r(α)) in the class N mod e with the extra weight r((N − dα)/e): a dispersion problem of
   Bombieri–Friedlander–Iwaniec / Titchmarsh-divisor type. `modulus_sum_scan.py` measures the sums of a_{G_{d,e}}(N)
@@ -68,11 +70,13 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             local_densities.py        exact Siegel main term for every n (and for the odd vectors); self-test at levels 4, 12, 20
             cusp_lower_bound.py       Table 3: the lower bound from the regions above the cusps, cusp by cusp
             dhr_sieve.py              DHR sieve functions F_2, f_2 (alpha_2, beta_2 by the adjoint method) and the weighted sieve (Table 4)
+            certify_dhr.py            interval-arithmetic enclosures of F_2, f_2 and the certification of Lemma 7.2 (Theorem 7.1)
             modulus_sum_scan.py       Table 5: sums of a_{G_{d,e}}(N) over the moduli at fixed N (cancellation test)
 figures/    mean_square, sieve_thresholds  (.pdf and .png)
 results/    mean_square_check_x21.txt              Table 1
             cusp_lower_bound.txt, cusp_lower_bound_large.txt   Table 3 (X = 2^21; X = 2^24 for (1,15015), (1009,1013))
             dhr_sieve.txt                          Table 4 and the parameters of Theorem 7.1
+            certify_dhr_output.txt                 certified enclosures (Lemma 7.2)
             modulus_sum_scan.txt                   Table 5
             norm_level20.txt                       the exact check at level 20
             certify_modular_output_twothirds.txt   certified parameters at level 2/3 (bounds 6 and 4)
@@ -97,12 +101,14 @@ python plot_sieve_thresholds.py        # Figure 2 from results/sieve_thresholds.
 python local_densities.py              # self-test of the exact main term (levels 4, 12, 20; ~10 s)
 python cusp_lower_bound.py --detail    # Table 3 (~2 min); python cusp_lower_bound.py 16777216 1,15015 1009,1013 for the two large pairs
 python dhr_sieve.py 0.5 2/3 0.95       # F_2, f_2, alpha_2, beta_2 and Table 4 (~3 min)
+python certify_dhr.py 20000            # Lemma 7.2: certified f_2(9) and the F_2-integral (directed rounding, ~1 min)
 python modulus_sum_scan.py             # Table 5: four values of N ~ 2e6 (~10 min)
 ```
 
 What is rigorous: `certify_modular.py` (interval arithmetic and directed rounding) enters the proofs of
-Corollary 1.4 (and, at the level 1/2, Theorem 1.1 of Part I); `mean_square_check.py`, `norm_level20.py` and the
-plots are floating point and are evidence only (Section 5 of the paper).
+Corollary 1.4 (and, at the level 1/2, Theorem 1.1 of Part I), and `certify_dhr.py` enters the proof of Theorem 7.1;
+`mean_square_check.py`, `norm_level20.py`, `cusp_lower_bound.py`, `dhr_sieve.py`, `modulus_sum_scan.py` and the
+plots are floating point and are evidence only.
 
 ## License
 
