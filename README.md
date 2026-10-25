@@ -144,6 +144,7 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             dimension_benchmark.py    Richert thresholds for kappa = 1 and kappa = 2 (Section 7.5)
             mollified_benchmark.py    hybrid sieve with a Selberg-type mollifier; DHR constants for kappa = 3/2 (Section 7.5)
             kloosterman_check.py      the circle mod c as a classical Kloosterman sum (Lemma 8.1)
+            optimal_weights.py        LP over the weight function g of the weighted sieve: the linear weight is optimal (Section 7.4)
             plot_cusp_decomposition.py  Figure 3: the norm cusp by cusp (from results/cusp_lower_bound.txt)
             plot_dhr_sieve.py         Figure 4: F_2, f_2 against the vector sieve; thresholds against theta (cache results/dhr_thresholds.txt)
             plot_modulus_sums.py      Figure 5: cancellation in the sum over the moduli, N = 3000002
