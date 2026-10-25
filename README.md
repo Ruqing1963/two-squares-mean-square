@@ -87,11 +87,30 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   (`certify_dhr.py`: f₂(9) ∈ [0.999711, 0.999738], integral ≤ 2.623903, from the Booker–Browning enclosures of
   α₂, β₂ and the monotonicity of F₂, f₂), so the theorem is unconditional. (7,4) is missed by 0.03; at level 2/3 the
   pair (6,4) gets margin 0.196, at 19/20 (5,3) gets 0.24.
+* **Section 7.3 (the symmetric remainder).** The remainder R_d = Σ_{d₁d₂=d} R(d₁,d₂;N) that the two-dimensional sieve
+  uses is, by Σ_{u|d} G_{tu,d/u} = ∏_{p|d}(1 + W_p) G_{t,d} (Lemma 7.3, Proposition 7.4), the coefficient of the
+  projection of G_{t,d} onto the joint (+1)-eigenspace of the Atkin–Lehner involutions W_p, p | d; every Hecke component
+  with η_p(f) = −1 for some p | (d, M₁) cancels exactly, in particular every oldform of odd level (Proposition 7.5).
+  Numerically (`symmetric_remainder.py`, 24 values of N near 2·10⁶) the cancellation is of square-root strength:
+  Σ|R_d| is 0.67–0.69 of Σ|R(d₁,d₂)| for ω(d) = 2 and 0.46–0.48 for ω(d) = 3 (random signs: 0.707, 0.5); the sieve
+  share of the joint (+1)-eigenspace is 0.39–0.47 for d = p₁p₂ (`symmetric_norm_share.py`). A d^{o(1)} gain, which
+  does not move the level.
+* **Section 7.5 (the dimension, mollified weights).** The factor 2^Ω only affects the constant; the weights
+  r(n)r(N − n) cost the sieve dimension (2 instead of 1): a dimension-1 sieve with the same Richert weights would give
+  (5,3) at level 1/2 and (3,2) = P₁ + P₂ from level 4/5 (`dimension_benchmark.py`). Selberg-type mollifiers
+  r(n)(Σ_{u|n, u ≤ N^ξ} γ_u)² keep the theta structure at level 1/2 − 4ξ, but below the sifting limit they are
+  identically 1 on the sifted integers (Theorem 7.6), they change the density only at the primes they contain
+  (Proposition 7.7), and every partial version is worse than (7,5) (`mollified_benchmark.py`: 8.57/5.60, 8.04/5.33).
 * Section 8: the remainder beyond level 1/2 is Σ_{de ≤ N^θ} λ_d λ′_e R(d,e;N), i.e. the distribution of the products
   dα (weighted by λ_d r(α)) in the class N mod e with the extra weight r((N − dα)/e): a dispersion problem of
   Bombieri–Friedlander–Iwaniec / Titchmarsh-divisor type. `modulus_sum_scan.py` measures the sums of a_{G_{d,e}}(N)
   over all coprime odd square-free (d,e) with de ≤ N^θ at fixed N ≈ 2·10⁶: the signed sums (all +, μ(de), random
-  signs) are all of size (Σ a²)^{1/2}, i.e. square-root cancellation, no sign correlation.
+  signs) are all of size (Σ a²)^{1/2}, i.e. square-root cancellation, no sign correlation. Section 8.1 makes the
+  Kloosterman structure exact: the Fourier transform of the circle x² + y² ≡ a (mod c) is a classical Kloosterman sum
+  (Lemma 8.1, checked by `kloosterman_check.py`), and a_G(N) − a_G(N/2) is a sum of S(16N, m|h|²; m′k) over the moduli
+  m′k ≡ 0 (mod m′), the character χ₋₄ cancelling exactly (Proposition 8.2); the uniform bound of Part I is equivalent
+  to square-root cancellation in the sum over k, cancellation over m′ would give the level 2/3; the fixed first
+  argument 16N is the obstacle (Remark 8.3).
 * Numerics: the Rankin–Selberg estimate of ‖G‖² from the data satisfies ‖G_{m,m′}‖² ≈ 0.37 (log mm′)² for
   10² ≤ mm′ ≤ 1.6·10⁴; an exact check at level 20 (G_{1,5} = (8/3) f_20, ‖f_20‖² = 0.08135 from the period lattice
   of 20a1 and from Rankin–Selberg) validates the whole numerical chain. `local_densities.py` makes the Siegel main
@@ -120,6 +139,11 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             norm_sandwich.py          Lambda_1 <= ||G||^2 <= Lambda_{sqrt3/2} over all cusps (Section 6.7)
             newform_support.py        T_3-eigencomponents of G_{1,q}: newform components occur iff chi(q) = +1 (Section 6.8)
             coefficient_moments.py    kurtosis, sup/rms and d(N)-dependence of a_G(N)/sqrt(N) (Section 5.4)
+            symmetric_remainder.py    all R(d1,d2;N) exactly; sum_d |R_d| against sum |R(d1,d2)| (Section 7.3)
+            symmetric_norm_share.py   Rankin-Selberg shares of the joint Atkin-Lehner eigenspaces of G_{1,d} (Section 7.3)
+            dimension_benchmark.py    Richert thresholds for kappa = 1 and kappa = 2 (Section 7.5)
+            mollified_benchmark.py    hybrid sieve with a Selberg-type mollifier; DHR constants for kappa = 3/2 (Section 7.5)
+            kloosterman_check.py      the circle mod c as a classical Kloosterman sum (Lemma 8.1)
             plot_cusp_decomposition.py  Figure 3: the norm cusp by cusp (from results/cusp_lower_bound.txt)
             plot_dhr_sieve.py         Figure 4: F_2, f_2 against the vector sieve; thresholds against theta (cache results/dhr_thresholds.txt)
             plot_modulus_sums.py      Figure 5: cancellation in the sum over the moduli, N = 3000002
