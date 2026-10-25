@@ -35,6 +35,12 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   (mm′)^ε of Part I cannot be removed. Numerically (Table 3, `cusp_lower_bound.py`) the regions above all cusps
   carry 93–98 % of the norm, and ‖G‖² ≈ (1/π)((log m)² + (log m′)²) + (5/π²) log m log m′ + (terms for the other
   divisors of mm′): the "0.37 (log mm′)²" of Section 5 is the average of this over the sample.
+* **Theorem 6.5 (the exact order).** ‖G_{m,m′}‖² ≪ (log 3mm′)² (log log 3mm′)^C, and ≪_k (log 3mm′)² when
+  ω(mm′) ≤ k; with Theorem 1.5, ‖G_{m,m′}‖² ≍ (log mm′)² for mm′ with boundedly many prime factors, and the
+  uniform bound T − M ≪ d(N) N^{1/2} (log 3mm′)(log log 3mm′)^C replaces the (mm′)^ε of Part I. Proof: the two
+  ε-losses of Part I (d(α)d(β) and Waibel's genus bound) are replaced by the mean value of r(α)² and by the local
+  densities. Corollary 6.6: the spectral second moment Σ_φ |⟨Θ,φ⟩|²/‖φ‖² is ≍ (log mm′)². For (1,p), p ≤ 10⁶,
+  Λ(1,p) = 0.319 (log p)² + 0.42 log p − 1.5 (fit), against the leading term 1/π = 0.318.
 * **Theorem 7.1 (two-dimensional sieve, Section 7).** Replacing the vector sieve of Part I by the Diamond–Halberstam–Richert
   sieve of dimension 2 (sieving limit β₂ = 4.2665 instead of 2 + 2√e = 5.30) gives, from the same level 1/2,
   Ω(n(N − n)) ≤ 7 and max(Ω(n), Ω(N − n)) ≤ 5 for ≥ 0.25 Σ_r(N) N/(log N)² integers n, for every large N ≡ 2 (mod 4):
@@ -78,6 +84,7 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
 figures/    mean_square, sieve_thresholds, cusp_decomposition, dhr_sieve, modulus_sums  (.pdf and .png)
 results/    mean_square_check_x21.txt              Table 1
             cusp_lower_bound.txt, cusp_lower_bound_large.txt   Table 3 (X = 2^21; X = 2^24 for (1,15015), (1009,1013))
+            cusp_lower_bound_1p.txt                (1,p) for p up to 10^6 (Section 6.5(f))
             dhr_sieve.txt                          Table 4 and the parameters of Theorem 7.1
             certify_dhr_output.txt                 certified enclosures (Lemma 7.2)
             modulus_sum_scan.txt                   Table 5

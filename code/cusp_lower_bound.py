@@ -32,7 +32,7 @@ pairs = [tuple(int(t) for t in a.split(',')) for a in args if ',' in a] or \
      (1, 15015), (1009, 1013)]
 CUT = 12  # e^{-pi delta n/mm'} is kept for n <= CUT mm'/delta (e^{-12 pi} < 1e-16)
 
-Xtab = max(X, max(CUT * m * mp for m, mp in pairs))
+Xtab = max(X, max(CUT * m * mp for m, mp in pairs) + 1)
 t0 = time.time()
 r = r_table(Xtab)
 f_sigma, v2 = sigma_over_n_odd(Xtab)

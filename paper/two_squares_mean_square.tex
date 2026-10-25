@@ -25,6 +25,7 @@
 \newcommand{\e}{\varepsilon}
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\gen}{\mathrm{gen}}
+\newcommand{\rk}{r}
 \DeclareMathOperator{\vol}{vol}
 \DeclareMathOperator{\Res}{Res}
 
@@ -37,7 +38,7 @@
 \begin{document}
 
 \begin{abstract}
-Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_{G}(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. Part~I proved $\|G_{m,m'}\|^2\ll_\e(mm')^{\e}$ for the Petersson norm and deduced the level of distribution $1/2$ for the weighted sequence $r(n)r(N-n)$ and the bounds $\Omega(n(N-n))\le8$, $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$. Here we prove a mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le4\pi e^2Y(1+54Y/L)\|G\|^2$ for every $G\in S_2(\Gamma_0(L))$ by a covering argument; for $G_{m,m'}$ it says that the root mean square of $(T-M)/\sqrt N$ is $\ll(mm')^{-1/2+\e}$, and it gives the level of distribution $1-\e$ for the weighted sequence for all but $O(X^{1-\delta})$ integers $N\le X$, and for those $N$ the bounds $5$ and $4$ (a result which, as an arithmetic statement about almost all $N$, is superseded by the circle method, which gives $N=p+q$ with $p\equiv q\equiv1\pmod 4$). We reformulate the uniform bound of Part~I in terms of Poincar\'e series, state the individual bound $|T-M|\ll N^{1/2+\e}(mm')^{-1/2+\e}$ suggested by the data, and show that any power saving in $mm'$ for individual $N$ raises the level of distribution for every $N$ beyond $1/2$. Finally we prove the lower bound $\|G_{m,m'}\|^2\ge\frac1\pi\bigl((\log m)^2+(\log m')^2\bigr)-O\bigl(\log(2mm')(\log\log3mm')^{C}\bigr)$ by integrating $|G|^2$ over the parts of the fundamental domain above the four Atkin--Lehner cusps at which $G_{m,m'}$ is transformed into $G_{1,mm'}$, whose first $mm'$ coefficients are $r(n)-M(1,mm';n)$; so the norm is of the order $(\log mm')^2$ up to the factor $(mm')^\e$, and the exponent $\e$ cannot be replaced by $0$. Numerically, the regions above all the cusps account for $93$--$98\%$ of the norm, which is a quadratic form in $\log m$, $\log m'$ plus contributions of the other divisors of $mm'$ rather than a constant times $(\log mm')^2$; there is an exact check at the level $20$, and the supremum of $|T-M|/\sqrt N$ over $N$ exceeds the root mean square by a bounded factor at every level computed. Finally, replacing the vector sieve of Part~I by the two-dimensional sieve of Diamond, Halberstam and Richert, whose functions $F_2,f_2$ we compute, gives $\Omega(n(N-n))\le7$ with $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$ from the same level $1/2$; the two inequalities for $F_2,f_2$ that this needs are certified in interval arithmetic.
+Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_{G}(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. Part~I proved $\|G_{m,m'}\|^2\ll_\e(mm')^{\e}$ for the Petersson norm and deduced the level of distribution $1/2$ for the weighted sequence $r(n)r(N-n)$ and the bounds $\Omega(n(N-n))\le8$, $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$. Here we prove a mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le4\pi e^2Y(1+54Y/L)\|G\|^2$ for every $G\in S_2(\Gamma_0(L))$ by a covering argument; for $G_{m,m'}$ it says that the root mean square of $(T-M)/\sqrt N$ is $\ll(mm')^{-1/2+\e}$, and it gives the level of distribution $1-\e$ for the weighted sequence for all but $O(X^{1-\delta})$ integers $N\le X$, and for those $N$ the bounds $5$ and $4$ (a result which, as an arithmetic statement about almost all $N$, is superseded by the circle method, which gives $N=p+q$ with $p\equiv q\equiv1\pmod 4$). We reformulate the uniform bound of Part~I in terms of Poincar\'e series, state the individual bound $|T-M|\ll N^{1/2+\e}(mm')^{-1/2+\e}$ suggested by the data, and show that any power saving in $mm'$ for individual $N$ raises the level of distribution for every $N$ beyond $1/2$. Finally we prove the lower bound $\|G_{m,m'}\|^2\ge\frac1\pi\bigl((\log m)^2+(\log m')^2\bigr)-O\bigl(\log(2mm')(\log\log3mm')^{C}\bigr)$ by integrating $|G|^2$ over the parts of the fundamental domain above the four Atkin--Lehner cusps at which $G_{m,m'}$ is transformed into $G_{1,mm'}$, whose first $mm'$ coefficients are $r(n)-M(1,mm';n)$; and the matching upper bound $\|G_{m,m'}\|^2\ll(\log3mm')^2(\log\log3mm')^{C}$, so that the norm is of the exact order $(\log mm')^2$ when $mm'$ has boundedly many prime factors and the uniform bound for $T-M$ holds with $(\log3mm')(\log\log3mm')^C$ in place of $(mm')^\e$. Numerically, the regions above all the cusps account for $93$--$98\%$ of the norm, which is a quadratic form in $\log m$, $\log m'$ plus contributions of the other divisors of $mm'$ rather than a constant times $(\log mm')^2$; there is an exact check at the level $20$, and the supremum of $|T-M|/\sqrt N$ over $N$ exceeds the root mean square by a bounded factor at every level computed. Finally, replacing the vector sieve of Part~I by the two-dimensional sieve of Diamond, Halberstam and Richert, whose functions $F_2,f_2$ we compute, gives $\Omega(n(N-n))\le7$ with $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$ from the same level $1/2$; the two inequalities for $F_2,f_2$ that this needs are certified in interval arithmetic.
 \end{abstract}
 
 \maketitle
@@ -136,7 +137,12 @@ Let $m,m'$ be coprime odd positive integers with $mm'>1$, and let $a(n)=a_{G_{1,
 \end{enumerate}
 \end{theorem}
 
-Together with Theorem~\ref{thm:norm}(i), $(\log mm')^2\ll\|G_{m,m'}\|^2\ll_\e(mm')^\e$ for $mm'\ge C'$, and the exponent $\e$ cannot be replaced by $0$. The inequality (i) is nearly an equality when $m=1$: the four regions then cover the fraction $5/(2\pi)=0.80$ of the area of $\Gamma_0(L)\backslash\HH$, and numerically they carry $98\%$ of the norm (Table~\ref{tab:cusps}). The proof is in Section~\ref{sec:lower}, which also computes, for square-free $m,m'$, the contribution of every cusp and explains the empirical law of Section~\ref{sec:num}: the norm is not $c(\log mm')^2$ but $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'+\cdots$, a sum over the divisors of $mm'$.
+Together with Theorem~\ref{thm:norm}(i), $(\log mm')^2\ll\|G_{m,m'}\|^2\ll_\e(mm')^\e$ for $mm'\ge C'$, and the exponent $\e$ cannot be replaced by $0$. In fact the factor $(mm')^\e$ can be removed altogether. Theorem~\ref{thm:upper} in Section~\ref{subsec:upper} replaces the two $\e$-losses in the proof of Part~I by mean values of $r(\alpha)^2$ and of the local densities and gives
+\begin{gather*}
+\|G_{m,m'}\|^2\ll(\log3mm')^2(\log\log3mm')^{C},\\
+\text{hence}\qquad \|G_{m,m'}\|^2\asymp_k(\log mm')^2\qquad\text{whenever }\omega(mm')\le k,
+\end{gather*}
+and the uniform bound of Theorem~\ref{thm:norm}(ii) holds with a power of $\log mm'$, namely $(\log3mm')(\log\log3mm')^{C}$, in place of $(mm')^\e$. The inequality (i) is nearly an equality when $m=1$: the four regions then cover the fraction $5/(2\pi)=0.80$ of the area of $\Gamma_0(L)\backslash\HH$, and numerically they carry $98\%$ of the norm (Table~\ref{tab:cusps}). The proof is in Section~\ref{sec:lower}, which also computes, for square-free $m,m'$, the contribution of every cusp and explains the empirical law of Section~\ref{sec:num}: the norm is not $c(\log mm')^2$ but $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'+\cdots$, a sum over the divisors of $mm'$.
 
 The fourth theme is the sieve itself. Part~I sifts $n$ and $N-n$ by the vector sieve of Br\"udern and Fouvry, two linear sieves combined; but $n(N-n)$ is a sieve problem of dimension $2$ (Remark~\ref{rem:dim2}), and the two-dimensional sieve of Diamond, Halberstam and Richert \cite{DHR,DH}, with Richert's weights, has the smaller sieving limit $\beta_2=4.2665$. Section~\ref{sec:dim2} computes its sieve functions $F_2,f_2$ (we determine the constants $\alpha_2=5.3577$, $\beta_2=4.2665$ of \cite{DHR} independently) and obtains, from the same level of distribution $1/2$ of Part~I,
 \[
@@ -484,6 +490,81 @@ By Lemma~\ref{lem:dens} with $(m,m')$ replaced by $(1,mm')$, the last sum is at 
 which is (ii); the second inequality in (ii) is $(\log m)^2+(\log m')^2\ge\frac12(\log mm')^2$.
 \end{proof}
 
+\subsection{The matching upper bound}\label{subsec:upper}
+The proof of Theorem~1.2 of Part~I loses the factor $(mm')^\e$ at two places only: the representation numbers $r(S,n)$ of the forms $S=A(x_1^2+x_2^2)+B(x_3^2+x_4^2)$ at the cusps are bounded by $n^\e(1+g_0n/mm')$ through $r(\alpha)r(\beta)\le16\,d(\alpha)d(\beta)$, and the genus terms through Waibel's general bound $\rk(\gen S,n)\ll n(n,L)^{1/2}(nL)^\e/\sqrt{\det S}$. Replacing the first by the mean value of $r(\alpha)^2r(\beta)^2$ (Lemma~\ref{lem:r2}) and the second by the local densities themselves gives the true order.
+
+\begin{theorem}[The exact order of the norm]\label{thm:upper}
+There is an absolute constant $C$ such that for all coprime odd positive integers $m,m'$
+\[
+\|G_{m,m'}\|^2\ \le\ C\,(\log3mm')^2\,(\log\log3mm')^{C},
+\]
+and for every $k$ a constant $C_k$ such that $\|G_{m,m'}\|^2\le C_k(\log3mm')^2$ whenever $\omega(mm')\le k$. Consequently $\|G_{m,m'}\|^2\asymp_k(\log mm')^2$ for $mm'\to\infty$ with $\omega(mm')\le k$, and Theorem~\ref{thm:norm}(ii) holds with $(mm')^\e$ replaced by $(\log3mm')(\log\log3mm')^{C}$.
+\end{theorem}
+
+\begin{proof}
+We follow the proof of Theorem~1.2 of Part~I (Section~2.5 there) and keep its notation: $L=4mm'$; for a class of pairs $(a,c)$ with $(c,L)=d<L$ we have $\hat d\in\{d,d/2\}$, the form $S$ with $A=\kappa(m'/d_{m'})d_m$, $B=\kappa(m/d_m)d_{m'}$, $\kappa\in\{\frac14,\frac12,1,2,4,8\}$, $AB=\kappa^2mm'$, $g:=(A,B)=\kappa g_0\le8d$ (Lemma~2.11 there), and the class contributes at most
+\begin{equation}\label{eq:classbound}
+\frac{256}\pi\sum_{n\ge1}\frac{\rk(S,n)^2+\rk(\gen S,n)^2}{n}\,e^{-\lambda n},\qquad \lambda=\lambda_d=\frac{2\sqrt3\pi\hat d}{L},
+\end{equation}
+to the sum of Lemma~2.8 there, while the class $d=L$ (the cusp $\infty$) contributes $O(1)$, because $|a_G(n)|\le T(m,m';n)+M(m,m';n)\ll n^3$ trivially and the exponential is $e^{-2\sqrt3\pi n}$. We use throughout
+\begin{equation}\label{eq:lamAB}
+\begin{gathered}
+\lambda AB=\frac{\sqrt3\pi}2\,\kappa^2\hat d\ \ge\ c_0\hat d,\qquad c_0=\frac{\sqrt3\pi}{32},\qquad \frac{g}{\lambda AB}\le\frac{16}{c_0},\\
+Y_A:=\frac1{\lambda A}\le\frac{3m}{d_m^2},\qquad Y_B:=\frac1{\lambda B}\le\frac{3m'}{d_{m'}^2},
+\end{gathered}
+\end{equation}
+the last because $L/(\hat dA)\le2L/(dA)=8m/(d_2\kappa d_m^2)\le32m/d_m^2$ with $d=d_2d_md_{m'}$, $d_2\mid4$. From Lemma~\ref{lem:r2} and partial summation, for $Y>0$,
+\begin{equation}\label{eq:rsums}
+\begin{gathered}
+\sum_{\alpha\ge1}\frac{r(\alpha)^2}{\alpha}e^{-\alpha/Y}\ll(1+\log^+Y)^2,\qquad \sum_{\alpha\ge1}r(\alpha)^2e^{-\alpha/Y}\ll Y(1+\log^+Y),\\
+\sum_{\alpha\ge1}\frac{r(\alpha)^2}{\alpha^{1/2}}e^{-\alpha/Y}\ll Y^{1/2}(1+\log^+Y)
+\end{gathered}
+\end{equation}
+(for $Y<1$ the sums are $\ll e^{-1/(2Y)}$).
+
+\emph{The representation numbers.} $\rk(S,n)=\sum_{A\alpha+B\beta=n}r(\alpha)r(\beta)$ has at most $1+gn/(AB)$ terms, so by Cauchy--Schwarz $\rk(S,n)^2\le(1+gn/(AB))\sum_{A\alpha+B\beta=n}r(\alpha)^2r(\beta)^2$, and
+\[
+\sum_n\frac{\rk(S,n)^2}n e^{-\lambda n}\le\sum_{(\alpha,\beta)\ne(0,0)}r(\alpha)^2r(\beta)^2e^{-\lambda(A\alpha+B\beta)}\Bigl(\frac1{A\alpha+B\beta}+\frac g{AB}\Bigr).
+\]
+The terms with $\beta=0$ give, by \eqref{eq:rsums}, $\frac1A\sum_\alpha r(\alpha)^2\alpha^{-1}e^{-\lambda A\alpha}+\frac g{AB}\sum_\alpha r(\alpha)^2e^{-\lambda A\alpha}\ll\frac1A(1+\log^+Y_A)^2+\frac{g}{\lambda A^2B}(1+\log^+Y_A)$, and likewise for $\alpha=0$. For $\alpha,\beta\ge1$ we use $A\alpha+B\beta\ge2\sqrt{AB\alpha\beta}$ and \eqref{eq:rsums}:
+\begin{multline*}
+\sum_{\alpha,\beta\ge1}\frac{r(\alpha)^2r(\beta)^2e^{-\lambda(A\alpha+B\beta)}}{A\alpha+B\beta}\le\frac1{2\sqrt{AB}}\sum_\alpha\frac{r(\alpha)^2e^{-\lambda A\alpha}}{\alpha^{1/2}}\sum_\beta\frac{r(\beta)^2e^{-\lambda B\beta}}{\beta^{1/2}}\\
+\ll\frac{(1+\log^+Y_A)(1+\log^+Y_B)}{\lambda AB},
+\end{multline*}
+and $\frac g{AB}\sum_{\alpha,\beta\ge1}r(\alpha)^2r(\beta)^2e^{-\lambda(A\alpha+B\beta)}\ll\frac{g}{\lambda^2A^2B^2}(1+\log^+Y_A)(1+\log^+Y_B)$. With \eqref{eq:lamAB}, $\log^+Y_A\le\log(3m)$, $\log^+Y_B\le\log(3m')$, the whole sum is
+\begin{equation}\label{eq:repbound}
+\sum_n\frac{\rk(S,n)^2}n e^{-\lambda n}\ \ll\ \frac{(1+\log^+(3m/d_m^2))^2}{A}+\frac{(1+\log^+(3m'/d_{m'}^2))^2}{B}+\frac{(\log3mm')^2}{\hat d}.
+\end{equation}
+
+\emph{The genus terms.} By Siegel's theorem, $\rk(\gen S,n)=\pi^2n\,\beta_S(n)/(AB)$ with $\beta_S(n)=\prod_p\beta_p(S;n)$, since $\sqrt{\det S}=4AB$. If $p\mid g$ then $S=pS_1$ with $S_1$ integral, and counting solutions modulo $p^a$ gives $\beta_p(S;n)=p\,\beta_p(S_1;n/p)$ if $p\mid n$ and $0$ otherwise; iterating over the prime factors of $g$ (including $p=2$ when $\kappa$ is even) gives $\beta_S(n)=g\,\beta_{S'}(n/g)$ if $g\mid n$ and $0$ otherwise, where $S'=S/g=Q_{A',B'}$ with $A'=A/g$, $B'=B/g$ coprime and odd. For $S'$, Lemma~\ref{lem:dens} gives $\beta_2(S';n)\le2$, $\beta_p(S';n)\le\sigma_{-1}(p^{v_p(n)})$ for $p\nmid2A'B'$, $\beta_p(S';n)\le1+1/p$ for $p\mid A'B'$, $p\nmid n$, and $\beta_p(S';n)\le7(v_p(n)+1)$ for $p\mid(n,A'B')$. Hence $\beta_{S'}(n)^2\le4\,(\sigma(A'B')/A'B')^2f(n)$ with the multiplicative function $f$ defined by $f(p^k)=\sigma_{-1}(p^k)^2$ for $p\nmid A'B'$ and $f(p^k)=49(k+1)^2$ for $p\mid A'B'$, $k\ge1$. Since $f(p^k)\le49(k+1)^2$ for all $p$ and $f(p)=1+O(1/p)$ for $p\nmid A'B'$, the mean-value inequality for non-negative multiplicative functions \cite[Theorem~01]{HT} gives
+\[
+\sum_{n\le X}f(n)\ll\frac X{\log X}\prod_{p\le X}\Bigl(\sum_{k\ge0}\frac{f(p^k)}{p^k}\Bigr)\ll X\prod_{p\mid A'B'}\Bigl(1+\frac{200}p\Bigr)\ll X(\log\log3A'B')^{200}\qquad(X\ge2),
+\]
+so that $\sum_{n\le X}\beta_S(n)^2=g^2\sum_{n'\le X/g}\beta_{S'}(n')^2\ll gX(\log\log3mm')^{C}$, and by partial summation $\sum_nn\beta_S(n)^2e^{-\lambda n}\ll g\lambda^{-2}(\log\log3mm')^C$. Therefore, by \eqref{eq:lamAB},
+\begin{equation}\label{eq:genbound}
+\sum_n\frac{\rk(\gen S,n)^2}n e^{-\lambda n}=\frac{\pi^4}{(AB)^2}\sum_nn\beta_S(n)^2e^{-\lambda n}\ll\frac{g\,(\log\log3mm')^C}{(\lambda AB)^2}\ll\frac{(\log\log3mm')^C}{\hat d}.
+\end{equation}
+
+\emph{The sum over the classes.} The classes are indexed by $d_2\mid4$, $d_m\mid m$, $d_{m'}\mid m'$ (with $\kappa$ and $\hat d$ determined by the class), and $\hat d\ge d/2$. Inserting \eqref{eq:repbound} and \eqref{eq:genbound} into \eqref{eq:classbound} and summing,
+\begin{gather*}
+\|G_{m,m'}\|^2\ll1+\Bigl((\log3mm')^2+(\log\log3mm')^C\Bigr)\sum_{d\mid L}\frac{2}{d}+(\log3m)^2\sum_{\text{classes}}\frac1A+(\log3m')^2\sum_{\text{classes}}\frac1B,\\[2pt]
+\text{where}\qquad
+\sum_{d\mid L}\frac1d=\frac{\sigma(L)}L\ll\log\log3L,\\
+\sum_{\text{classes}}\frac1A\le\sum_{d_2\mid4}\ \sum_{d_m\mid m}\ \sum_{d_{m'}\mid m'}\frac{4d_{m'}}{m'd_m}=12\,\frac{\sigma(m)}m\,\frac{\sigma(m')}{m'},
+\end{gather*}
+the last being $\ll(\log\log3mm')^2$, and likewise for $B$. This proves the first bound. If $\omega(mm')\le k$, then $\sigma(mm')/mm'\le2^k$, $\sigma(L)/L\le2^{k+2}$ and $\prod_{p\mid A'B'}(1+200/p)\le201^k$, so all the $\log\log$ factors are $\le C_k$, which gives the second bound; the lower bound is Theorem~\ref{thm:lower}, and the last assertion is Part~I, Lemma~2.2 and Theorem~2.3, where the norm enters only through the Cauchy--Schwarz step, which costs exactly the factor $\|G_{m,m'}\|$.
+\end{proof}
+
+\begin{corollary}[The spectral second moment]\label{cor:spectral}
+Let $\mathcal B^*$ be an orthogonal basis of $S_2(\Gamma_0(4mm'))$ of eigenforms of the Hecke operators $T_n$, $(n,2mm')=1$, as in Part~I, Section~5.5. Then
+\[
+\sum_{\varphi\in\mathcal B^*}\frac{|\langle\Theta_{m,m'},\varphi\rangle|^2}{\|\varphi\|^2}=\|G_{m,m'}\|^2\asymp_k(\log mm')^2\qquad(\omega(mm')\le k),
+\]
+and, for every $N$ with $(N,2mm')=1$, Theorem~\ref{thm:norm}(ii) is the bound $|\sum_\varphi\langle\Theta,\varphi\rangle a_\varphi(N)/\|\varphi\|^2|\ll d(N)N^{1/2}(\log3mm')(\log\log3mm')^C$ for the spectral sum (29) of Part~I.
+\end{corollary}
+
+The first identity is Parseval's, since $E\perp\varphi$. By the Rankin--Selberg structure of the coefficients described in Part~I, Section~5.5, $\langle\Theta_{m,m'},\varphi\rangle$ is $L(\frac12,f)L(\frac12,f\otimes\chi_{-4})$ times a factor built from local data at the primes dividing $2mm'$, $f$ the newform underlying $\varphi$; we have not computed these local factors, and we state the corollary at the level of the inner products. In this form it says that the family of $\asymp mm'$ forms of level $4mm'$ has a weighted second moment of $L(\frac12,f)L(\frac12,f\otimes\chi_{-4})$ of the order $(\log mm')^2$, with both the upper and the lower bound obtained from the geometry of the cusps rather than from the Petersson formula.
+
 \subsection{All cusps, numerically}\label{subsec:allcusps}
 For square-free $m,m'$ the computation of Lemma~\ref{lem:region} can be carried out at every cusp. The cusps of $\Gamma_0(L)$ are then in bijection with the divisors $d$ of $L$ (one cusp of denominator $d$ for each $d$, since $(d,L/d)\le2$), and we write $d=d_2\delta$ with $d_2\mid4$, $\delta\mid mm'$, $\delta_m=(\delta,m)$, $\delta_{m'}=(\delta,m')$, and
 \[
@@ -544,6 +625,17 @@ Table~\ref{tab:cusps} and Figure~\ref{fig:cusps} show the following.
 since $\iint e^{-c(u+v)}(u+v)^{-1}\dd u\,\dd v=1/c$: $4.38$, $8.76$, $10.84$ against the computed $4.16$, $8.54$, $10.62$ for $(13,29)$, $(61,67)$, $(101,103)$.
 \item The leading term $\frac1\pi((\log m)^2+(\log m')^2)$ of Theorem~\ref{thm:lower}(i) is $85$--$95\%$ of the right-hand side of (i) for $mm'\ge100$; the difference is the term $c_1\log Y+c_2$ of Lemma~\ref{lem:r2} at the four cusps, which is still large at $Y\approx10^2$--$10^3$.
 \item When $mm'$ has several prime factors, the other divisors contribute: for $m=1$ and $\delta\mid m'$ the cusps with the pair $(m'/\delta,\delta)$ and width $m'/\delta$ see $T(m'/\delta,\delta;n)=r(n/\delta)$ for $n<m'/\delta$, hence contribute about $\frac1{\pi\delta}\bigl(\log\frac{m'}{\delta^2}\bigr)_+^2$: for $(1,15015)$ the divisors $\delta=3,5,7,11,13$ give $6.72$, $2.88$, $1.78$, $0.82$, $0.57$ (against $5.84$, $2.61$, $1.49$, $0.67$, $0.49$ from the formula), which is why this pair has the largest ratio $\|G\|^2/(\log mm')^2$ in Table~\ref{tab:ms}.
+\item For $m=1$ and $p$ prime the lower bound can be followed much further than the Rankin--Selberg estimate, since the four Atkin--Lehner cusps carry $98\%$ of the norm and need only the coefficients $a_{G_{1,p}}(n)$ for $n\ll p$ (\texttt{results/cusp\_lower\_bound\_1p.txt}):
+\begin{center}
+\small
+\begin{tabular}{r|rrrrrr}
+$p$ & 101 & 1009 & 10007 & 100003 & 300007 & 1000003\\
+\hline
+$\Lambda(1,p)$ & 7.247 & 16.678 & 29.466 & 45.665 & 54.586 & 65.245\\
+$\Lambda(1,p)/(\log p)^2$ & 0.340 & 0.349 & 0.347 & 0.345 & 0.343 & 0.342\\
+\end{tabular}
+\end{center}
+The least-squares fit $\Lambda(1,p)=a(\log p)^2+b\log p+c$ over these six primes gives $a=0.319$, $b=0.42$, $c=-1.5$, against $1/\pi=0.318$ for the leading term of Theorem~\ref{thm:lower}(ii); indeed Lemma~\ref{lem:r2} gives for the four cusps, before the correction by $M(1,p;n)$, exactly $\frac1{4\pi}\bigl(S(p/4\pi)+S(p/\pi)\bigr)=\frac1\pi(\log p)^2+0.383\log p-0.65+O(p^{-1/2})$, which is $65.39$ at $p=1000003$ against the computed $65.13$. The ratio $\Lambda(1,p)/(\log p)^2$ therefore tends to $1/\pi$, but only like $1/\pi+0.4/\log p$, which is why the fits of Section~\ref{sec:num} over $mm'\le10^4$ gave $0.37$.
 \end{enumerate}
 In short, $\|G_{m,m'}\|^2$ is, to within a few percent, $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'$ plus the contribution of the cusp of denominator $2$ and of the other divisors of $mm'$, plus lower-order terms; its ratio to $(\log mm')^2$ tends to $1/\pi$ for $(1,m')$ and to $\frac1{2\pi}+\frac5{4\pi^2}+\cdots$ for $m\approx m'$ prime, with lower-order terms that are still substantial at $mm'\approx10^4$. The constant $0.37$ of Section~\ref{subsec:law} is the average of these ratios over the sample.
 
@@ -751,6 +843,7 @@ The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{
 \bibitem{Fouvry} \'E.~Fouvry, \emph{Sur le probl\`eme des diviseurs de Titchmarsh}, J. Reine Angew. Math. \textbf{357} (1985), 51--76.
 \bibitem{FK} C.~S.~Franze, P.~H.~Kao, \emph{Almost-prime values of reducible polynomials at prime arguments}, preprint, \href{https://arxiv.org/abs/1812.11280}{arXiv:1812.11280}.
 \bibitem{MV} H.~L.~Montgomery, R.~C.~Vaughan, \emph{The exceptional set in Goldbach's problem}, Acta Arith. \textbf{27} (1975), 353--370.
+\bibitem{HT} R.~R.~Hall, G.~Tenenbaum, \emph{Divisors}, Cambridge Tracts in Math. \textbf{90}, Cambridge Univ. Press, 1988.
 \bibitem{IwaTopics} H.~Iwaniec, \emph{Topics in Classical Automorphic Forms}, Grad. Stud. Math. \textbf{17}, Amer. Math. Soc., 1997.
 \bibitem{SiegelII} C.~L.~Siegel, \emph{\"Uber die analytische Theorie der quadratischen Formen. II}, Ann. of Math. (2) \textbf{37} (1936), 230--263.
 \bibitem{Wang} Y.~Wang, \emph{On the representation of a large even integer as a sum of a product of at most 2 primes and a product of at most 3 primes}, Sci. Sinica \textbf{6} (1957), 1003--1015; Chinese original in Acta Math. Sinica \textbf{6} (1956), 565--582.
