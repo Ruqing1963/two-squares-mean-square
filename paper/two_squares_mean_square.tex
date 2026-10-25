@@ -1,4 +1,4 @@
-\documentclass[11pt]{amsart}
+﻿\documentclass[11pt]{amsart}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[margin=1.1in]{geometry}
 \usepackage{microtype}
@@ -140,9 +140,10 @@ Let $m,m'$ be coprime odd positive integers with $mm'>1$, and let $a(n)=a_{G_{1,
 Together with Theorem~\ref{thm:norm}(i), $(\log mm')^2\ll\|G_{m,m'}\|^2\ll_\e(mm')^\e$ for $mm'\ge C'$, and the exponent $\e$ cannot be replaced by $0$. In fact the factor $(mm')^\e$ can be removed altogether. Theorem~\ref{thm:upper} in Section~\ref{subsec:upper} replaces the two $\e$-losses in the proof of Part~I by mean values of $r(\alpha)^2$ and of the local densities and gives
 \begin{gather*}
 \|G_{m,m'}\|^2\ll(\log3mm')^2(\log\log3mm')^{C},\\
-\text{hence}\qquad \|G_{m,m'}\|^2\asymp_k(\log mm')^2\qquad\text{whenever }\omega(mm')\le k,
+\text{hence}\qquad \|G_{m,m'}\|^2\asymp_k(\log mm')^2\qquad\text{whenever }\omega(mm')\le k,\\
+\text{and Theorem~\ref{thm:norm}(ii) holds with }(\log3mm')(\log\log3mm')^{C}\text{ in place of }(mm')^\e .
 \end{gather*}
-and the uniform bound of Theorem~\ref{thm:norm}(ii) holds with a power of $\log mm'$, namely $(\log3mm')(\log\log3mm')^{C}$, in place of $(mm')^\e$. The inequality (i) is nearly an equality when $m=1$: the four regions then cover the fraction $5/(2\pi)=0.80$ of the area of $\Gamma_0(L)\backslash\HH$, and numerically they carry $98\%$ of the norm (Table~\ref{tab:cusps}). The proof is in Section~\ref{sec:lower}, which also computes, for square-free $m,m'$, the contribution of every cusp and explains the empirical law of Section~\ref{sec:num}: the norm is not $c(\log mm')^2$ but $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'+\cdots$, a sum over the divisors of $mm'$.
+The inequality (i) is nearly an equality when $m=1$: the four regions then cover the fraction $5/(2\pi)=0.80$ of the area of $\Gamma_0(L)\backslash\HH$, and numerically they carry $98\%$ of the norm (Table~\ref{tab:cusps}). The proof is in Section~\ref{sec:lower}, which also computes, for square-free $m,m'$, the contribution of every cusp and explains the empirical law of Section~\ref{sec:num}: the norm is not $c(\log mm')^2$ but $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'+\cdots$, a sum over the divisors of $mm'$.
 
 The fourth theme is the sieve itself. Part~I sifts $n$ and $N-n$ by the vector sieve of Br\"udern and Fouvry, two linear sieves combined; but $n(N-n)$ is a sieve problem of dimension $2$ (Remark~\ref{rem:dim2}), and the two-dimensional sieve of Diamond, Halberstam and Richert \cite{DHR,DH}, with Richert's weights, has the smaller sieving limit $\beta_2=4.2665$. Section~\ref{sec:dim2} computes its sieve functions $F_2,f_2$ (we determine the constants $\alpha_2=5.3577$, $\beta_2=4.2665$ of \cite{DHR} independently) and obtains, from the same level of distribution $1/2$ of Part~I,
 \[
@@ -547,8 +548,8 @@ so that $\sum_{n\le X}\beta_S(n)^2=g^2\sum_{n'\le X/g}\beta_{S'}(n')^2\ll gX(\lo
 
 \emph{The sum over the classes.} The classes are indexed by $d_2\mid4$, $d_m\mid m$, $d_{m'}\mid m'$ (with $\kappa$ and $\hat d$ determined by the class), and $\hat d\ge d/2$. Inserting \eqref{eq:repbound} and \eqref{eq:genbound} into \eqref{eq:classbound} and summing,
 \begin{gather*}
-\|G_{m,m'}\|^2\ll1+\Bigl((\log3mm')^2+(\log\log3mm')^C\Bigr)\sum_{d\mid L}\frac{2}{d}+(\log3m)^2\sum_{\text{classes}}\frac1A+(\log3m')^2\sum_{\text{classes}}\frac1B,\\[2pt]
-\text{where}\qquad
+\|G_{m,m'}\|^2\ll1+\Bigl((\log3mm')^2+(\log\log3mm')^C\Bigr)\sum_{d\mid L}\frac{2}{d}\\ \qquad+(\log3m)^2\sum_{\text{classes}}\frac1A+(\log3m')^2\sum_{\text{classes}}\frac1B ,\\[2pt]
+\text{where}\quad
 \sum_{d\mid L}\frac1d=\frac{\sigma(L)}L\ll\log\log3L,\\
 \sum_{\text{classes}}\frac1A\le\sum_{d_2\mid4}\ \sum_{d_m\mid m}\ \sum_{d_{m'}\mid m'}\frac{4d_{m'}}{m'd_m}=12\,\frac{\sigma(m)}m\,\frac{\sigma(m')}{m'},
 \end{gather*}
