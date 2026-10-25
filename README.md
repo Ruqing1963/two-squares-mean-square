@@ -72,12 +72,16 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             dhr_sieve.py              DHR sieve functions F_2, f_2 (alpha_2, beta_2 by the adjoint method) and the weighted sieve (Table 4)
             certify_dhr.py            interval-arithmetic enclosures of F_2, f_2 and the certification of Lemma 7.2 (Theorem 7.1)
             modulus_sum_scan.py       Table 5: sums of a_{G_{d,e}}(N) over the moduli at fixed N (cancellation test)
-figures/    mean_square, sieve_thresholds  (.pdf and .png)
+            plot_cusp_decomposition.py  Figure 3: the norm cusp by cusp (from results/cusp_lower_bound.txt)
+            plot_dhr_sieve.py         Figure 4: F_2, f_2 against the vector sieve; thresholds against theta (cache results/dhr_thresholds.txt)
+            plot_modulus_sums.py      Figure 5: cancellation in the sum over the moduli, N = 3000002
+figures/    mean_square, sieve_thresholds, cusp_decomposition, dhr_sieve, modulus_sums  (.pdf and .png)
 results/    mean_square_check_x21.txt              Table 1
             cusp_lower_bound.txt, cusp_lower_bound_large.txt   Table 3 (X = 2^21; X = 2^24 for (1,15015), (1009,1013))
             dhr_sieve.txt                          Table 4 and the parameters of Theorem 7.1
             certify_dhr_output.txt                 certified enclosures (Lemma 7.2)
             modulus_sum_scan.txt                   Table 5
+            dhr_thresholds.txt                     data of Figure 4(b)
             norm_level20.txt                       the exact check at level 20
             certify_modular_output_twothirds.txt   certified parameters at level 2/3 (bounds 6 and 4)
             certify_modular_output_nineteen.txt    certified parameters at level 19/20 (Corollary 1.4: bounds 5 and 4)
@@ -102,7 +106,10 @@ python local_densities.py              # self-test of the exact main term (level
 python cusp_lower_bound.py --detail    # Table 3 (~2 min); python cusp_lower_bound.py 16777216 1,15015 1009,1013 for the two large pairs
 python dhr_sieve.py 0.5 2/3 0.95       # F_2, f_2, alpha_2, beta_2 and Table 4 (~3 min)
 python certify_dhr.py 20000            # Lemma 7.2: certified f_2(9) and the F_2-integral (directed rounding, ~1 min)
-python modulus_sum_scan.py             # Table 5: four values of N ~ 2e6 (~10 min)
+python modulus_sum_scan.py             # Table 5: four values of N ~ 2e6 (~1 min)
+python plot_cusp_decomposition.py      # Figure 3 (seconds)
+python plot_dhr_sieve.py               # Figure 4 (~5 min the first time; --recompute redoes the threshold scan)
+python plot_modulus_sums.py            # Figure 5 (~20 s)
 ```
 
 What is rigorous: `certify_modular.py` (interval arithmetic and directed rounding) enters the proofs of
