@@ -61,9 +61,11 @@ bx.scatter(g2, lb, s=34, color=BLUE, zorder=3, label=r"$\Lambda(m,m')$, all cusp
 bx.scatter(g2, lead, s=34, color=ORANGE, marker="s", zorder=3,
            label=r"$\frac{1}{\pi}(\log^2 m+\log^2 m')+\frac{5}{\pi^2}\log m\,\log m'$")
 bx.scatter(g2, fit, s=30, facecolors="none", edgecolors=MUTED, marker="o", zorder=2, label=r"$0.365\,(\log mm')^2$")
+OFFSETS = {5: (4, -9), 377: (4, -9), 1155: (4, -9), 1009: (-40, 3), 10403: (5, -11), 15015: (-44, 1)}
 for r, gg, ll in zip(rows, g2, lb):
-    if r[0] * r[1] in (5, 377, 1155, 1009, 10403, 15015):
-        bx.annotate(f"({r[0]},{r[1]})", (gg, ll), xytext=(4, -9), textcoords="offset points", fontsize=7, color=INK)
+    off = OFFSETS.get(r[0] * r[1])
+    if off is not None:
+        bx.annotate(f"({r[0]},{r[1]})", (gg, ll), xytext=off, textcoords="offset points", fontsize=7, color=INK)
 bx.set_xscale("log")
 bx.set_yscale("log")
 bx.set_xlim(*lim)
