@@ -38,7 +38,7 @@
 \begin{document}
 
 \begin{abstract}
-Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_{G}(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. Part~I proved $\|G_{m,m'}\|^2\ll_\e(mm')^{\e}$ for the Petersson norm and deduced the level of distribution $1/2$ for the weighted sequence $r(n)r(N-n)$ and the bounds $\Omega(n(N-n))\le8$, $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$. Here we prove a mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le4\pi e^2Y(1+54Y/L)\|G\|^2$ for every $G\in S_2(\Gamma_0(L))$ by a covering argument; for $G_{m,m'}$ it says that the root mean square of $(T-M)/\sqrt N$ is $\ll(mm')^{-1/2+\e}$, and it gives the level of distribution $1-\e$ for the weighted sequence for all but $O(X^{1-\delta})$ integers $N\le X$, and for those $N$ the bounds $5$ and $4$ (a result which, as an arithmetic statement about almost all $N$, is superseded by the circle method, which gives $N=p+q$ with $p\equiv q\equiv1\pmod 4$). We reformulate the uniform bound of Part~I in terms of Poincar\'e series, state the individual bound $|T-M|\ll N^{1/2+\e}(mm')^{-1/2+\e}$ suggested by the data, and show that any power saving in $mm'$ for individual $N$ raises the level of distribution for every $N$ beyond $1/2$. Finally we prove the lower bound $\|G_{m,m'}\|^2\ge\frac1\pi\bigl((\log m)^2+(\log m')^2\bigr)-O\bigl(\log(2mm')(\log\log3mm')^{C}\bigr)$ by integrating $|G|^2$ over the parts of the fundamental domain above the four Atkin--Lehner cusps at which $G_{m,m'}$ is transformed into $G_{1,mm'}$, whose first $mm'$ coefficients are $r(n)-M(1,mm';n)$; and the matching upper bound $\|G_{m,m'}\|^2\ll(\log3mm')^2(\log\log3mm')^{C}$, so that the norm is of the exact order $(\log mm')^2$ when $mm'$ has boundedly many prime factors and the uniform bound for $T-M$ holds with $(\log3mm')(\log\log3mm')^C$ in place of $(mm')^\e$. By an explicit Rankin--Selberg unfolding, $\langle\Theta_{m,m'},\varphi\rangle=\frac4{\pi^2}\chi_{-4}(m')\eta_{m'}(\varphi)L(1,\varphi)L(1,\varphi\otimes\chi_{-4})$ for every newform $\varphi$ of level $4mm'$, so these bounds are bounds for the second moment of $L(\frac12,\varphi)L(\frac12,\varphi\otimes\chi_{-4})$ over the family. Numerically, the regions above all the cusps account for $93$--$98\%$ of the norm, which is a quadratic form in $\log m$, $\log m'$ plus contributions of the other divisors of $mm'$ rather than a constant times $(\log mm')^2$; there is an exact check at the level $20$, and the supremum of $|T-M|/\sqrt N$ over $N$ exceeds the root mean square by a bounded factor at every level computed. Finally, replacing the vector sieve of Part~I by the two-dimensional sieve of Diamond, Halberstam and Richert, whose functions $F_2,f_2$ we compute, gives $\Omega(n(N-n))\le7$ with $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$ from the same level $1/2$; the two inequalities for $F_2,f_2$ that this needs are certified in interval arithmetic.
+Let $m,m'$ be coprime odd integers, $\Theta_{m,m'}(z)=\theta^2(mz)\theta^2(m'z)$, $G_{m,m'}$ its cuspidal part and $L=4mm'$, so that $a_{G}(N)=T(m,m';N)-M(m,m';N)$ is the error term in the number of representations of $N$ by $m(x^2+y^2)+m'(z^2+w^2)$. Part~I proved $\|G_{m,m'}\|^2\ll_\e(mm')^{\e}$ for the Petersson norm and deduced the level of distribution $1/2$ for the weighted sequence $r(n)r(N-n)$ and the bounds $\Omega(n(N-n))\le8$, $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$. Here we prove a mean-square bound $\sum_{N\le Y}|a_G(N)|^2\le4\pi e^2Y(1+54Y/L)\|G\|^2$ for every $G\in S_2(\Gamma_0(L))$ by a covering argument; for $G_{m,m'}$ it says that the root mean square of $(T-M)/\sqrt N$ is $\ll(mm')^{-1/2+\e}$, and it gives the level of distribution $1-\e$ for the weighted sequence for all but $O(X^{1-\delta})$ integers $N\le X$, and for those $N$ the bounds $5$ and $4$ (a result which, as an arithmetic statement about almost all $N$, is superseded by the circle method, which gives $N=p+q$ with $p\equiv q\equiv1\pmod 4$). We reformulate the uniform bound of Part~I in terms of Poincar\'e series, state the individual bound $|T-M|\ll N^{1/2+\e}(mm')^{-1/2+\e}$ suggested by the data, and show that any power saving in $mm'$ for individual $N$ raises the level of distribution for every $N$ beyond $1/2$. Finally we prove that the norm depends only on $mm'$ (an Atkin--Lehner involution maps $G_{m,m'}$ to $G_{1,mm'}$), the lower bound $\|G_{m,m'}\|^2\ge\frac1\pi(\log mm')^2-O\bigl(\log(2mm')(\log\log3mm')^{C}\bigr)$, by integrating $|G|^2$ over the parts of the fundamental domain above the Atkin--Lehner cusps at which $G_{m,m'}$ is transformed into $G_{1,mm'}$, whose first $mm'$ coefficients are $r(n)-M(1,mm';n)$, and the matching upper bound $\|G_{m,m'}\|^2\ll(\log3mm')^2(\log\log3mm')^{C}$, so that the norm is of the exact order $(\log mm')^2$ when $mm'$ has boundedly many prime factors and the uniform bound for $T-M$ holds with $(\log3mm')(\log\log3mm')^C$ in place of $(mm')^\e$. By an explicit Rankin--Selberg unfolding, $\langle\Theta_{m,m'},f(d\,\cdot)\rangle=\pm\frac4{\pi^2}\prod_{p\mid mm'/M_1}(1+\chi_{-4}(p))\,d^{-1}L(1,f)L(1,f\otimes\chi_{-4})$ for every newform $f$ of level $2^eM_1\mid4mm'$ and every $d$, with no other local factors, so these bounds are bounds for the second moment of $L(\frac12,f)L(\frac12,f\otimes\chi_{-4})$ over the family. Numerically, the regions above all the cusps account for $93$--$98\%$ of the norm; there is an exact check at the level $20$, and the supremum of $|T-M|/\sqrt N$ over $N$ exceeds the root mean square by a bounded factor at every level computed. Finally, replacing the vector sieve of Part~I by the two-dimensional sieve of Diamond, Halberstam and Richert, whose functions $F_2,f_2$ we compute, gives $\Omega(n(N-n))\le7$ with $\max(\Omega(n),\Omega(N-n))\le5$ for every large $N\equiv2\pmod4$ from the same level $1/2$; the two inequalities for $F_2,f_2$ that this needs are certified in interval arithmetic.
 \end{abstract}
 
 \maketitle
@@ -129,15 +129,15 @@ The third theme is the size of the norm itself. Theorem~\ref{thm:norm}(i) is an 
 Let $m,m'$ be coprime odd positive integers with $mm'>1$, and let $a(n)=a_{G_{1,mm'}}(n)=T(1,mm';n)-M(1,mm';n)$, so that $a(n)=r(n)-M(1,mm';n)$ for $1\le n<mm'$.
 \begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.2em]
 \item $\displaystyle \|G_{m,m'}\|^2\ \ge\ \frac1{4\pi}\sum_{Q\in\{m,\,4m,\,m',\,4m'\}}\ \sum_{n\ge1}\frac{|a(n)|^2}{n}\,e^{-4\pi n/Q}.$
+\item $\|G_{m,m'}\|=\|G_{1,mm'}\|$: the norm depends only on the product $mm'$.
 \item There is an absolute constant $C$ such that
-\begin{align*}
-\|G_{m,m'}\|^2\ &\ge\ \frac1\pi\bigl((\log m)^2+(\log m')^2\bigr)-C\log(2mm')\,(\log\log 3mm')^{C}\\
-&\ge\ \frac1{2\pi}(\log mm')^2-C\log(2mm')\,(\log\log 3mm')^{C}.
-\end{align*}
+\[
+\|G_{m,m'}\|^2\ \ge\ \frac1\pi(\log mm')^2-C\log(2mm')\,(\log\log 3mm')^{C}.
+\]
 \end{enumerate}
 \end{theorem}
 
-Together with Theorem~\ref{thm:norm}(i), $(\log mm')^2\ll\|G_{m,m'}\|^2\ll_\e(mm')^\e$ for $mm'\ge C'$, and the exponent $\e$ cannot be replaced by $0$. In fact the factor $(mm')^\e$ can be removed altogether. Theorem~\ref{thm:upper} in Section~\ref{subsec:upper} replaces the two $\e$-losses in the proof of Part~I by mean values of $r(\alpha)^2$ and of the local densities and gives
+Part (ii) is the Atkin--Lehner involution $W_m$, which maps $\Theta_{m,m'}$ to $\chi_{-4}(m)\Theta_{1,mm'}$ and is an isometry; (iii) is (i) for the pair $(1,mm')$ at its two cusps of widths $mm'$ and $4mm'$. Together with Theorem~\ref{thm:norm}(i), $(\log mm')^2\ll\|G_{m,m'}\|^2\ll_\e(mm')^\e$ for $mm'\ge C'$, and the exponent $\e$ cannot be replaced by $0$. In fact the factor $(mm')^\e$ can be removed altogether. Theorem~\ref{thm:upper} in Section~\ref{subsec:upper} replaces the two $\e$-losses in the proof of Part~I by mean values of $r(\alpha)^2$ and of the local densities and gives
 \begin{gather*}
 \|G_{m,m'}\|^2\ll(\log3mm')^2(\log\log3mm')^{C},\\
 \text{hence}\qquad \|G_{m,m'}\|^2\asymp_k(\log mm')^2\qquad\text{whenever }\omega(mm')\le k,\\
@@ -147,7 +147,7 @@ On the spectral side, Theorem~\ref{thm:RS} makes the Rankin--Selberg structure o
 \[
 \langle\Theta_{m,m'},\varphi\rangle=\frac4{\pi^2}\,\chi_{-4}(m')\,\eta_{m'}(\varphi)\,L(1,\varphi)\,L(1,\varphi\otimes\chi_{-4}),
 \]
-with no further local factors; so the norm bounds are statements about the second moment of $L(\frac12,\varphi)L(\frac12,\varphi\otimes\chi_{-4})$ over the family of level $4mm'$ (Corollary~\ref{cor:newmoment}). The inequality (i) is nearly an equality when $m=1$: the four regions then cover the fraction $5/(2\pi)=0.80$ of the area of $\Gamma_0(L)\backslash\HH$, and numerically they carry $98\%$ of the norm (Table~\ref{tab:cusps}). The proof is in Section~\ref{sec:lower}, which also computes, for square-free $m,m'$, the contribution of every cusp and explains the empirical law of Section~\ref{sec:num}: the norm is not $c(\log mm')^2$ but $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'+\cdots$, a sum over the divisors of $mm'$.
+with no further local factors; so the norm bounds are statements about the second moment of $L(\frac12,\varphi)L(\frac12,\varphi\otimes\chi_{-4})$ over the family of level $4mm'$ (Corollary~\ref{cor:newmoment}). The inequality (i) is nearly an equality when $m=1$: the four regions then cover the fraction $5/(2\pi)=0.80$ of the area of $\Gamma_0(L)\backslash\HH$, and numerically they carry $98\%$ of the norm (Table~\ref{tab:cusps}). The proof is in Section~\ref{sec:lower}, which also computes, for square-free $m,m'$, the contribution of every cusp of the fundamental domain of the pair $(m,m')$: these cusp sums depend on the factorisation (for $m\approx m'$ they are $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'+\cdots$, a sum over the divisors of $mm'$) although their total, the norm, does not; the empirical law $0.37(\log mm')^2$ of Section~\ref{sec:num} is the leading term $\frac1\pi(\log mm')^2$ of (iii) together with the positive lower-order terms, which are still large at $mm'\le10^6$.
 
 The fourth theme is the sieve itself. Part~I sifts $n$ and $N-n$ by the vector sieve of Br\"udern and Fouvry, two linear sieves combined; but $n(N-n)$ is a sieve problem of dimension $2$ (Remark~\ref{rem:dim2}), and the two-dimensional sieve of Diamond, Halberstam and Richert \cite{DHR,DH}, with Richert's weights, has the smaller sieving limit $\beta_2=4.2665$. Section~\ref{sec:dim2} computes its sieve functions $F_2,f_2$ (we determine the constants $\alpha_2=5.3577$, $\beta_2=4.2665$ of \cite{DHR} independently) and obtains, from the same level of distribution $1/2$ of Part~I,
 \[
@@ -350,7 +350,7 @@ and, for the root mean square of $(T-M)/\sqrt N$ over $N\le Y$, $Y\gg L$,
 \[
 \mathrm{rms}^2\approx\frac{16\pi^2\|G\|^2}{\vol(\Gamma_0(L)\backslash\HH)}\approx\frac{44\,(\log mm')^2}{mm'\prod_{p\mid 2mm'}(1+1/p)},
 \]
-which reproduces the column ``rms'' of Table~3 of Part~I ($0.27$ for $(101,103)$, $0.67$ for $(1,1009)$). This corrects the remark in Section~5.3 of the first two versions of Part~I that the root mean square ``decreases like $(mm')^{-1/4}$'' and that Waibel's bound ``appears to be sharp'': the decrease is like $(mm')^{-1/2}$ up to a logarithm, as Theorem~\ref{thm:A} with Theorem~\ref{thm:norm}(i) shows; version~3 of Part~I states the corrected law. Section~\ref{sec:lower} shows what the ``law'' is: up to a few percent, the norm is the sum of the integrals of $|G|^2$ over the regions above the cusps, which are $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'+\cdots$ with terms for the other divisors of $mm'$; the constant $0.37$ is the average of this over the sample, and the estimates of Table~\ref{tab:ms} are themselves biased by the restriction to the admissible $N$ (Table~\ref{tab:cusps} has the unbiased values).
+which reproduces the column ``rms'' of Table~3 of Part~I ($0.27$ for $(101,103)$, $0.67$ for $(1,1009)$). This corrects the remark in Section~5.3 of the first two versions of Part~I that the root mean square ``decreases like $(mm')^{-1/4}$'' and that Waibel's bound ``appears to be sharp'': the decrease is like $(mm')^{-1/2}$ up to a logarithm, as Theorem~\ref{thm:A} with Theorem~\ref{thm:norm}(i) shows; version~3 of Part~I states the corrected law. Section~\ref{sec:lower} shows what the ``law'' is: the norm depends only on $mm'$ (Theorem~\ref{thm:lower}(ii)), its leading term is $\frac1\pi(\log mm')^2$, and the constant $0.37$ is this leading term together with lower-order terms that are still large in the range of the sample; the estimates of Table~\ref{tab:ms} are themselves biased by the restriction to the admissible $N$ (Table~\ref{tab:cusps} has the unbiased values).
 
 \begin{figure}[H]
 \centering
@@ -426,8 +426,8 @@ I(\varrho)\ \ge\ \int_1^\infty\int_{-1/2}^{L-1/2}|G|_2\varrho|^2\,\dd x\,\dd y=\
 The number of pairs $(a,c)$ modulo $L$ with $(c,L)=L/Q$ and $(a,c,L)=1$, i.e.\ $(a,L/Q)=1$, is $\varphi(Q)\cdot\varphi(L/Q)\,Q=\varphi(L)Q$, and $\mu/\tilde\mu=1/(L\varphi(L))$. Multiplying gives the assertion.
 \end{proof}
 
-\begin{proof}[Proof of Theorem~\ref{thm:lower}(i)]
-Since $m,m'$ are odd and coprime with $mm'>1$, we have $m\ne m'$, $m\ne4m'$ and $m'\ne4m$, so the four values $L/Q$, $Q\in\{m,4m,m',4m'\}$, are distinct and the four sets of pairs $(a,c)$ in Lemma~\ref{lem:region} are disjoint. (When $m=1$ the values $Q=1$ and $Q=4$ occur: $W_1\in\Gamma_0(L)$, the class $(c,L)=L$ is the cusp $\infty$ itself and the expansion is that of $G_{1,m'}$; Lemmas~\ref{lem:AL} and \ref{lem:region} cover these cases as stated, since they use only the Atkin--Lehner matrices and Parseval's identity, and the four cusps are then all the Atkin--Lehner cusps of $\Gamma_0(4m')$.) As all terms of \eqref{eq:W1} are non-negative, (i) follows by adding the four lower bounds.
+\begin{proof}[Proof of Theorem~\ref{thm:lower}(i) and (ii)]
+Part (ii): by Lemma~\ref{lem:AL} applied to each prime of $m$ in turn (or directly, with $W_m$ of level $L$), $G_{m,m'}|_2W_m=\varepsilon G_{1,mm'}$ with $|\varepsilon|=1$, and $|_2W_m$ is an isometry of $S_2(\Gamma_0(L))$. For (i): since $m,m'$ are odd and coprime with $mm'>1$, we have $m\ne m'$, $m\ne4m'$ and $m'\ne4m$, so the four values $L/Q$, $Q\in\{m,4m,m',4m'\}$, are distinct and the four sets of pairs $(a,c)$ in Lemma~\ref{lem:region} are disjoint. (When $m=1$ the values $Q=1$ and $Q=4$ occur: $W_1\in\Gamma_0(L)$, the class $(c,L)=L$ is the cusp $\infty$ itself and the expansion is that of $G_{1,m'}$; Lemmas~\ref{lem:AL} and \ref{lem:region} cover these cases as stated, since they use only the Atkin--Lehner matrices and Parseval's identity, and the four cusps are then all the Atkin--Lehner cusps of $\Gamma_0(4m')$.) As all terms of \eqref{eq:W1} are non-negative, (i) follows by adding the four lower bounds.
 \end{proof}
 
 \subsection{The sum $\sum r(n)^2/n$}
@@ -475,8 +475,8 @@ For the sum, write $M(m,m';n)=\pi^2n\,\beta(n)/(mm')$ with $\beta(n)=\prod_p\bet
 since $\sum_{j\ge1}14(j+1)^2p^{-j}\le C/p$ for $p\ge3$, and $\prod_{p\mid mm'}(1+C/p)\le\exp(C\sum_{p\mid mm'}1/p)\ll(\log\log3mm')^{C}$.
 \end{proof}
 
-\begin{proof}[Proof of Theorem~\ref{thm:lower}(ii)]
-Fix $Q\in\{m,4m,m',4m'\}$ with $Q\ge4\pi$ and put $Y=Q/(4\pi)\ge1$; note $Y\le\max(m,m')/\pi\le mm'/\pi$. Keep only $n<mm'$ in the inner sum of (i), where $a(n)=r(n)-M(1,mm';n)$ and $M\ge0$, so that $|a(n)|^2\ge r(n)^2-2r(n)M(1,mm';n)$:
+\begin{proof}[Proof of Theorem~\ref{thm:lower}(iii)]
+By (ii) we may replace $(m,m')$ by $(1,mm')$, and we write $n=mm'$. Apply (i) to the pair $(1,n)$ and keep only the two cusps $Q\in\{n,4n\}$ (of widths $n$ and $4n$), with $Y=Q/(4\pi)$, so that $n/(4\pi)\le Y\le n/\pi$; we may assume $n\ge4\pi$. Keep only $n'<n$ in the inner sum of (i) (we write $n'$ for the summation variable there), where $a(n)=r(n)-M(1,mm';n)$ and $M\ge0$, so that $|a(n)|^2\ge r(n)^2-2r(n)M(1,mm';n)$:
 \[
 \sum_{n\ge1}\frac{|a(n)|^2}{n}e^{-n/Y}\ \ge\ S(Y)-\sum_{n\ge mm'}\frac{r(n)^2}{n}e^{-n/Y}-2\sum_{n\ge1}\frac{r(n)M(1,mm';n)}{n}e^{-n/Y}.
 \]
@@ -484,16 +484,18 @@ By Lemma~\ref{lem:r2}, $S(Y)\ge2(\log Y)^2-C$, and the tail is at most
 \[
 \sum_{j\ge0}e^{-\pi2^j}\,\frac1{2^jmm'}\sum_{n<2^{j+1}mm'}r(n)^2\ \ll\ \sum_{j\ge0}e^{-\pi2^j}\log(2^{j+2}mm')\ \ll\ \log(2mm').
 \]
-By Lemma~\ref{lem:dens} with $(m,m')$ replaced by $(1,mm')$, the last sum is at most a constant times $(Y/mm')\log(2Y)(\log\log3mm')^C$, which is at most $\log(2mm')(\log\log3mm')^C$ because $Y/mm'\le1/\min(m,m')\le1$. Summing over the four $Q$ and using
+By Lemma~\ref{lem:dens} with $(m,m')$ replaced by $(1,n)$, the last sum is at most a constant times $(Y/n)\log(2Y)(\log\log3n)^C\le\log(2n)(\log\log3n)^C$. Summing over the two $Q$ and using
 \[
-2\bigl(\log(m/4\pi)\bigr)^2+2\bigl(\log(m/\pi)\bigr)^2\ \ge\ 4(\log m)^2-4\log(4\pi^2)\log m
+2\bigl(\log(n/4\pi)\bigr)^2+2\bigl(\log(n/\pi)\bigr)^2\ \ge\ 4(\log n)^2-4\log(4\pi^2)\log n,
 \]
-(and the same for $m'$), while the terms with $Q<4\pi$, if any, are dropped and the corresponding $(\log m)^2\le(\log 12)^2$ is absorbed in the constant, (i) gives
+(i) gives
 \[
-\|G_{m,m'}\|^2\ \ge\ \frac1{\pi}\Bigl((\log m)^2+(\log m')^2\Bigr)-\frac{\log(4\pi^2)}\pi\log(mm')-C\log(2mm')(\log\log3mm')^C,
+\|G_{m,m'}\|^2=\|G_{1,n}\|^2\ \ge\ \frac1{\pi}(\log n)^2-\frac{\log(4\pi^2)}\pi\log n-C\log(2n)(\log\log3n)^C,
 \]
-which is (ii); the second inequality in (ii) is $(\log m)^2+(\log m')^2\ge\frac12(\log mm')^2$.
+which is (iii).
 \end{proof}
+
+The same computation at the four cusps of the pair $(m,m')$ itself gives $\frac1\pi((\log m)^2+(\log m')^2)$ in place of $\frac1\pi(\log mm')^2$: the cusp sums of the fundamental domain of $(m,m')$ depend on the factorisation, their total does not, and the pair $(1,mm')$ gives the best lower bound.
 
 \subsection{The matching upper bound}\label{subsec:upper}
 The proof of Theorem~1.2 of Part~I loses the factor $(mm')^\e$ at two places only: the representation numbers $r(S,n)$ of the forms $S=A(x_1^2+x_2^2)+B(x_3^2+x_4^2)$ at the cusps are bounded by $n^\e(1+g_0n/mm')$ through $r(\alpha)r(\beta)\le16\,d(\alpha)d(\beta)$, and the genus terms through Waibel's general bound $\rk(\gen S,n)\ll n(n,L)^{1/2}(nL)^\e/\sqrt{\det S}$. Replacing the first by the mean value of $r(\alpha)^2r(\beta)^2$ (Lemma~\ref{lem:r2}) and the second by the local densities themselves gives the true order.
@@ -574,19 +576,40 @@ The first identity is Parseval's, since $E\perp\varphi$. Part~I, Section~5.5, de
 We write $L(s,\varphi)=\sum_ka_\varphi(k)k^{-s}$ and $L(s,\varphi\otimes\chi)=\sum_k\chi(k)a_\varphi(k)k^{-s}$ for a newform $\varphi=\sum a_\varphi(k)q^k$ of weight $2$ with $a_\varphi(1)=1$, so that $s=1$ is the centre of the critical strip, and $\eta_Q(\varphi)=\pm1$ for its Atkin--Lehner eigenvalues, $\varphi|_2W_Q=\eta_Q(\varphi)\varphi$ for $Q\,\|\,L$; recall $a_\varphi(p)=-\eta_p(\varphi)$ for $p\,\|\,L$.
 
 \begin{theorem}[The Rankin--Selberg formula]\label{thm:RS}
-Let $n$ be an odd square-free positive integer, $L=4n$, and $\varphi$ a newform of weight $2$ and level $L$. Then
+Let $n$ be an odd square-free positive integer and $L=4n$.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.2em]
+\item For a newform $\varphi$ of weight $2$ and level $L$,
 \[
-\langle\Theta_{1,n},\varphi\rangle=\frac4{\pi^2}\,\chi(n)\,\eta_n(\varphi)\,L(1,\varphi)\,L(1,\varphi\otimes\chi),
+\langle\Theta_{1,n},\varphi\rangle=\frac4{\pi^2}\,\chi(n)\,\eta_n(\varphi)\,L(1,\varphi)\,L(1,\varphi\otimes\chi).
 \]
-and for every factorisation $n=mm'$ into coprime factors
+\item For a newform $f$ of weight $2$ and level $M\mid L$, $M=2^eM_1$ with $M_1$ odd, and $d\mid L/M$,
 \[
-\langle\Theta_{m,m'},\varphi\rangle=\frac4{\pi^2}\,\chi(m')\,\eta_{m'}(\varphi)\,L(1,\varphi)\,L(1,\varphi\otimes\chi).
+\langle\Theta_{1,n},f(d\,\cdot)\rangle=\frac4{\pi^2}\,\chi(M_1)\,\eta_{M_1}(f)\,\frac{\prod_{p\mid n/M_1}(1+\chi(p))}{d}\,L(1,f)\,L(1,f\otimes\chi),
 \]
-In particular $|\langle\Theta_{m,m'},\varphi\rangle|$ does not depend on the factorisation.
+where $\eta_{M_1}(f)=\prod_{p\mid M_1}\eta_p(f)$; in particular $\langle\Theta_{1,n},f(d\,\cdot)\rangle=0$ unless every prime of $n/M_1$ is $\equiv1\pmod4$, and then the factor is $2^{\omega(n/M_1)}/d$.
+\item For every factorisation $n=mm'$ into coprime factors,
+\[
+\langle\Theta_{m,m'},f(d\,\cdot)\rangle=\chi(m)\,\eta_{(m,M_1)}(f)\,\langle\Theta_{1,n},f(d\,\cdot)\rangle;
+\]
+for newforms of level $L$ this reads $\langle\Theta_{m,m'},\varphi\rangle=\frac4{\pi^2}\chi(m')\eta_{m'}(\varphi)L(1,\varphi)L(1,\varphi\otimes\chi)$. In particular $|\langle\Theta_{m,m'},f(d\,\cdot)\rangle|$ does not depend on the factorisation.
+\end{enumerate}
 \end{theorem}
 
+Here (i) is the case $M=L$, $d=1$ of (ii), and it is proved first; (ii) needs in addition the action of the Atkin--Lehner matrices of level $L$ on the oldforms $f(dz)$.
+
+\begin{lemma}\label{lem:ALold}
+Let $f$ be a newform of level $M\mid L$, $d\mid L/M$, $Q\mid n$, and put $Q_1=(Q,M)$, $Q_2=(Q,d)$, $Q_3=Q/(Q_1Q_2)$, $d'=dQ_3/Q_2$. Then $f(d\,\cdot)|_2W_Q^{(L)}=(d'/d)\,\eta_{Q_1}(f)\,f(d'\cdot)$.
+\end{lemma}
 \begin{proof}
-\emph{Reduction to $(1,n)$.} By Lemma~\ref{lem:AL}, applied to each prime of $m$ in turn, $\Theta_{m,m'}|_2W_m=\chi(m)\Theta_{1,n}$, and $|_2W_m$ is an isometry, so $\langle\Theta_{m,m'},\varphi\rangle=\langle\Theta_{m,m'}|_2W_m,\varphi|_2W_m\rangle=\chi(m)\eta_m(\varphi)\langle\Theta_{1,n},\varphi\rangle$; with the first formula this gives the second, since $\chi(m)\chi(n)=\chi(m')$ and $\eta_m\eta_n=\eta_{m'}$.
+Since the odd part of $L$ is square-free, $Q_1,Q_2,Q_3$ are pairwise coprime and $d'\mid L/M$. With $W_Q=\left(\begin{smallmatrix}Qa&b\\Lc&Q\delta\end{smallmatrix}\right)$, $Q^2a\delta-Lbc=Q$, one checks
+\[
+B_dW_Q=Q_2\,Y\,B_{d'},\qquad Y=\begin{pmatrix}Q_1Q_2a&db/Q_2\\ (L/(dQ_3))\,c&Q_1Q_3\delta\end{pmatrix},
+\]
+where $Y$ is integral ($Q_2\mid d$, and $dQ_3\mid L$) with $\det Y=Q_1$, $Q_1$ divides its diagonal entries and $M$ divides $L/(dQ_3)$ because $dQ_3\mid L/M$ (including the $2$-part, as $d\mid L/M$); so $Y$ is an Atkin--Lehner matrix of level $M$ and index $Q_1$, and $f|_2Y=\eta_{Q_1}(f)f$. As $f(d\,\cdot)=d^{-1}f|_2B_d$ and scalars act trivially, $f(d\,\cdot)|_2W_Q=d^{-1}f|_2(YB_{d'})=d^{-1}\eta_{Q_1}(f)f|_2B_{d'}=(d'/d)\eta_{Q_1}(f)f(d'\cdot)$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:RS}]
+\emph{Reduction to $(1,n)$.} By Lemma~\ref{lem:AL}, applied to each prime of $m$ in turn, $\Theta_{m,m'}|_2W_m=\chi(m)\Theta_{1,n}$, and $|_2W_m$ is an isometry, so $\langle\Theta_{m,m'},f(d\,\cdot)\rangle=\chi(m)\langle\Theta_{1,n},f(d\,\cdot)|_2W_m\rangle=\chi(m)(d'/d)\eta_{(m,M_1)}(f)\langle\Theta_{1,n},f(d'\cdot)\rangle$ by Lemma~\ref{lem:ALold} (with $Q=m$), and (ii) for $d$ and $d'$ gives (iii); for $M=L$, $\chi(m)\chi(n)=\chi(m')$ and $\eta_m\eta_n=\eta_{m'}$.
 
 \emph{The Eisenstein series.} For $\operatorname{Re}s>\frac12$ let
 \[
@@ -600,17 +623,21 @@ which is analytic near $s=0$ with $I(0)=\langle\Theta_{1,n},\varphi\rangle$ (the
 
 \emph{Decomposition over the cusps.} The map $\Gamma_\infty\gamma\mapsto\gamma^{-1}\infty$ identifies $\Gamma_\infty\backslash\Gamma_0(4)$ with the $\Gamma_0(4)$-orbit of $\infty$ in $\mathbb P^1(\mathbb Q)$, and the right action of $\Gamma_0(L)$ decomposes this orbit into the $\Gamma_0(L)$-classes of cusps lying over $\infty$, which are the cusps $a/c$ with $4\mid c$, i.e.\ the classes of denominators $4n/Q$, $Q\mid n$, represented by $\mathfrak a_Q=W_Q\infty$. For each $Q$ let $\varrho_Q=\left(\begin{smallmatrix}a&b\\(L/Q)c_1&Qd\end{smallmatrix}\right)\in\mathrm{SL}_2(\Z)$ with $W_Q=\varrho_QB_Q$ as in the proof of Lemma~\ref{lem:region}, $\beta_Q=\varrho_Q^{-1}$, so that $\beta_Q^{-1}\infty=\mathfrak a_Q$ and $d_{\beta_Q}=a$. Then $\Gamma_\infty\backslash\Gamma_0(4)=\bigsqcup_{Q\mid n}\Gamma_\infty\backslash\Gamma_\infty\beta_Q\Gamma_0(L)$, and $\gamma'\mapsto\Gamma_\infty\beta_Q\gamma'$ identifies $\Gamma_{\mathfrak a_Q}\backslash\Gamma_0(L)$ with the $Q$-th piece, $\Gamma_{\mathfrak a_Q}=\beta_Q^{-1}\Gamma_\infty\beta_Q\cap\Gamma_0(L)$ being the stabiliser of the cusp, of width $w_Q=Q$. Writing $H(z)=g(z)\overline{\varphi(z)}y^2$, the automorphy of $g$ and $\varphi$ gives $H(z)=\chi(d_{\gamma'})^{-1}j(\gamma',z)H(\gamma'z)$ for $\gamma'\in\Gamma_0(L)$, hence
 \[
-\chi(d_{\beta_Q\gamma'})\,j(\beta_Q\gamma',z)^{-1}\operatorname{Im}(\beta_Q\gamma'z)^sH(z)=\chi(a)\,K_Q(\gamma'z),\qquad K_Q(w)=j(\beta_Q,w)^{-1}\operatorname{Im}(\beta_Qw)^sH(w),
+\chi(d_{\beta_Q\gamma'})\,j(\beta_Q\gamma',z)^{-1}\operatorname{Im}(\beta_Q\gamma'z)^sH(z)=\chi(a)\,K_Q(\gamma'z),\quad K_Q(w)=j(\beta_Q,w)^{-1}\operatorname{Im}(\beta_Qw)^sH(w),
 \]
-and unfolding, $I(s)=\sum_{Q\mid n}\chi(a)\int_{\Gamma_{\mathfrak a_Q}\backslash\HH}K_Q\,\dd\mu$. With the scaling matrix $\sigma_Q=\beta_Q^{-1}\left(\begin{smallmatrix}Q^{1/2}&0\\0&Q^{-1/2}\end{smallmatrix}\right)=Q^{-1/2}W_Q$ we have $\beta_Q\sigma_Qu=Qu$, $j(\beta_Q,\sigma_Qu)^{-1}=Q^{1/2}j(\sigma_Q,u)$, $\operatorname{Im}(\beta_Q\sigma_Qu)=Q\operatorname{Im}u$, and $H(\sigma_Qu)=(g|_1\sigma_Q)(u)\overline{(\varphi|_2\sigma_Q)(u)}\,j(\sigma_Q,u)\overline{j(\sigma_Q,u)}^{2}|j(\sigma_Q,u)|^{-4}(\operatorname{Im}u)^2$, so that all the factors $j(\sigma_Q,u)$ cancel and
+and unfolding, $I(s)=\sum_{Q\mid n}\chi(a)\int_{\Gamma_{\mathfrak a_Q}\backslash\HH}K_Q\,\dd\mu$. With the scaling matrix $\sigma_Q=\beta_Q^{-1}\left(\begin{smallmatrix}Q^{1/2}&0\\0&Q^{-1/2}\end{smallmatrix}\right)=Q^{-1/2}W_Q$ we have $\beta_Q\sigma_Qu=Qu$, $j(\beta_Q,\sigma_Qu)^{-1}=Q^{1/2}j(\sigma_Q,u)$, $\operatorname{Im}(\beta_Q\sigma_Qu)=Q\operatorname{Im}u$, and
+\[
+H(\sigma_Qu)=(g|_1\sigma_Q)(u)\overline{(\varphi|_2\sigma_Q)(u)}\,j(\sigma_Q,u)\overline{j(\sigma_Q,u)}^{2}|j(\sigma_Q,u)|^{-4}(\operatorname{Im}u)^2,
+\]
+so that all the factors $j(\sigma_Q,u)$ cancel and
 \[
 \int_{\Gamma_{\mathfrak a_Q}\backslash\HH}K_Q\,\dd\mu=Q^{1/2+s}\int_0^\infty\!\!\int_0^1(g|_1\sigma_Q)(u)\,\overline{(\varphi|_2\sigma_Q)(u)}\,v^{s}\,\dd u_1\,\dd v\qquad(u=u_1+iv).
 \]
-Here $g|_1\sigma_Q=g|_1W_Q$ and $\varphi|_2\sigma_Q=\varphi|_2W_Q=\eta_Q(\varphi)\varphi$, because scalar matrices act trivially; and, exactly as in the proof of Lemma~\ref{lem:AL}, $B_QW_Q=Q\left(\begin{smallmatrix}Qa&b\\4(n/Q)c_1&d\end{smallmatrix}\right)$ with the second factor in $\Gamma_0(4n/Q)$, so that $g|_1W_Q=Q^{-1/2}\chi(d)\,\theta^2((n/Q)z)$. Since $Qad-4(n/Q)bc_1=1$ gives $ad\equiv Q\pmod 4$, $\chi(a)\chi(d)=\chi(Q)$, and by Parseval
-\[
-I(s)=\sum_{Q\mid n}\chi(Q)\eta_Q(\varphi)\,\Gamma(s+1)(4\pi)^{-s-1}\sum_{j\ge1}\frac{r(j)\,a_\varphi((n/Q)j)}{((n/Q)j)^{s+1}}
-\]
-for $\operatorname{Re}s>\frac12$, the coefficients $a_\varphi$ being real.
+Here $g|_1\sigma_Q=g|_1W_Q$ and $\varphi|_2\sigma_Q=\varphi|_2W_Q$, because scalar matrices act trivially; and, exactly as in the proof of Lemma~\ref{lem:AL}, $B_QW_Q=Q\left(\begin{smallmatrix}Qa&b\\4(n/Q)c_1&d\end{smallmatrix}\right)$ with the second factor in $\Gamma_0(4n/Q)$, so that $g|_1W_Q=Q^{-1/2}\chi(d)\,\theta^2((n/Q)z)$. Since $Qad-4(n/Q)bc_1=1$ gives $ad\equiv Q\pmod 4$, $\chi(a)\chi(d)=\chi(Q)$, and by Parseval, writing $\varphi|_2W_Q=\sum_kc_Q(k)e(kz)$,
+\begin{equation}\label{eq:Is}
+I(s)=\sum_{Q\mid n}\chi(Q)\,\Gamma(s+1)(4\pi)^{-s-1}\sum_{j\ge1}\frac{r(j)\,\overline{c_Q((n/Q)j)}}{((n/Q)j)^{s+1}}\qquad(\operatorname{Re}s>\tfrac12).
+\end{equation}
+For a newform $\varphi$ of level $L$, $c_Q(k)=\eta_Q(\varphi)a_\varphi(k)$, with real $a_\varphi$.
 
 \emph{The Dirichlet series.} For $p\mid n/Q$ we have $p\mid L$, so $a_\varphi((n/Q)j)=a_\varphi(n/Q)a_\varphi(j)$ for all $j$, and $r(j)=4\sum_{d\mid j}\chi(d)$ is $4$ times the coefficient of the Eisenstein series with Satake parameters $(1,\chi(p))$; the standard computation of the Rankin--Selberg Euler product gives, for $\operatorname{Re}w>\frac32$,
 \[
@@ -628,23 +655,65 @@ Finally $a_\varphi(n/Q)/(n/Q)=\prod_{p\mid n/Q}(-\eta_p(\varphi)/p)$ and $\eta_Q
 \[
 \eta_n(\varphi)\sum_{Q\mid n}\chi(Q)\prod_{p\mid n/Q}\Bigl(-\frac1p\Bigr)=\eta_n(\varphi)\prod_{p\mid n}\Bigl(\chi(p)-\frac1p\Bigr)=\chi(n)\eta_n(\varphi)\prod_{p\mid n}\Bigl(1-\frac{\chi(p)}p\Bigr),
 \]
-and $L(1,\chi)=\pi/4$.
+and $L(1,\chi)=\pi/4$. This proves (i).
+
+\emph{The oldforms.} Let now $\varphi=f(d\,\cdot)$ with $f$ a newform of level $M=2^eM_1$, $d=d_2d_{\mathrm{o}}$ with $d_2\mid2^{2-e}$ and $d_{\mathrm{o}}$ odd, and write $n=M_1d_{\mathrm{o}}R$. For $Q\mid n$ write $Q=Q_1Q_2Q_3$ with $Q_1\mid M_1$, $Q_2\mid d_{\mathrm{o}}$, $Q_3\mid R$. By Lemma~\ref{lem:ALold}, $c_Q(k)=(d'/d)\eta_{Q_1}(f)a_f(k/d')$ for $d'\mid k$ and $0$ otherwise, with $d'=dQ_3/Q_2$. Put $Q'=n/Q$ and $\delta=d_{\mathrm{o}}/Q_2$, which divides $Q'$; then $d'\mid Q'j$ if and only if $d_2Q_3\mid j$, and for $j=d_2Q_3j_1$ we have $Q'j/d'=Q''j_1$ with $Q''=Q'/\delta=(M_1/Q_1)(R/Q_3)$, while $Q'j=Q'd_2Q_3j_1$. Hence the $Q$-th inner sum in \eqref{eq:Is} at $s=0$ is
+\[
+\frac{d'}{d}\,\eta_{Q_1}(f)\,\frac{4}{Q'd_2Q_3}\sum_{j_1\ge1}\frac{\sigma_\chi(d_2Q_3j_1)\,a_f(Q''j_1)}{j_1}=\frac{4\,\eta_{Q_1}(f)}{Q'Q_2d_2}\,D_Q,
+\]
+where
+\[
+D_Q:=\sum_{j_1\ge1}\frac{\sigma_\chi(d_2Q_3j_1)\,a_f(Q''j_1)}{j_1},
+\]
+since $d'/(dd_2Q_3)=1/(Q_2d_2)$. The series $D_Q$ (continued from $\operatorname{Re}w>\frac32$ as before) is an Euler product whose local factors differ from those of $\sum\sigma_\chi(j)a_f(j)j^{-w}$ only at the primes of $d_2Q_3$ (where the argument of $\sigma_\chi$ carries an extra factor $p$) and at the primes of $Q''$ (where the argument of $a_f$ does). With $x=p^{-w}$ and $L_p=L_p(w,f)L_p(w,f\otimes\chi)$: at $p=2$, $\sigma_\chi(2^k)=1$ and the factor is $\sum_ka_f(2^k)x^k=L_2(w,f)=L_2$; at $p\mid M_1$, $a_f(p^{k+v})=a_f(p)^{k+v}$ gives $a_f(p)^vL_p$ ($v=1$ for $p\mid M_1/Q_1$, $v=0$ otherwise); and at $p\nmid2M$, with $a_f(p)=\alpha+\beta$, $\alpha\beta=p$,
+\begin{align*}
+\sum_{k\ge0}\sigma_\chi(p^k)a_f(p^k)x^k&=(1-\chi(p)px^2)\,L_p,\\
+\sum_{k\ge0}\sigma_\chi(p^{k+1})a_f(p^k)x^k&=\bigl(1+\chi(p)-\chi(p)a_f(p)x\bigr)\,L_p,\\
+\sum_{k\ge0}\sigma_\chi(p^k)a_f(p^{k+1})x^k&=\bigl(a_f(p)-(1+\chi(p))px\bigr)\,L_p
+\end{align*}
+(the second from $\sigma_\chi(p^{k+1})=\sigma_\chi(p^k)+\chi(p)^{k+1}$, the third from $a_f(p^{k+1})=(\alpha^{k+2}-\beta^{k+2})/(\alpha-\beta)$ and $\sum_k\sigma_\chi(p^k)(\alpha x)^k=((1-\alpha x)(1-\chi(p)\alpha x))^{-1}$). Therefore, at $w=1$,
+\[
+D_Q=\frac{4\,L(1,f)L(1,f\otimes\chi)}{\pi\prod_{p\mid M_1}(1-\chi(p)/p)}\prod_{p\mid M_1/Q_1}a_f(p)\prod_{p\mid Q_3}\frac{1+\chi(p)-\chi(p)a_f(p)/p}{1-\chi(p)/p}\prod_{p\mid R/Q_3}\frac{a_f(p)-1-\chi(p)}{1-\chi(p)/p}.
+\]
+Inserting this into \eqref{eq:Is}, with $\Gamma(1)(4\pi)^{-1}$ and $1/(Q'Q_2)=1/((M_1/Q_1)\,d_{\mathrm{o}}\,(R/Q_3))$, the sum over $Q$ factors over the three parts of $Q$:
+\begin{align*}
+\langle\Theta_{1,n},f(d\,\cdot)\rangle&=\frac{4\,L(1,f)L(1,f\otimes\chi)}{\pi^2\,d_2d_{\mathrm{o}}\prod_{p\mid M_1}(1-\chi(p)/p)}
+\Bigl[\sum_{Q_1\mid M_1}\chi(Q_1)\eta_{Q_1}(f)\prod_{p\mid M_1/Q_1}\frac{a_f(p)}p\Bigr]
+\Bigl[\sum_{Q_2\mid d_{\mathrm{o}}}\chi(Q_2)\Bigr]\\
+&\qquad\times\Bigl[\sum_{Q_3\mid R}\chi(Q_3)\prod_{p\mid Q_3}\frac{1+\chi(p)-\chi(p)a_f(p)/p}{1-\chi(p)/p}\prod_{p\mid R/Q_3}\frac{(a_f(p)-1-\chi(p))/p}{1-\chi(p)/p}\Bigr].
+\end{align*}
+The first bracket is $\chi(M_1)\eta_{M_1}(f)\prod_{p\mid M_1}(1-\chi(p)/p)$ as in (i); the second is $\prod_{p\mid d_{\mathrm{o}}}(1+\chi(p))$; and the third is a product over $p\mid R$ of
+\[
+\frac{\chi(p)\bigl(1+\chi(p)-\chi(p)a_f(p)/p\bigr)+\bigl(a_f(p)-1-\chi(p)\bigr)/p}{1-\chi(p)/p}=\frac{(1+\chi(p))(1-1/p)}{1-\chi(p)/p}=1+\chi(p),
+\]
+the terms with $a_f(p)$ cancelling. Since $n/M_1=d_{\mathrm{o}}R$ and $d=d_2d_{\mathrm{o}}$, this is (ii).
 \end{proof}
 
 \begin{remark}\label{rem:RSsym}
 (i) The Atkin--Lehner symmetries alone show where the coefficients can be non-zero: $\langle\Theta_{1,n},\varphi\rangle=\langle\Theta_{1,n}|W_n,\varphi|W_n\rangle=\chi(n)\eta_n(\varphi)\langle\Theta_{1,n},\varphi\rangle$ (Lemma~\ref{lem:AL} with $(m,m')=(n,1)$), and $\Theta|_2W_L=-\Theta$ (Section~\ref{subsec:allcusps}, the cusp $0$) gives $\langle\Theta,\varphi\rangle=-\eta_L(\varphi)\langle\Theta,\varphi\rangle$; so $\langle\Theta_{1,n},\varphi\rangle\ne0$ forces $\eta_n(\varphi)=\chi(n)$ and $\eta_4(\varphi)=-\chi(n)$, i.e.\ the root number $-\eta_L(\varphi)$ of $\varphi$ is $+1$. The formula is consistent with this: when $\eta_n\ne\chi(n)$ the right-hand side vanishes because one of the two central values does (root number $-1$).
-(ii) The theorem was checked numerically (\texttt{test\_rs\_formula.py}, \texttt{results/test\_rs\_formula.txt}): the newform components of $G_{1,p}=T-M$ are isolated with the Hecke operator $T_3$, their norms computed by Rankin--Selberg and their central values from the functional equation. At the level $20$ (where $G_{1,5}=\frac83f_{20}$) the two sides agree to six decimals, $0.21693$; at the levels $52$, $116$ and $148$ (one, three and two newforms with non-zero component, the last two with Hecke eigenvalues in $\mathbb Q(\sqrt{17})$; all with $\eta_p=+1$ and root number $+1$) the ratios are $0.99975$; $0.99997$, $0.99878$, $0.99760$; $1.00054$, $0.99932$, within the accuracy of the Rankin--Selberg norms. At the levels $44$ and $76$ ($p\equiv3\pmod4$) $G_{1,p}$ has no newform component.
+(ii) The theorem was checked numerically (\texttt{test\_rs\_formula.py}, \texttt{test\_rs\_old.py}, outputs in \texttt{results/}): the $T_3$-eigencomponents of $G_{1,p}=T-M$ are isolated, their norms computed by Rankin--Selberg and the central values from the functional equation. For newforms: at the level $20$ (where $G_{1,5}=\frac83f_{20}$) the two sides agree to six decimals, $0.21693$; at the levels $52$, $116$ and $148$ (one, three and two newforms with non-zero component, the last two with Hecke eigenvalues in $\mathbb Q(\sqrt{17})$; all with $\eta_p=+1$ and root number $+1$) the ratios are $0.99975$; $0.99997$, $0.99878$, $0.99760$; $1.00054$, $0.99932$. For oldforms, the component $v=c_1f+c_2f(2\,\cdot)+c_4f(4\,\cdot)$ of $G_{1,p}$ in the space of $f$ is its orthogonal projection, so $\|v\|^2=\langle\Theta,v\rangle=\frac4{\pi^2}\chi(p)\eta_p(f)L(1,f)L(1,f\otimes\chi)(c_1+c_2/2+c_4/4)$ by (ii); the ratios of the two sides are $1.00071$ for $f$ of level $11$ in $G_{1,11}$ ($c_1:c_2:c_4=1:3:4$), $1.00184$ for $f$ of level $26$ in $G_{1,13}$, $0.99873$ for $f$ of level $58$ in $G_{1,29}$, and $1.00068$, $1.00035$ for the two forms of level $74$ in $G_{1,37}$ ($c_1:c_2=1:2$ in the level-$2p$ cases), within the accuracy of the Rankin--Selberg norms. At the levels $44$ and $76$ ($p\equiv3\pmod4$) $G_{1,p}$ has no newform component, in accordance with (i) and the vanishing of $L(1,\varphi\otimes\chi)$ there.
 \end{remark}
 
-\begin{corollary}[The newform second moment]\label{cor:newmoment}
-For $n=mm'$ odd and square-free,
+\begin{corollary}[The second moment over the newforms of all levels]\label{cor:newmoment}
+Let $n$ be odd and square-free. For a newform $f$ of weight $2$ and level $M=2^eM_1\mid4n$ let $S(f)$ be the span of the $f(d\,\cdot)$, $d\mid4n/M$, $\Gamma_f$ the Gram matrix $(\langle f(d\,\cdot),f(d'\cdot)\rangle)_{d,d'}$ and $w=(1/d)_d$. Then
 \[
-\sum_{\varphi\in H_2^{\mathrm{new}}(4n)}\frac{L(1,\varphi)^2L(1,\varphi\otimes\chi)^2}{\langle\varphi,\varphi\rangle}=\frac{\pi^4}{16}\,\bigl\|\mathrm{pr}_{\mathrm{new}}G_{m,m'}\bigr\|^2\ \le\ \frac{\pi^4}{16}\,\|G_{m,m'}\|^2\ \ll\ (\log3n)^2(\log\log3n)^{C},
+\|G_{1,n}\|^2=\sum_{f}\bigl\|\mathrm{pr}_{S(f)}\Theta_{1,n}\bigr\|^2=\frac{16}{\pi^4}\sum_{f}\gamma_f\,4^{\omega(n/M_1)}\,L(1,f)^2L(1,f\otimes\chi)^2,\qquad \gamma_f=w^{\mathrm T}\Gamma_f^{-1}w,
 \]
-the sum over the newforms of weight $2$ and level $4n$ and $\mathrm{pr}_{\mathrm{new}}$ the orthogonal projection onto them; the left-hand side does not depend on the factorisation $n=mm'$. Since $\langle\varphi,\varphi\rangle\asymp n^{1+o(1)}$ for newforms of level $4n$, the harmonic second moment of $L(\frac12,\varphi)L(\frac12,\varphi\otimes\chi_{-4})$ over the family is $\ll(\log n)^{2+o(1)}$.
+the sum over the newforms $f$ of weight $2$ and level dividing $4n$ for which every prime of $n/M_1$ is $\equiv1\pmod 4$. In particular
+\[
+\sum_{\varphi\in H_2^{\mathrm{new}}(4n)}\frac{L(1,\varphi)^2L(1,\varphi\otimes\chi)^2}{\langle\varphi,\varphi\rangle}\ \le\ \frac{\pi^4}{16}\,\|G_{1,n}\|^2\ \ll\ (\log3n)^2(\log\log3n)^{C},
+\]
+and, since $\langle\varphi,\varphi\rangle\asymp n^{1+o(1)}$ for newforms of level $4n$, the harmonic second moment of the product $L(\frac12,\varphi)L(\frac12,\varphi\otimes\chi_{-4})$ of central values over the newforms of level $4n$ is $\ll(\log n)^{2+o(1)}$.
 \end{corollary}
+\begin{proof}
+The spaces $S(f)$ are mutually orthogonal and span $S_2(\Gamma_0(4n))$; $\mathrm{pr}_{S(f)}\Theta=\sum_dc_df(d\,\cdot)$ with $\Gamma_fc=v$, $v_d=\langle\Theta,f(d\,\cdot)\rangle=\kappa_f/d$ by Theorem~\ref{thm:RS}(ii), where
+\[
+\kappa_f=\tfrac4{\pi^2}\chi(M_1)\eta_{M_1}(f)2^{\omega(n/M_1)}L(1,f)L(1,f\otimes\chi);
+\]
+hence $\|\mathrm{pr}_{S(f)}\Theta\|^2=v^{\mathrm T}\Gamma_f^{-1}v=\kappa_f^2\gamma_f$. The Gram matrices are explicit (see \cite[Section~2]{ILS}); for a newform of level $4n$, $\gamma_f=1/\langle f,f\rangle$.
+\end{proof}
 
-The two-sided bound of Corollary~\ref{cor:spectral} applies to the whole spectral sum, newforms and oldforms together; whether the newforms carry a positive proportion of it depends on the oldform components, for which the same unfolding gives a formula with additional local factors at the primes of $4n/M$ ($M$ the level of the underlying newform), not worked out here. Both the upper and the lower bound are obtained from the geometry of the cusps, not from the Petersson formula.
+The two-sided bound of Corollary~\ref{cor:spectral} is therefore a statement about the second moment of $L(\frac12,f)L(\frac12,f\otimes\chi_{-4})$ over the newforms $f$ of all levels $2^eM_1$ with $M_1\mid n$, each weighted by the explicit $\gamma_f4^{\omega(n/M_1)}$, with both the upper and the lower bound obtained from the geometry of the cusps rather than from the Petersson formula.
 
 \subsection{All cusps, numerically}\label{subsec:allcusps}
 For square-free $m,m'$ the computation of Lemma~\ref{lem:region} can be carried out at every cusp. The cusps of $\Gamma_0(L)$ are then in bijection with the divisors $d$ of $L$ (one cusp of denominator $d$ for each $d$, since $(d,L/d)\le2$), and we write $d=d_2\delta$ with $d_2\mid4$, $\delta\mid mm'$, $\delta_m=(\delta,m)$, $\delta_{m'}=(\delta,m')$, and
@@ -684,14 +753,14 @@ $(1009,1013)^*$ & 1022117 & 57.730 & 61.23 & 58.545 & 5.271 & 63.816 & 1.105 & 3
 \hline
 \end{tabular}
 \medskip
-\caption{The lower bound \eqref{eq:allcusps} and its parts (\texttt{results/cusp\_lower\_bound.txt}, \texttt{\_large.txt}): $\Lambda_{\mathrm{AL}}$ is the sum over the Atkin--Lehner cusps ($d_2\in\{1,4\}$), $\Lambda_{\mathrm{odd}}$ the sum over the cusps with $d_2=2$, $\Lambda$ their sum, ``Thm~\ref{thm:lower}(i)'' the right-hand side of Theorem~\ref{thm:lower}(i) (the four cusps with $\delta\in\{m,m'\}$), and the last column its leading term. $\|G\|^2$ is the Rankin--Selberg estimate over all $n\le2^{21}$ with the exact main term ($2^{24}$ for the two pairs marked $^*$), and ``Tab.~\ref{tab:ms}'' the estimate over the admissible $n$ of Section~\ref{sec:num} (for $(3,7)$, $(5,7)$, $(15,77)$, $(105,143)$ computed here in the same way). For the two pairs marked $^*$ the estimate has not converged ($Y/L=280$ and $4$; Table~\ref{tab:ms} has $S_2(Y)/S_2(Y/2)=4.36$ and $4.56$ for them), and the lower bound is the better information. Floating point.}
+\caption{The lower bound \eqref{eq:allcusps} and its parts (\texttt{results/cusp\_lower\_bound.txt}, \texttt{\_large.txt}): $\Lambda_{\mathrm{AL}}$ is the sum over the Atkin--Lehner cusps ($d_2\in\{1,4\}$), $\Lambda_{\mathrm{odd}}$ the sum over the cusps with $d_2=2$, $\Lambda$ their sum, ``Thm~\ref{thm:lower}(i)'' the right-hand side of Theorem~\ref{thm:lower}(i) (the four cusps with $\delta\in\{m,m'\}$), and the last column its leading term. $\|G\|^2$ is the Rankin--Selberg estimate over all $n\le2^{21}$ with the exact main term ($2^{24}$ for the two pairs marked $^*$), and ``Tab.~\ref{tab:ms}'' the estimate over the admissible $n$ of Section~\ref{sec:num} (for $(3,7)$, $(5,7)$, $(15,77)$, $(105,143)$ computed here in the same way). For the two pairs marked $^*$ the estimate has not converged ($Y/L=280$ and $4$; Table~\ref{tab:ms} has $S_2(Y)/S_2(Y/2)=4.36$ and $4.56$ for them), and the lower bound is the better information. By Theorem~\ref{thm:lower}(ii), $(1,15015)$ and $(105,143)$ have the same norm, although their cusp sums differ. Floating point.}
 \label{tab:cusps}
 \end{table}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{cusp_decomposition.pdf}
-\caption{The norm decomposed over the cusps (Table~\ref{tab:cusps}). (a) For the eleven pairs with $Y\ge35L$, ordered by $mm'$, the parts of $\Lambda(m,m')$ as fractions of $\|G_{m,m'}\|^2$: the four cusps of Theorem~\ref{thm:lower}(i), the other Atkin--Lehner cusps, the cusps of denominator $2$, and the rest $\|G\|^2-\Lambda$, which is the part of the fundamental domain below height $1$; the dashed line is $3/\pi$, the share of the area above height $1$, and the number above each bar is $\Lambda/\|G\|^2$. For $m=1$ the four cusps of the theorem are all the Atkin--Lehner cusps; for $m\approx m'$ they carry about half, the other half coming from the pair $(m,m')$ at the cusps with $\delta=1$. (b) $\Lambda(m,m')$ and the leading term $\frac1\pi(\log^2m+\log^2m')+\frac5{\pi^2}\log m\log m'$ against $\|G_{m,m'}\|^2$, with the fit $0.365(\log mm')^2$ of Section~\ref{subsec:law} for comparison; the leading term follows the factorisation of $mm'$ (it separates $(1,1009)$ from $(13,29)$ and $(15,77)$), the fit does not. Script \texttt{plot\_cusp\_decomposition.py}; floating point.}
+\caption{The norm decomposed over the cusps (Table~\ref{tab:cusps}). (a) For the eleven pairs with $Y\ge35L$, ordered by $mm'$, the parts of $\Lambda(m,m')$ as fractions of $\|G_{m,m'}\|^2$: the four cusps of Theorem~\ref{thm:lower}(i), the other Atkin--Lehner cusps, the cusps of denominator $2$, and the rest $\|G\|^2-\Lambda$, which is the part of the fundamental domain below height $1$; the dashed line is $3/\pi$, the share of the area above height $1$, and the number above each bar is $\Lambda/\|G\|^2$. For $m=1$ the four cusps of the theorem are all the Atkin--Lehner cusps; for $m\approx m'$ they carry about half, the other half coming from the pair $(m,m')$ at the cusps with $\delta=1$. (b) $\Lambda(m,m')$ and the leading term $\frac1\pi(\log^2m+\log^2m')+\frac5{\pi^2}\log m\log m'$ of the cusp sum against $\|G_{m,m'}\|^2$, with the fit $0.365(\log mm')^2$ of Section~\ref{subsec:law} for comparison. The cusp sums depend on the factorisation of $mm'$, the norm does not (Theorem~\ref{thm:lower}(ii)); $\Lambda(m,m')$ is a lower bound for the norm for every factorisation, and the pair $(1,mm')$ gives the best one. Script \texttt{plot\_cusp\_decomposition.py}; floating point.}
 \label{fig:cusps}
 \end{figure}
 
@@ -717,8 +786,9 @@ $\Lambda(1,p)/(\log p)^2$ & 0.340 & 0.349 & 0.347 & 0.345 & 0.343 & 0.342\\
 \end{tabular}
 \end{center}
 The least-squares fit $\Lambda(1,p)=a(\log p)^2+b\log p+c$ over these six primes gives $a=0.319$, $b=0.42$, $c=-1.5$, against $1/\pi=0.318$ for the leading term of Theorem~\ref{thm:lower}(ii); indeed Lemma~\ref{lem:r2} gives for the four cusps, before the correction by $M(1,p;n)$, exactly $\frac1{4\pi}\bigl(S(p/4\pi)+S(p/\pi)\bigr)=\frac1\pi(\log p)^2+0.383\log p-0.65+O(p^{-1/2})$, which is $65.39$ at $p=1000003$ against the computed $65.13$. The ratio $\Lambda(1,p)/(\log p)^2$ therefore tends to $1/\pi$, but only like $1/\pi+0.4/\log p$, which is why the fits of Section~\ref{sec:num} over $mm'\le10^4$ gave $0.37$.
+\item By Theorem~\ref{thm:lower}(ii), pairs with the same product have the same norm, although their cusp sums $\Lambda$ differ (the regions above height $1$ are not permuted by $W_m$, which changes the widths). The Rankin--Selberg estimates confirm this where they have converged (\texttt{results/norm\_split\_check.txt}): $(3,5)$ and $(1,15)$ give $2.0584$ and $2.0591$; $(3,7)$ and $(1,21)$: $2.4806$ and $2.4805$; $(5,7)$ and $(1,35)$: $4.1087$ and $4.1067$; $(13,29)$ and $(1,377)$: $12.423$ and $12.390$. For larger $L$ the estimates for $(1,n)$ at $X=2^{21}$ lie below their own lower bounds $\Lambda(1,n)$ (e.g.\ $23.95$ against $24.05$ for $n=4087$, $26.66$ against $29.70$ for $n=10403$) and have not converged, while those for the balanced pairs have; this is also why the two rows marked $^*$ in Table~\ref{tab:cusps} disagree.
 \end{enumerate}
-In short, $\|G_{m,m'}\|^2$ is, to within a few percent, $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'$ plus the contribution of the cusp of denominator $2$ and of the other divisors of $mm'$, plus lower-order terms; its ratio to $(\log mm')^2$ tends to $1/\pi$ for $(1,m')$ and to $\frac1{2\pi}+\frac5{4\pi^2}+\cdots$ for $m\approx m'$ prime, with lower-order terms that are still substantial at $mm'\approx10^4$. The constant $0.37$ of Section~\ref{subsec:law} is the average of these ratios over the sample.
+In short, the cusp sums $\Lambda(m,m')$ of the fundamental domain of the pair $(m,m')$ are, to within a few percent of the norm, $\frac1\pi((\log m)^2+(\log m')^2)+\frac5{\pi^2}\log m\log m'$ plus the contribution of the cusp of denominator $2$ and of the other divisors of $mm'$, plus lower-order terms: they depend on the factorisation, although their common upper bound, the norm, does not. For the pair $(1,mm')$ the leading term is $\frac1\pi(\log mm')^2$, which is the leading term of the norm itself (Theorem~\ref{thm:lower}(iii)); its ratio to $(\log mm')^2$ approaches $1/\pi$ only like $1/\pi+0.4/\log mm'$, and the constant $0.37$ of Section~\ref{subsec:law} is the value of this ratio in the range of the sample.
 
 \section{The two-dimensional sieve: $(7,5)$ for every $N$}\label{sec:dim2}
 
@@ -910,7 +980,7 @@ For all three weightings the sums are of the size $Q$, the square root of the su
 
 \section*{Data and code}
 {\sloppy
-The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{certify\_modular.py} (arguments \texttt{1/2}, \texttt{2/3}, \texttt{19/20}), \texttt{plot\_mean\_square.py}, \texttt{plot\_sieve\_thresholds.py}, \texttt{plot\_cusp\_decomposition.py}, \texttt{plot\_dhr\_sieve.py} and \texttt{plot\_modulus\_sums.py} (Figures~\ref{fig:ms}, \ref{fig:thr}, \ref{fig:cusps}, \ref{fig:dhr}, \ref{fig:signs}), \texttt{local\_densities.py} and \texttt{cusp\_lower\_bound.py} (Table~\ref{tab:cusps}), \texttt{dhr\_sieve.py} (Section~\ref{sec:dim2}, output \texttt{results/dhr\_sieve.txt}), \texttt{certify\_dhr.py} (Lemma~\ref{lem:cert}, output \texttt{results/certify\_dhr\_output.txt}), \texttt{modulus\_sum\_scan.py} (Table~\ref{tab:signs}, output \texttt{results/modulus\_sum\_scan.txt}), the modules of Part~I they use (\texttt{sup\_error\_scan.py}, \texttt{modular\_sieve\_scan.py}, \texttt{sieve\_core.py}) and the outputs \texttt{results/mean\_square\_check\_x21.txt}, \texttt{results/norm\_level20.txt}, \texttt{results/certify\_modular\_output\_twothirds.txt}, \texttt{results/certify\_modular\_output\_nineteen.txt}, \texttt{results/sieve\_thresholds.txt}, \texttt{results/cusp\_lower\_bound.txt}, \texttt{results/cusp\_lower\_bound\_large.txt} are in the repository \url{https://github.com/Ruqing1963/two-squares-mean-square}; the code and data of Part~I are at \url{https://github.com/Ruqing1963/two-squares-theta-level}. The certification of the sieve parameters uses directed rounding as described in Part~I, Appendix~A; the computations of Section~\ref{sec:num} are in floating point and are evidence, not proof.
+The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{certify\_modular.py} (arguments \texttt{1/2}, \texttt{2/3}, \texttt{19/20}), \texttt{plot\_mean\_square.py}, \texttt{plot\_sieve\_thresholds.py}, \texttt{plot\_cusp\_decomposition.py}, \texttt{plot\_dhr\_sieve.py} and \texttt{plot\_modulus\_sums.py} (Figures~\ref{fig:ms}, \ref{fig:thr}, \ref{fig:cusps}, \ref{fig:dhr}, \ref{fig:signs}), \texttt{local\_densities.py} and \texttt{cusp\_lower\_bound.py} (Table~\ref{tab:cusps}), \texttt{dhr\_sieve.py} (Section~\ref{sec:dim2}, output \texttt{results/dhr\_sieve.txt}), \texttt{certify\_dhr.py} (Lemma~\ref{lem:cert}, output \texttt{results/certify\_dhr\_output.txt}), \texttt{modulus\_sum\_scan.py} (Table~\ref{tab:signs}, output \texttt{results/modulus\_sum\_scan.txt}), \texttt{test\_rs\_formula.py} and \texttt{test\_rs\_old.py} (Remark~\ref{rem:RSsym}, outputs \texttt{results/test\_rs\_formula.txt}, \texttt{results/test\_rs\_old.txt}), the modules of Part~I they use (\texttt{sup\_error\_scan.py}, \texttt{modular\_sieve\_scan.py}, \texttt{sieve\_core.py}) and the outputs \texttt{results/mean\_square\_check\_x21.txt}, \texttt{results/norm\_level20.txt}, \texttt{results/certify\_modular\_output\_twothirds.txt}, \texttt{results/certify\_modular\_output\_nineteen.txt}, \texttt{results/sieve\_thresholds.txt}, \texttt{results/cusp\_lower\_bound.txt}, \texttt{results/cusp\_lower\_bound\_large.txt}, \texttt{results/cusp\_lower\_bound\_1p.txt}, \texttt{results/norm\_split\_check.txt} are in the repository \url{https://github.com/Ruqing1963/two-squares-mean-square}; the code and data of Part~I are at \url{https://github.com/Ruqing1963/two-squares-theta-level}. The certification of the sieve parameters uses directed rounding as described in Part~I, Appendix~A; the computations of Section~\ref{sec:num} are in floating point and are evidence, not proof.
 \par}
 
 \begin{thebibliography}{9}
@@ -926,6 +996,7 @@ The scripts \texttt{mean\_square\_check.py}, \texttt{norm\_level20.py}, \texttt{
 \bibitem{FK} C.~S.~Franze, P.~H.~Kao, \emph{Almost-prime values of reducible polynomials at prime arguments}, preprint, \href{https://arxiv.org/abs/1812.11280}{arXiv:1812.11280}.
 \bibitem{MV} H.~L.~Montgomery, R.~C.~Vaughan, \emph{The exceptional set in Goldbach's problem}, Acta Arith. \textbf{27} (1975), 353--370.
 \bibitem{HT} R.~R.~Hall, G.~Tenenbaum, \emph{Divisors}, Cambridge Tracts in Math. \textbf{90}, Cambridge Univ. Press, 1988.
+\bibitem{ILS} H.~Iwaniec, W.~Luo, P.~Sarnak, \emph{Low lying zeros of families of $L$-functions}, Publ. Math. Inst. Hautes \'Etudes Sci. \textbf{91} (2000), 55--131.
 \bibitem{IwaTopics} H.~Iwaniec, \emph{Topics in Classical Automorphic Forms}, Grad. Stud. Math. \textbf{17}, Amer. Math. Soc., 1997.
 \bibitem{SiegelII} C.~L.~Siegel, \emph{\"Uber die analytische Theorie der quadratischen Formen. II}, Ann. of Math. (2) \textbf{37} (1936), 230--263.
 \bibitem{Wang} Y.~Wang, \emph{On the representation of a large even integer as a sum of a product of at most 2 primes and a product of at most 3 primes}, Sci. Sinica \textbf{6} (1957), 1003--1015; Chinese original in Acta Math. Sinica \textbf{6} (1956), 565--582.

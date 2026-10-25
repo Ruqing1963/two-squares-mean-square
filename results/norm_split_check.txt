@@ -1,0 +1,13 @@
+﻿tables to 2097152 in 6.3s;  ||G||^2 estimated from n <= X = 2^21
+
+       (m,m)       mm ||G||^2 all n adm. (Tab.1)    LB_AL   LB_odd       LB LB/||G||^2   Thm(i) Thm(ii) asympt.
+     (1, 15)       15        2.0591       3.4370   1.8952   0.0758   1.9711      0.957   1.7535          2.3343   [1s]
+     (1, 21)       21        2.4805       4.0176   2.2158   0.1636   2.3794      0.959   1.9354          2.9505   [1s]
+     (1, 35)       35        4.1067       4.8218   3.8944   0.0853   3.9797      0.969   3.8455          4.0236   [1s]
+    (1, 377)      377       12.3899      13.0520  12.0578   0.1117  12.1694      0.982  12.0237         11.2018   [1s]
+   (1, 1155)     1155       21.4843      27.2975  21.1864   0.2068  21.3932      0.996  16.2103         15.8291   [1s]
+   (1, 4087)     4087       23.9453      23.5157  23.9416   0.1104  24.0520      1.004  23.9372         22.0107   [1s]
+  (1, 10403)    10403       26.6648      25.8807  29.5840   0.1110  29.6950      1.114  29.5813         27.2345   [1s]
+
+LB_AL: Atkin-Lehner cusps (d_2 = 1, 4), LB_odd: cusps of denominator 2 delta; Thm(i): the four cusps with the pair (1, mm') (delta = m, m');
+Thm(ii) asympt.: (1/pi)((log m)^2 + (log m')^2), the leading term of Thm(i).  The Siegel regions cover the fraction 3/pi = 0.955 of the area of Gamma_0(L)\H.

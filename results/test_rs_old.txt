@@ -1,0 +1,25 @@
+﻿p = 11: T_3 eigenvalues on the span of G_{1,11}: [-1.]
+   eigenvalue -1.0000: oldforms of f of level 11, a_f(2) = -2.000484, a_f(3) = -1.0000, a_f(11) = 1.0000; v = 3.2000 f + 9.6015 f(2z) + 12.8015 f(4z)
+      ||v||^2 (RS at X/2, X) = 1.680303, 1.682160;  L(1,f) = 0.25382596 (w=+1, spread 9.7e-06), L(1,f x chi) = 1.45881662 (level 176, w=+1, spread 0.0e+00)
+      formula (4/pi^2) chi(p) eta_p L L (c1 + c2/2 + c4/4) = 1.680970;  ratio ||v||^2/formula = 1.00071
+p = 13: T_3 eigenvalues on the span of G_{1,13}: [-3. -0.]
+   eigenvalue -3.0000: oldforms of f of level 26, a_f(2) = 1.000000, a_f(3) = -3.0000, a_f(13) = -1.0000; v = 0.7619 f + 1.5238 f(2z) + 0.0000 f(4z)
+      ||v||^2 (RS at X/2, X) = 0.692453, 0.693120;  L(1,f) = 0.62096535 (w=+1, spread 1.2e-15), L(1,f x chi) = 1.80405719 (level 208, w=+1, spread 4.4e-16)
+      formula (4/pi^2) chi(p) eta_p L L (c1 + c2/2 + c4/4) = 0.691845;  ratio ||v||^2/formula = 1.00184
+   eigenvalue -0.0000: newform of level 52 (tested in test_rs_formula.py)
+p = 29: T_3 eigenvalues on the span of G_{1,29}: [-3. -1.  1.  2.]
+   eigenvalue -3.0000: newform of level 116 (tested in test_rs_formula.py)
+   eigenvalue -1.0000: oldforms of f of level 58, a_f(2) = 1.000000, a_f(3) = -1.0000, a_f(29) = -1.0000; v = 1.0667 f + 2.1333 f(2z) + 0.0000 f(4z)
+      ||v||^2 (RS at X/2, X) = 1.725630, 1.724985;  L(1,f) = 1.03320751 (w=+1, spread 6.7e-16), L(1,f x chi) = 1.93343530 (level 464, w=+1, spread 6.7e-16)
+      formula (4/pi^2) chi(p) eta_p L L (c1 + c2/2 + c4/4) = 1.727174;  ratio ||v||^2/formula = 0.99873
+   eigenvalue 1.0000: newform of level 116 (tested in test_rs_formula.py)
+   eigenvalue 2.0000: newform of level 116 (tested in test_rs_formula.py)
+p = 37: T_3 eigenvalues on the span of G_{1,37}: [-2.561553 -1.618034  0.618034  1.561553]
+   eigenvalue -2.5616: newform of level 148 (tested in test_rs_formula.py)
+   eigenvalue -1.6180: oldforms of f of level 74, a_f(2) = 1.000000, a_f(3) = -1.6180, a_f(37) = -1.0000; v = 0.6869 f + 1.3739 f(2z) + 0.0000 f(4z)
+      ||v||^2 (RS at X/2, X) = 1.649725, 1.648875;  L(1,f) = 1.13044214 (w=+1, spread 2.0e-15), L(1,f x chi) = 2.61779898 (level 592, w=+1, spread 8.9e-16)
+      formula (4/pi^2) chi(p) eta_p L L (c1 + c2/2 + c4/4) = 1.647752;  ratio ||v||^2/formula = 1.00068
+   eigenvalue 0.6180: oldforms of f of level 74, a_f(2) = 1.000000, a_f(3) = 0.6180, a_f(37) = -1.0000; v = 0.4359 f + 0.8717 f(2z) + 0.0000 f(4z)
+      ||v||^2 (RS at X/2, X) = 0.441052, 0.440172;  L(1,f) = 1.24292197 (w=+1, spread 8.0e-15), L(1,f x chi) = 1.00202825 (level 592, w=+1, spread 4.4e-16)
+      formula (4/pi^2) chi(p) eta_p L L (c1 + c2/2 + c4/4) = 0.440018;  ratio ||v||^2/formula = 1.00035
+   eigenvalue 1.5616: newform of level 148 (tested in test_rs_formula.py)
