@@ -1,0 +1,39 @@
+﻿p = 5, level 20: T_3 eigenvalues on the span of G_{1,5}: [-2.]
+   eigenvalue -2.0000: a(2) = 0.0000, a(3) = -2.0000, a(5) = -1.0000, a(5) = -1.0000, a(9)-(a(3)^2-3) = -1.1e-16  -> old
+p = 13, level 52: T_3 eigenvalues on the span of G_{1,13}: [-3. -0.]
+   eigenvalue -3.0000: a(2) = 3.0000, a(3) = -3.0000, a(5) = -1.0000, a(13) = -1.0000, a(9)-(a(3)^2-3) = -1.4e-13  -> old
+   eigenvalue -0.0000: a(2) = 0.0000, a(3) = -0.0000, a(5) = 2.0000, a(13) = -1.0000, a(9)-(a(3)^2-3) = 3.1e-15  -> NEWFORM of level 52
+      ||phi||^2 (RS at y = X/4, X/2, X): 0.180225 0.180302 0.180001;  c = 2.666667;  <Theta,phi> = c||phi||^2 = 0.480002
+      L(1,phi) = 0.84548321 (root number +1, spread 2.2e-16)
+      L(1,phi x chi) = 1.40115742 (twist level 208, root number +1, spread 2.2e-16)
+      formula (4/pi^2) chi(p) eta_p L L = 0.480123   (chi(p) = +1, eta_p = +1);   ratio computed/formula = 0.99975
+p = 29, level 116: T_3 eigenvalues on the span of G_{1,29}: [-3. -1.  1.  2.]
+   eigenvalue -3.0000: a(2) = 0.0000, a(3) = -3.0000, a(5) = 3.0000, a(29) = -1.0000, a(9)-(a(3)^2-3) = 2.9e-14  -> NEWFORM of level 116
+      ||phi||^2 (RS at y = X/4, X/2, X): 1.119911 1.116601 1.116404;  c = 0.800000;  <Theta,phi> = c||phi||^2 = 0.893123
+      L(1,phi) = 0.85897704 (root number +1, spread 2.2e-16)
+      L(1,phi x chi) = 2.56555882 (twist level 464, root number +1, spread 0.0e+00)
+      formula (4/pi^2) chi(p) eta_p L L = 0.893149   (chi(p) = +1, eta_p = +1);   ratio computed/formula = 0.99997
+   eigenvalue -1.0000: a(2) = 3.0000, a(3) = -1.0000, a(5) = 1.0000, a(29) = -1.0000, a(9)-(a(3)^2-3) = -1.2e-14  -> old
+   eigenvalue 1.0000: a(2) = -0.0000, a(3) = 1.0000, a(5) = 3.0000, a(29) = -1.0000, a(9)-(a(3)^2-3) = -5.9e-14  -> NEWFORM of level 116
+      ||phi||^2 (RS at y = X/4, X/2, X): 0.622666 0.619086 0.619467;  c = 1.333333;  <Theta,phi> = c||phi||^2 = 0.825956
+      L(1,phi) = 1.27649228 (root number +1, spread 4.4e-16)
+      L(1,phi x chi) = 1.59848808 (twist level 464, root number +1, spread 0.0e+00)
+      formula (4/pi^2) chi(p) eta_p L L = 0.826966   (chi(p) = +1, eta_p = +1);   ratio computed/formula = 0.99878
+   eigenvalue 2.0000: a(2) = 0.0000, a(3) = 2.0000, a(5) = -2.0000, a(29) = -1.0000, a(9)-(a(3)^2-3) = 1.3e-13  -> NEWFORM of level 116
+      ||phi||^2 (RS at y = X/4, X/2, X): 0.689078 0.686891 0.685144;  c = 0.533333;  <Theta,phi> = c||phi||^2 = 0.365410
+      L(1,phi) = 1.32311910 (root number +1, spread 6.7e-16)
+      L(1,phi x chi) = 0.68307011 (twist level 464, root number +1, spread 3.3e-16)
+      formula (4/pi^2) chi(p) eta_p L L = 0.366289   (chi(p) = +1, eta_p = +1);   ratio computed/formula = 0.99760
+p = 37, level 148: T_3 eigenvalues on the span of G_{1,37}: [-2.561553 -1.618034  0.618034  1.561553]
+   eigenvalue -2.5616: a(2) = -0.0000, a(3) = -2.5616, a(5) = 2.0000, a(37) = -1.0000, a(9)-(a(3)^2-3) = -1.1e-13  -> NEWFORM of level 148
+      ||phi||^2 (RS at y = X/4, X/2, X): 0.928647 0.927935 0.930955;  c = 1.009952;  <Theta,phi> = c||phi||^2 = 0.940220
+      L(1,phi) = 0.92006491 (root number +1, spread 4.4e-16)
+      L(1,phi x chi) = 2.52008455 (twist level 592, root number +1, spread 0.0e+00)
+      formula (4/pi^2) chi(p) eta_p L L = 0.939710   (chi(p) = +1, eta_p = +1);   ratio computed/formula = 1.00054
+   eigenvalue -1.6180: a(2) = 3.0000, a(3) = -1.6180, a(5) = 3.8541, a(37) = -1.0000, a(9)-(a(3)^2-3) = 1.5e-13  -> old
+   eigenvalue 0.6180: a(2) = 3.0000, a(3) = 0.6180, a(5) = -2.8541, a(37) = -1.0000, a(9)-(a(3)^2-3) = 3.2e-13  -> old
+   eigenvalue 1.5616: a(2) = -0.0000, a(3) = 1.5616, a(5) = 2.0000, a(37) = -1.0000, a(9)-(a(3)^2-3) = -7.9e-14  -> NEWFORM of level 148
+      ||phi||^2 (RS at y = X/4, X/2, X): 0.485212 0.486949 0.486632;  c = 1.656714;  <Theta,phi> = c||phi||^2 = 0.806210
+      L(1,phi) = 1.46116542 (root number +1, spread 2.2e-16)
+      L(1,phi x chi) = 1.36232863 (twist level 592, root number +1, spread 4.4e-16)
+      formula (4/pi^2) chi(p) eta_p L L = 0.806755   (chi(p) = +1, eta_p = +1);   ratio computed/formula = 0.99932

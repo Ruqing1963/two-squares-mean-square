@@ -41,6 +41,12 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   ε-losses of Part I (d(α)d(β) and Waibel's genus bound) are replaced by the mean value of r(α)² and by the local
   densities. Corollary 6.6: the spectral second moment Σ_φ |⟨Θ,φ⟩|²/‖φ‖² is ≍ (log mm′)². For (1,p), p ≤ 10⁶,
   Λ(1,p) = 0.319 (log p)² + 0.42 log p − 1.5 (fit), against the leading term 1/π = 0.318.
+* **Theorem 6.7 (Rankin–Selberg formula).** For every newform φ of weight 2 and level 4mm′ (mm′ odd square-free),
+  ⟨Θ_{m,m′}, φ⟩ = (4/π²) χ₋₄(m′) η_{m′}(φ) L(1,φ) L(1,φ⊗χ₋₄) — all local factors cancel, and |⟨Θ_{m,m′},φ⟩| is
+  independent of the factorisation. Proof: Hecke's weight-1 Eisenstein series θ² unfolded over the cusps of
+  Γ₀(4mm′) above ∞, which are the Atkin–Lehner cusps W_Q∞. Verified numerically at levels 20, 52, 116
+  (`test_rs_formula.py`: ratios 1.00000, 0.99975, 0.99997/0.99878/0.99760). Corollary 6.8: the newform second
+  moment Σ L(1,φ)²L(1,φ⊗χ)²/⟨φ,φ⟩ = (π⁴/16)‖pr_new G‖² ≪ (log 3mm′)²(log log 3mm′)^C.
 * **Theorem 7.1 (two-dimensional sieve, Section 7).** Replacing the vector sieve of Part I by the Diamond–Halberstam–Richert
   sieve of dimension 2 (sieving limit β₂ = 4.2665 instead of 2 + 2√e = 5.30) gives, from the same level 1/2,
   Ω(n(N − n)) ≤ 7 and max(Ω(n), Ω(N − n)) ≤ 5 for ≥ 0.25 Σ_r(N) N/(log N)² integers n, for every large N ≡ 2 (mod 4):
@@ -78,6 +84,7 @@ code/       mean_square_check.py      mean square of T - M over N <= Y and the e
             dhr_sieve.py              DHR sieve functions F_2, f_2 (alpha_2, beta_2 by the adjoint method) and the weighted sieve (Table 4)
             certify_dhr.py            interval-arithmetic enclosures of F_2, f_2 and the certification of Lemma 7.2 (Theorem 7.1)
             modulus_sum_scan.py       Table 5: sums of a_{G_{d,e}}(N) over the moduli at fixed N (cancellation test)
+            test_rs_formula.py        numerical test of Theorem 6.7 (newform components of G_{1,p} via T_3, norms, central values)
             plot_cusp_decomposition.py  Figure 3: the norm cusp by cusp (from results/cusp_lower_bound.txt)
             plot_dhr_sieve.py         Figure 4: F_2, f_2 against the vector sieve; thresholds against theta (cache results/dhr_thresholds.txt)
             plot_modulus_sums.py      Figure 5: cancellation in the sum over the moduli, N = 3000002
