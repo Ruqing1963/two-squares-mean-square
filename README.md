@@ -1,12 +1,16 @@
 # Sums of two squares with few prime factors, II: the mean square of the cuspidal error of θ²(mz)θ²(m′z), almost all N, and the size of the Petersson norm
 
-Code, data and manuscript (draft) for
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23826297.svg)](https://doi.org/10.5281/zenodo.23826297)
+
+Code, data and manuscript for
 
 > R. Chen, *Sums of two squares with few prime factors, II: the mean square of the cuspidal error of
-> θ²(mz)θ²(m′z), almost all N, and the size of the Petersson norm*, preprint, 2026.
+> θ²(mz)θ²(m′z), almost all N, and the size of the Petersson norm*, preprint, 2026,
+> DOI [10.5281/zenodo.23826297](https://doi.org/10.5281/zenodo.23826297) (version 1.0, tag v1.0).
 
 Part I is [two-squares-theta-level](https://github.com/Ruqing1963/two-squares-theta-level)
-(DOI [10.5281/zenodo.23618710](https://doi.org/10.5281/zenodo.23618710)).
+(version 3, DOI [10.5281/zenodo.23826176](https://doi.org/10.5281/zenodo.23826176)); the working notes and the
+short-interval theorem are in [two-squares-short-intervals](https://github.com/Ruqing1963/two-squares-short-intervals).
 
 ## What the paper does
 

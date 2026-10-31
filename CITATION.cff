@@ -7,8 +7,10 @@ authors:
     given-names: Ruqing
     affiliation: "GUT Geoservice Inc., Montreal, Canada"
     email: ruqing@hotmail.com
-date-released: 2026-10-24
-version: "0.1"
+doi: 10.5281/zenodo.23826297
+date-released: 2026-10-30
+version: "1.0"
+url: "https://doi.org/10.5281/zenodo.23826297"
 license: MIT
 repository-code: "https://github.com/Ruqing1963/two-squares-mean-square"
 keywords:
