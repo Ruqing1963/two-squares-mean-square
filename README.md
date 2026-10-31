@@ -117,6 +117,10 @@ a_G(N) = T(m,m′;N) − M(m,m′;N) is the error term in the number of represen
   term exact for every n (square-free m, m′), checked against the levels 4, 12 (no cusp forms: T = M exactly) and
   20 (T − M = (8/3) a_f(n) for all n); with it the unbiased estimate for (1,5) is 0.5785, the exact value.
 
+* `notes/part3_explorations.pdf`: the working notes behind Sections 7.3–7.5 and 8.1 (the symmetric remainder, the
+  dispersion form and the exponent bookkeeping against the fixed first argument, the dimension and mollified weights,
+  the LP over the weight function), with the full derivations and the parts that did not go into the paper.
+
 ## Repository layout
 
 ```
