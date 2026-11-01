@@ -1,12 +1,14 @@
 # Sums of two squares with few prime factors, II: the mean square of the cuspidal error of θ²(mz)θ²(m′z), almost all N, and the size of the Petersson norm
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23826297.svg)](https://doi.org/10.5281/zenodo.23826297)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23866064.svg)](https://doi.org/10.5281/zenodo.23866064)
 
 Code, data and manuscript for
 
 > R. Chen, *Sums of two squares with few prime factors, II: the mean square of the cuspidal error of
 > θ²(mz)θ²(m′z), almost all N, and the size of the Petersson norm*, preprint, 2026,
-> DOI [10.5281/zenodo.23826297](https://doi.org/10.5281/zenodo.23826297) (version 1.0, tag v1.0).
+> DOI [10.5281/zenodo.23866064](https://doi.org/10.5281/zenodo.23866064) (version 3, tag v1.0, with the correction of
+> Section 8.1; version 2, DOI [10.5281/zenodo.23826297](https://doi.org/10.5281/zenodo.23826297), wrote the Kloosterman sums
+> as S(16N, m|h|²; m′k)).
 
 Part I is [two-squares-theta-level](https://github.com/Ruqing1963/two-squares-theta-level)
 (version 3, DOI [10.5281/zenodo.23826176](https://doi.org/10.5281/zenodo.23826176)); the working notes and the
